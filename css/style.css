@@ -1,0 +1,368 @@
+
+/* 
+                                Core Styles 
+*/
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0 5%;
+}
+
+a, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p, li {
+    font-size: 1.125em;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h1+h2 {
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+/* Buttons */
+.solid {
+    background: #000;
+    color: #fff;
+    font-size: var(--button-reg);
+    border: none;
+    width: 150px;
+    height: auto;
+    padding: 10px 25px;
+    margin-bottom: 15px;
+}
+
+.primary {
+    background: var(--primary);
+    color: #fff;
+    font-size: var(--button-reg);
+    border: none;
+    width: 150px;
+    height: auto;
+    padding: 10px 25px;
+}
+
+:root {
+    --primary: #fdd008;
+
+    --button-reg: 1em;
+    --button-sm: .75em;
+
+    --heading: #1a1a1a;
+    --p: #4c4c4c;
+}
+
+/* 
+                                Navigation
+*/
+
+#top-navbar {
+    display: none;
+}
+
+.sub-nav {
+    visibility: hidden;
+    height: 0;
+    position: relative;
+    z-index: 2000;
+    background: #fff;
+    display: none;
+}
+
+.quote {
+    display: none;
+}
+
+/* Side Nav */
+#main-navigation {
+    margin: 0;
+    padding-right: 20px;
+    position: relative;
+    top: -2020px;
+    z-index: 50;
+    visibility: hidden;
+}
+
+#bottom-nav-bar {
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 200;
+    background: #232b2b;
+    transition: .3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+    text-align: right;
+    padding: 0px;
+    top: 50px;
+    z-index: 1200;
+    margin: 15px 0;
+    width: auto;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.side-nav a {
+    text-decoration: none;
+    padding: 0;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 13px;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    position: relative;
+    z-index: 200;
+}
+
+nav img {
+    position: absolute;
+    height: 30px;
+    left: 0;
+    top: 5px;
+    z-index: 10;
+    padding: 15px;
+}
+
+/* Hamburger Menu */
+#menu-button {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    top: 7px;
+    width: 60px;
+}
+
+/* 
+                                Landing Page
+*/
+
+#landing-page {
+    background:url("../images/construction.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-dark {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .6;
+}
+
+.landing-group {
+    position: relative;
+    z-index: 10;
+}
+
+.landing-text {
+    position: relative;
+    z-index: 2;
+    display: hidden;
+}
+
+.landing-text h1 {
+    margin: 0;
+    padding-top: 110px;
+    color: #fff;
+    font-weight: 900;
+    line-height: 1.2em;
+}
+
+.landing-text h2 {
+    color: #fff;
+    margin: 30px auto;
+}
+
+.landing-b {
+    margin-bottom: 50px;
+}
+
+.landing-text button {
+    width: 160px;
+}
+.about {
+    border: 1px solid var(--primary);
+    display: block;
+    font-weight: 900;
+}
+
+.primary {
+    color: #1a1a1a;
+    font-weight: 900;
+}
+
+/* 
+                                3 Boxes
+*/
+
+#cards {
+    height: 1800px;
+}
+
+.card {
+    height: 400px;
+    max-width: 250px;
+    background: #f6f7f8;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-border {
+    width: 98%;
+    height: 10px;
+    background: var(--primary);
+    position: relative;
+    top: -100px;
+    z-index: 1000;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h3 {
+    color: var(--heading);
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.card p {
+    color: var(--p);
+    font-size: 14px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.card-content button {
+    border: transparent;
+    background: transparent;
+    font-size: 14px;
+    color: var(--heading);
+    margin: auto;
+}
+
+/* 
+                                About
+*/
+
+#about {
+    position: relative;
+}
+
+.about-dark {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+}
+
+.about-content {
+    position: relative;
+    top: -450px;
+}
+
+.about-content h2 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 30px;
+
+}
+
+.about-content h2 span {
+    color: var(--primary);
+}
+
+.about-content h2:before {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 50px;
+    height: 2px;
+    left: 185px;
+    top: 5px;
+}
+
+.about-content h2:after {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 30px;
+    height: 2px;
+    left: 185px;
+    top: 14px;
+}
+
+.about-content img {
+    width: 100%;
+    height: auto;
+}
+
+/* Yellow Box */
+.about-box {
+    background: var(--primary);
+    padding: 20px;
+    position: relative;
+    top: -20px;
+}
+
+.about-box h3 {
+    font-size: 34px;
+}
+
+.about-box span {
+    font-weight: normal;
+}
+
+.about-content-button {
+    width: auto;
+}
+
+/* 
+                                Icons                   
+*/
+
+#icons {
+    height: auto;
+}
+
+.numbers span, .numbers h4 {
+    color: #fff;
+}
