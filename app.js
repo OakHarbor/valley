@@ -23,11 +23,11 @@ let toggleNav = function () {
 
         getSidebarLinks.forEach((item, index)=>{
           console.log(item);
-          item.style.display = "block";
+          item.style.display = "inline-block";
           item.style.opacity = "1";
           item.style.visibility = "visible";
          })
-        getSidebar.style.height = "290px";
+        getSidebar.style.height = "540px";
 
         toggleNavStatus = true;
     } 

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/style.css">
     
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -16,83 +16,88 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/4f8f1d146c.js" crossorigin="anonymous"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Valley Construction Supply | Marysville, WA</title>
 </head>
 <header>
-    <button id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-    <!--                                              Top Navigation Bar  -->
-    <div id="top-navbar">
-        <div class="container">
-            <img src="" alt="valley_construction_supply_logo">
-
-            <div class="location">
-                <div class="icon">
-                    <!-- icon -->
-                </div>
-                <div class="location-info">
-                    <p>Marysville, WA</p>
-                    <p>(800) 559-8566</p>
-                </div>
-            </div>
-
-            <div class="location">
-                <div class="icon">
-                    <!-- icon -->
-                </div>
-                <div class="location-info">
-                    <p>Tacoma, WA</p>
-                    <p>(800) 922-2082</p>
-                </div>
-            </div>
-
-            <div class="location">
-                <div class="icon">
-                    <!-- icon -->
-                </div>
-                <div class="location-info">
-                    <p>Hours</p>
-                    <p>Mon-Fri: 9am - 5pm</p>
+        <!--                                              Top Navigation Bar  -->
+        <div aria-hidden="true" id="top-navbar">
+            <div class="top-content container">
+                <img class="valley-mobile-logo vcs-black" src="images/vcs-black.png" alt="" height="80px">
+                <div class="top-nav-container">
+                    <div class="location">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-info">
+                            <p>Marysville, WA</p>
+                            <p>(800) 559-8566</p>
+                        </div>
+                    </div>
+        
+                    <div class="location">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-info">
+                            <p>Tacoma, WA</p>
+                            <p>(800) 922-2082</p>
+                        </div>
+                    </div>
+        
+                    <div class="location">
+                        <div class="icon">
+                            <i class="far fa-calendar-alt"></i>
+                        </div>
+                        <div class="location-info">
+                            <p>Hours</p>
+                            <p>Mon-Fri: 9am - 5pm</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <nav>
-        <!--                                              Desktop Navigation -->
-        <img src="images/current-logo.png" alt="" height="80px">
-        <div id="bottom-nav-bar" class="side-nav" class="container">
-            <ul id="main-navigation" class="side-nav">
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                    <ul class="sub-nav">
-                        <li><a href="">JOBS</a></li>
-                        <li><a href="">ABOUT VCS</a></li>
-                    </ul>
-                <li><a href="">SERVICES</a></li>
-                    <ul class="sub-nav">
-                        <li><a href="">REBAR FABRICATION</a></li>
-                        <li><a href="">CONCRETE</a></li>
-                        <li><a href="">BUILDING MATERIALS</a></li>
-                        <li><a href="">EQUIPMENT AND TOOLS</a></li>
-                    </ul>
-                <li><a href="">PRODUCTS</a></li>
-                <li><a href="">PROMOTIONS</a></li>
-                <li><a href="">CONTACT</a></li>
-                    <ul class="sub-nav">
-                        <li><a href="">APPLY FOR CREDIT</a></li>
-                    </ul>
-            </ul>
-            <button class="quote" type="button">
-                REQUEST A QUOTE 
-            </button>
-        </div>
-    </nav>
-</header>
+        <button id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <nav class="container">
+            <!--                                              Desktop Navigation -->
+            <img class="valley-mobile-logo" src="images/current-logo.png" alt="" height="80px">
+            <img class="valley-mobile-logo" src="images/vcs-black.png" alt="" height="80px">
+            <div id="bottom-nav-bar" class="side-nav" class="container">
+                <ul id="main-navigation" class="side-nav">
+                    <li><a class="active-menu" href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                        <ul class="sub-nav">
+                            <li><a href="">JOBS</a></li>
+                            <li><a href="">ABOUT VCS</a></li>
+                        </ul>
+                    <li><a href="">SERVICES</a></li>
+                        <ul class="sub-nav">
+                            <li><a href="">REBAR FABRICATION</a></li>
+                            <li><a href="">CONCRETE</a></li>
+                            <li><a href="">BUILDING MATERIALS</a></li>
+                            <li><a href="">EQUIPMENT AND TOOLS</a></li>
+                        </ul>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href="">PROMOTIONS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                        <ul class="sub-nav">
+                            <li><a href="">APPLY FOR CREDIT</a></li>
+                        </ul>
+                </ul>
+                <button class="quote" type="button">
+                    REQUEST A QUOTE 
+                </button>
+            </div>
+        </nav>
+    </header>
 <body>
 
 <main id="main-content">
@@ -108,12 +113,13 @@
                 <h1>Construction Supply Specialist</h1>
                 <h2>Valley Construction Supply is the largest locally owned and operated
                     supplier of wholesale concrete, framing, rebar, and draining and venting 
-                    hardware.
+                    hardware for Seatlle and the surrounding Puget Sound area.
                 </h2>
                 <button class="about solid">ABOUT VCS</button>
                 <button class="primary landing-b">CALL US</button>
             </div>
         </div>
+        <div class="clippy-desktop"></div>
     </section>
 
     <!-- ============================================ -->
@@ -121,45 +127,52 @@
     <!-- ============================================ -->
 
     <section id="cards">
-        <div class="container">
+        <div class="card-container">
             <div class="card container">
                 <div class="card-content">
-                    <div class="top-border"></div>
-                    <!--ICON-->
-                    <h3>Header 1</h3>
+                    <i class="fas fa-cogs"></i>
+                    <h3>Complete Inventory</h3>
                     <div class="card-line"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Explicabo ea cupiditate consectetur quia eum maiores quos ratione.</p>
-                    <button>Read More</button>
+                    <p>We stock a comprehensive line of supplies, tools, and materials for any
+                       construction need.  That includes foundation materials, concrete accessories,
+                       drainage and excavation supplies, and framing and venting hardware
+                    </p>
+                    <button>Read More<i class="fas fa-chevron-right"></i></button>
                 </div>
+                <div class="clip-bottom"></div>
             </div>
-        </div>
-        <div class="container">
+
+  
             <div class="card container">
                 <div class="card-content">
-                    <div class="top-border"></div>
-                    <!--ICON-->
-                    <h3>Header 2</h3>
+                    <i class="fas fa-cogs"></i>
+                    <h3>Rebar Fabrication</h3>
                     <div class="card-line"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Explicabo ea cupiditate consectetur quia eum maiores quos ratione.</p>
-                    <button>Read More</button>
+                    <p>Valley Rebar Fabrication has the resources to deliver fabricated rebar
+                       to meet exact specifications.  This includes free estimates, detailing,
+                       and shop drawings.  Call us to speak with a Valley Rebar Specialist.
+                    </p>
+                    <button>Read More<i class="fas fa-chevron-right"></i></button>
                 </div>
+                <div class="clip-bottom"></div>
             </div>
-        </div>
-        <div class="container">
+       
+   
             <div class="card container">
                 <div class="card-content">
-                    <div class="top-border"></div>
-                    <!--ICON-->
-                    <h3>Header 3</h3>
+                    <i class="fas fa-cogs"></i>
+                    <h3>Best Service Since 1982</h3>
                     <div class="card-line"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Explicabo ea cupiditate consectetur quia eum maiores quos ratione.</p>
-                    <button>Read More</button>
+                    <p>Valley Construction Supply is determined to help contractors with their project
+                       needs.  We offer everything you need from a large inventory of building supplies, 
+                       tools and materials at competitive prices with the best manufacturers.
+                    </p>
+                    <button>Read More<i class="fas fa-chevron-right"></i></button>
                 </div>
+                <div class="clip-bottom"></div>
             </div>
         </div>
+        <div class="clippy"></div>
     </section>
 
     <!-- ============================================ -->
@@ -174,56 +187,42 @@
                 <img src="../images/worker.jpg" alt="" width="300" height="300">
                 <div class="about-box">
                     <h3><span>Committed</span> to superior quality and results</h3>
-                    <p>Valley Construction Supply is determined to help contractors
-                       with their project needs.  We offer everything you need from a 
-                       large inventory of building materials.
+                    <p>Valley Construction Supply is family owned and operated for over 30 years and we have been
+                       working hard to ensure we provide every customer with remarkable service and up 
+                       to date product knowledge.
                     </p>
-                    <button class="about-content-button about solid">READ MORE</button>
+                    <button class="about-content-button about solid">WHO WE ARE</button>
                 </div>
 
                 <div class="numbers">
                     <div class="numbers-item">
-                        <!-- ICON -->
-                        <span>2500</span>
-                        <h4>Projects Completed</h4>
+                        <i class="far fa-building"></i>
+                        <div>
+                            <span>2500</span>
+                            <h4>Projects Completed</h4>
+                        </div>
                     </div>
                     <div class="numbers-item">
-                        <!-- ICON -->
-                        <span>100%</span>
-                        <h4>Satisfaction</h4>
+                        <i class="far fa-building"></i>
+                        <div>
+                            <span>100%</span>
+                            <h4>Satisfaction</h4>
+                        </div>
                     </div>
                     <div class="numbers-item">
-                        <!-- ICON -->
-                        <span>9/10</span>
-                        <h4>Toll Brothers Rating</h4>
+                        <i class="far fa-building"></i>
+                        <div>
+                            <span>9/10</span>
+                            <h4>Toll Brothers Rating</h4>
+                        </div>
                     </div>
                     <div class="numbers-item">
-                        <!-- ICON -->
-                        <span>30</span>
-                        <h4>Employees</h4>
+                        <i class="far fa-building"></i>
+                        <div>
+                            <span>30</span>
+                            <h4>Employees</h4>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="numbers">
-                <div class="numbers-item">
-                    <!-- ICON -->
-                    <span>2500</span>
-                    <h4>Projects Completed</h4>
-                </div>
-                <div class="numbers-item">
-                    <!-- ICON -->
-                    <span>100%</span>
-                    <h4>Satisfaction</h4>
-                </div>
-                <div class="numbers-item">
-                    <!-- ICON -->
-                    <span>9/10</span>
-                    <h4>Toll Brothers Rating</h4>
-                </div>
-                <div class="numbers-item">
-                    <!-- ICON -->
-                    <span>30</span>
-                    <h4>Employees</h4>
                 </div>
             </div>
         </div>
