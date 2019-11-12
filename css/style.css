@@ -105,13 +105,20 @@ nav img:nth-child(2){
     display: none;
 }
 
-.sub-nav {
-    visibility: hidden;
-    height: 0;
+.about-dropdown,
+.services-dropdown,
+.contact-dropdown {
     position: relative;
-    z-index: 2000;
-    background: #fff;
-    display: none;
+}
+
+.sub-nav li {
+    text-align: left;
+}
+
+.sub-nav li a {
+    padding: 10px 20px;
+    margin: 0;
+    width: 100px;
 }
 
 .quote {
@@ -156,6 +163,10 @@ nav ul li {
     font-size: 10px;
 }
 
+.about-dropdown:hover .sub-nav {
+    
+}
+
 .side-nav a {
     text-decoration: none;
     padding: 0 0 5px 20px;
@@ -169,6 +180,11 @@ nav ul li {
     z-index: 200;
 }
 
+i.fas.fa-chevron-down {
+    font-size: 16px;
+    margin-left: 10px;
+} 
+
 nav img {
     position: absolute;
     height: 50px;
@@ -176,6 +192,20 @@ nav img {
     top: 5px;
     z-index: 10;
     padding: 15px;
+}
+
+.sub-nav {
+    position: absolute;
+    z-index: 2000;
+    background: #000;
+    text-align: left;
+    padding: 0;
+    top: 43px;
+    display: none;
+}
+
+.sub-nav li a:hover {
+    color: var(--primary);
 }
 
 /* Hamburger Menu */
@@ -246,7 +276,7 @@ nav img {
     color: #fff;
     font-weight: 900;
     line-height: 1.2em;
-}
+} 
 
 .landing-text h2 {
     color: #fff;
@@ -777,7 +807,6 @@ i.fas.fa-chevron-right {
 
     .side-nav a:hover {
         color: var(--primary);
-        opacity: .5;
         -webkit-transition: .3s ease;
         -o-transition: .3s ease;
         transition: .3s ease;
@@ -791,6 +820,20 @@ i.fas.fa-chevron-right {
     .side-nav li {
         margin: 0;
     }
+
+    .about-li:hover .sub1 {
+        display: block;
+    }
+
+    .services-li:hover .sub2 {
+        display: block;
+    }
+
+    .contact-li:hover .sub3 {
+        display: block;
+    }
+
+
 
     .top-content {
         display: -webkit-box;
