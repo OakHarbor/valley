@@ -229,7 +229,7 @@ nav img {
 */
 
 #landing-page {
-    background:url("../images/construction.jpg");
+    background:url("../images/Project\ 1.jpg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -256,7 +256,7 @@ nav img {
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .6;
+    opacity: .5;
 }
 
 .landing-group {
@@ -609,6 +609,46 @@ i.fas.fa-chevron-right {
     margin: 0;
 }
 
+/* 
+                               Partners
+*/
+
+.partners-topper h2 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 30px;
+}
+
+.partners-topper h2 span {
+    color: var(--primary);
+}
+
+.partners-topper h2:before {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 50px;
+    height: 2px;
+    left: 185px;
+    top: 35px;
+}
+
+.partners-topper h2:after {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 30px;
+    height: 2px;
+    left: 185px;
+    top: 44px;
+}
+
+.partners-logo img {
+    margin: 20px auto;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1024px) {
 
     /* 
@@ -723,13 +763,25 @@ i.fas.fa-chevron-right {
         left: 250px;
     }
 
+    /* 
+                               Parters
+    */
+
+    .partners-logo {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
 }
 
 @media screen and (min-width: 1025px) {
 
     .container {
-        max-width: 1100px;
+        max-width: 1100px !important;
         padding: 0 2em;
+        margin: 0;
     }
 
     #top-navbar {
@@ -978,7 +1030,7 @@ i.fas.fa-chevron-right {
     }
 
     .card {
-        width: 220px;
+        width: 270px;
         margin: 0;
         height: 450px;;
     }
@@ -997,7 +1049,7 @@ i.fas.fa-chevron-right {
             -ms-flex-direction: row;
                 flex-direction: row;
         -ms-flex-pack: distribute;
-            justify-content: space-around;
+            justify-content: space-between;
         margin: auto;
         position: relative;
         top: -120px;
@@ -1055,13 +1107,14 @@ i.fas.fa-chevron-right {
     */
 
     #icons {
-        height: 500px;
+        height: 600px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+        position: relative;
     }
 
     .numbers {
@@ -1100,5 +1153,81 @@ i.fas.fa-chevron-right {
         font-size: 30px;
     }
 
+    .about-clippy {
+        height: 900px;
+        width: 100%;
+        background: #fff;
+        clip-path: polygon(0 90%, 0 100%, 100% 100%, 100% 90%, 50% 100%);
+        position: absolute;
+        bottom: 0;
+    }
+
+    /* 
+                               Partners
+    */
+
+    #partners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .partners-topper {
+        width: 600px;
+        margin: auto;
+    }
+
+    .partners-topper h2 {
+        text-align: center;
+    }
+
+    .partners-topper h2:before,
+    .partners-topper h2:after {
+        left: 400px;
+    }
+
+    .partners-topper h2:before {
+        top: 38px;
+    }
+    
+    .partners-topper h2:after {
+        top: 47px;
+    }
+
+    .partners-topper p {
+        text-align: center;
+    }
+
+    .partners-topper span:before {
+        content: '';
+        position: absolute;
+        background: var(--primary);
+        width: 50px;
+        height: 2px;
+        right: 400px;
+        top: 38px;
+    }
+        
+    .partners-topper span:after {
+        content: '';
+        position: absolute;
+        background: var(--primary);
+        width: 30px;
+        height: 2px;
+        right: 400px;
+        top: 47px;
+    }
+
+    .partners-logo {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 1100px;
+    }
+
+    .partners-logo img {
+        width: 150px;
+        margin: auto;
+    }
 
 }
