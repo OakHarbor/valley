@@ -529,7 +529,6 @@ i.fas.fa-chevron-right {
 #icons {
     height: 900px;
     background:url("../images/construction.jpg");
-    background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1108,6 +1107,7 @@ i.fas.fa-chevron-right {
 
     #icons {
         height: 600px;
+        background-attachment: fixed;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
