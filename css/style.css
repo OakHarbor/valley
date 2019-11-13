@@ -230,7 +230,6 @@ nav img {
 
 #landing-page {
     background:url("../images/Project\ 1.jpg");
-    background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -984,6 +983,7 @@ i.fas.fa-chevron-right {
     #landing-page {
         height: 700px;
         position: relative;
+        background-attachment: fixed;
         -webkit-box-align: start;
             -ms-flex-align: start;
                 align-items: flex-start;
