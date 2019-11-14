@@ -217,10 +217,6 @@ nav ul li {
     font-size: 10px;
 }
 
-.about-dropdown:hover .sub-nav {
-    
-}
-
 .side-nav a {
     text-decoration: none;
     padding: 0 0 5px 20px;
@@ -1147,6 +1143,27 @@ i.fas.fa-chevron-right {
     }
 
     /* 
+                               Gallery
+    */
+
+    #gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery-button {
+        margin: 70px auto !important;
+        display: block;  
+    }
+
+    .clippy-gallery {
+        height: 500px;
+        bottom: -40px;
+    }
+
+    /* 
                                Future
     */
 
@@ -1199,6 +1216,58 @@ i.fas.fa-chevron-right {
         height: 250px;
     }
 
+    /* 
+                               Partners
+    */
+
+    .partners-logo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 800px;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 80px;
+        padding-top: 50px;
+    }
+
+    /* 
+                               Sales
+    */
+
+    .partners-topper {
+        padding-top: 50px;
+    }
+    
+    .sales-people {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 800px;
+        justify-content: space-around;
+        padding: 50px auto;
+    }
+
+    .sales-card {
+        margin: 25px;
+    }
+
+    /* 
+                               Contact
+    */
+
+    #contact {
+        height: 250px;
+    }
+
+    .contact-group h2 {
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+
+    .contact-button {
+        margin: 0 auto !important;
+    }
 }
 
 @media screen and (min-width: 1025px) {
