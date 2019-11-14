@@ -20,6 +20,11 @@ p, li {
     font-family: 'Poppins', sans-serif;
 }
 
+p {
+    color: #4c4c4c;
+    font-size: 1em;
+}
+
 h1 {
     font-size: 2.5em;
 }
@@ -83,6 +88,7 @@ h2 {
 }
 
 /* Global Variables */
+
 :root {
     --primary: #fdd008;
 
@@ -464,12 +470,14 @@ i.fas.fa-chevron-right {
 
 .about-content h2 {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 40px;
     margin-bottom: 30px;
 }
 
 .about-content h2 span {
     color: var(--primary);
+    display: block;
+    line-height: 1em;
 }
 
 .about-content h2:before {
@@ -479,7 +487,7 @@ i.fas.fa-chevron-right {
     width: 50px;
     height: 2px;
     left: 185px;
-    top: 5px;
+    top: 55px;
 }
 
 .about-content h2:after {
@@ -489,7 +497,7 @@ i.fas.fa-chevron-right {
     width: 30px;
     height: 2px;
     left: 185px;
-    top: 14px;
+    top: 64px;
 }
 
 .about-content img {
@@ -608,6 +616,121 @@ i.fas.fa-chevron-right {
 }
 
 /* 
+                               Future
+*/
+
+#building-the-future {
+    background: #f2f2f2;
+}
+
+.future-topper {
+    background: #fff;
+    height: 420px;
+}
+
+.future-topper h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    margin: 0;
+    padding-top: 60px;
+    margin-bottom: 30px;
+    line-height: 1em;
+}
+
+.future-topper h2 span {
+    color: var(--primary);
+    display: block;
+}
+
+.future-topper h2:before {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 50px;
+    height: 2px;
+    left: 250px;
+    top: 120px;
+}
+
+.future-topper h2:after {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 30px;
+    height: 2px;
+    left: 250px;
+    top: 129px;
+}
+
+.future-icons {
+    margin-bottom: 40px;
+}
+
+.icon-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon-group i {
+    margin-right: 20px;
+    font-size: 30px;
+    color: var(--primary);
+    width: 38px !important;
+}
+
+/* Cards */
+
+.future-card img {
+    width: 100%;
+}
+
+.future-card {
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.future-card-content{
+    width: 80%;
+    margin: auto;
+    padding: 0 20px 20px 20px;
+    position: absolute;
+    bottom: 75px;
+    z-index: 10;
+    background: #f2f2f2;
+}
+
+.future-card-content p {
+    margin-bottom: 25px;
+}
+
+.future-card-content button {
+    border: transparent;
+    background: transparent;
+    font-size: 14px;
+    color: var(--heading);
+    margin: 0 auto;
+    position: relative;
+    padding-left: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.future-card-content button:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 86px;
+    height: 2px;
+    background: var(--primary);
+}
+
+/* 
                                Partners
 */
 
@@ -643,8 +766,58 @@ i.fas.fa-chevron-right {
     top: 44px;
 }
 
+.partners-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .partners-logo img {
     margin: 20px auto;
+}
+
+/* 
+                                Gallery
+*/
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery-topper {
+    margin: 70px auto 40px auto;
+}
+
+.gallery-topper h2 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 30px;
+}
+
+.gallery-topper h2 span {
+    color: var(--primary);
+}
+
+.gallery-topper h2:before {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 50px;
+    height: 2px;
+    left: 215px;
+    top: 35px;
+}
+
+.gallery-topper h2:after {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 30px;
+    height: 2px;
+    left: 215px;
+    top: 44px;
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -994,7 +1167,7 @@ i.fas.fa-chevron-right {
     }
 
     .landing-text {
-        width: 700px;
+        width: 900px;
         left: 0;
         top: -30px;
     }
@@ -1002,6 +1175,12 @@ i.fas.fa-chevron-right {
     .landing-text h1 {
         padding-top: 30px;
         font-size: 59px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .landing-text h2 {
+        width: 610px;
+        margin-left: 0;
     }
 
     button.about {
@@ -1091,7 +1270,7 @@ i.fas.fa-chevron-right {
 
     .about-content img {
         width: 650px;
-        height: 398px;
+        height: 416px;
     }
 
     .about-box {
@@ -1157,9 +1336,9 @@ i.fas.fa-chevron-right {
         height: 900px;
         width: 100%;
         background: #fff;
-        clip-path: polygon(0 90%, 0 100%, 100% 100%, 100% 90%, 50% 100%);
+        clip-path: polygon(0 86%, 0 100%, 100% 100%, 100% 86%, 50% 98%);
         position: absolute;
-        bottom: 0;
+        bottom: -3px;
     }
 
     /* 
@@ -1175,24 +1354,25 @@ i.fas.fa-chevron-right {
 
     .partners-topper {
         width: 600px;
-        margin: auto;
+        margin: 40px auto;
     }
 
     .partners-topper h2 {
         text-align: center;
+        font-size: 38px;
     }
 
     .partners-topper h2:before,
     .partners-topper h2:after {
-        left: 400px;
+        left: 470px;
     }
 
     .partners-topper h2:before {
-        top: 38px;
+        top: 45px;
     }
     
     .partners-topper h2:after {
-        top: 47px;
+        top: 54px;
     }
 
     .partners-topper p {
@@ -1205,8 +1385,8 @@ i.fas.fa-chevron-right {
         background: var(--primary);
         width: 50px;
         height: 2px;
-        right: 400px;
-        top: 38px;
+        right: 470px;
+        top: 45px;
     }
         
     .partners-topper span:after {
@@ -1215,11 +1395,13 @@ i.fas.fa-chevron-right {
         background: var(--primary);
         width: 30px;
         height: 2px;
-        right: 400px;
-        top: 47px;
+        right: 470px;
+        top: 54px;
     }
 
     .partners-logo {
+        display: flex;
+        flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
         width: 1100px;
@@ -1229,5 +1411,66 @@ i.fas.fa-chevron-right {
         width: 150px;
         margin: auto;
     }
+
+    /* 
+                               Partners
+    */
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 600px;
+        width: 100%;
+        margin: 80px auto;
+        grid-gap: 40px;
+        position: relative;
+    }
+
+    .gallery div {
+        background: #1a1a1a;
+    }
+
+    #img1 {
+        grid-column: span 2;
+        position: relative;
+    }
+
+    #img2 {
+        grid-column: span 2;
+        grid-row: span 2;
+        position: relative;
+    }
+
+    #img3 {
+        grid-column: span 2;
+        position: relative;
+    }
+
+    #img4 {
+        grid-column: span 2;
+        grid-row: span 2;
+        position: relative;
+    }
+
+    #img5 {
+        grid-column: span 2;
+        grid-row: span 2;
+        position: relative;
+    }
+
+    #img6 {
+        grid-column: span 2;
+        position: relative;
+    }
+
+    .image {
+       height: 100%;
+       width: 100%;
+       position: absolute;
+
+    }
+
+
 
 }
