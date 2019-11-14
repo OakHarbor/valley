@@ -50,6 +50,7 @@ h2 {
     margin-bottom: 15px;
     position: relative;
     box-sizing: border-box;
+    transition: .3s ease
 }
 
 .solid:before {
@@ -61,6 +62,7 @@ h2 {
     position: absolute;
     top: -5px;
     left: -5px;
+    transition: .2s ease;
 }
 
 .solid:after {
@@ -72,18 +74,15 @@ h2 {
     position: absolute;
     bottom: -5px;
     right: -5px;
+    transition: .2s ease;
 }
 
-.solid:hover {
-    background: var(--primary);
-    color: #000;
+.solid:hover:before,
+.solid:hover:after {
+    width: 150px;
+    height: 35px;
     cursor: pointer;
-    -webkit-transition: .3s ease;
-    -o-transition: .3s ease;
-    transition: .3s ease;
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1)
+    transition: .2s ease;
 }
 
 .primary {
@@ -97,6 +96,7 @@ h2 {
     cursor: pointer;
     position: relative;
     box-sizing: border-box;
+    transition: .2s ease;
 }
 
 .primary:before {
@@ -108,6 +108,7 @@ h2 {
     position: absolute;
     top: -5px;
     left: -5px;
+    transition: .2s ease;
 }
 
 .primary:after {
@@ -119,16 +120,15 @@ h2 {
     position: absolute;
     bottom: -5px;
     right: -5px;
+    transition: .2s ease;
 }
 
-.primary:hover {
-    background: #f6f7f8;
-    -webkit-transition: .3s ease;
-    -o-transition: .3s ease;
-    transition: .3s ease;
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1)
+.primary:hover:before,
+.primary:hover:after {
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    transition: .2s ease;
 }
 
 .active-menu {
@@ -140,7 +140,7 @@ h2 {
 :root {
     --primary: #fdd008;
 
-    --button-reg: .8em;
+    --button-reg: .9em;
     --button-sm: .75em;
 
     --heading: #1a1a1a;
@@ -355,6 +355,7 @@ nav img {
 .primary {
     color: #1a1a1a;
     font-weight: 900;
+    margin-right: 50px;
 }
 
 /* 
@@ -818,6 +819,7 @@ i.fas.fa-chevron-right {
 
 .gallery-topper h2 span {
     color: var(--primary);
+    display: block;
 }
 
 .gallery-topper h2:before {
@@ -920,6 +922,94 @@ i.fas.fa-chevron-right {
     margin: 20px auto;
 }
 
+/* 
+                               Sales
+*/
+
+#sales {
+    background: #1a1a1a;
+    position: relative;
+}
+
+.sales-topper h2,
+.sales-topper p {
+    color: #f5f3f3;
+}
+
+.sales-topper h2 {
+    margin-top: 0;
+}
+
+.sales-people {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sales-card {
+    margin: 20px auto;
+}
+
+.sales-card img {
+    width: 260px;
+    height: 350px;
+    border-bottom: 5px solid var(--primary);
+    margin-bottom: 10px;
+}
+
+.sales-card h3,
+.sales-card h4 {
+    margin: 0;
+    color: #f5f3f3;
+}
+
+.sales-card h4 {
+    font-weight: normal;
+}
+
+.sales-people:last-child {
+    padding-bottom: 50px;
+}
+
+.clippy-sales {
+    height: 200px;
+    width: 100%;
+    background: var(--primary);
+    clip-path: polygon(0 86%, 0 100%, 100% 100%, 100% 86%, 50% 98%);
+    position: absolute;
+    bottom: -3px;
+}
+
+/* 
+                               Contact
+*/
+
+#contact {
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.contact-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.contact-group h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.contact-group button {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1024px) {
 
     /* 
@@ -1002,6 +1092,14 @@ i.fas.fa-chevron-right {
     }
 
     /* 
+                               Cards
+    */
+
+    .card {
+        max-width: 450px !important;
+    }
+
+    /* 
                                About
     */
 
@@ -1010,7 +1108,7 @@ i.fas.fa-chevron-right {
     }
 
     .about-content h2 {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .numbers {
@@ -1027,11 +1125,13 @@ i.fas.fa-chevron-right {
     }
 
     .about-content h2:before {
-        left: 250px;
+        left: 200px;
+        top: 15px;
     }
 
     .about-content h2:after {
-        left: 250px;
+        left: 200px;
+        top: 24px;
     }
 
     /* 
@@ -1043,6 +1143,57 @@ i.fas.fa-chevron-right {
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    /* 
+                               Future
+    */
+
+    .future-topper {
+        height: 300px;
+    }
+
+    .future-topper h2 {
+        font-size: 50px;
+    }
+
+    .future-topper h2:before {
+        left: 250px;
+        top: 75px;
+    }
+
+    .future-topper h2:after {
+        left: 250px;
+        top: 84px;
+    }
+
+    .future-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .future-cards {
+        position: relative;
+        height: auto;
+    }
+
+    .future-card {
+        margin-bottom: 70px;
+    }
+
+    .future-card:last-child {
+        padding-bottom: 90px;
+    }
+
+    .future-card img {
+        width: 80%;
+    }
+
+    .future-card-content {
+        width: 65%;
+        top: 250px;
+        padding: 25px;
     }
 
 }
