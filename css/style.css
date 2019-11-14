@@ -1068,7 +1068,31 @@ i.fas.fa-chevron-right {
 
     .landing-text h1 {
         font-size: 60px;
+        position: relative;
+        z-index: 15;
     }
+
+    .landing-text h1:before {
+        content: '';
+        width: 280px;
+        height: 4px;
+        background: var(--primary);
+        position: absolute;
+        bottom: 0px;
+        z-index: -1;
+    }
+
+    .landing-text h1:after {
+        content: '';
+        width: 558px;
+        height: 4px;
+        background: var(--primary);
+        position: absolute;
+        bottom: 71px;
+        left: 0;
+        z-index: -1;
+    }
+
     .landing-text h2 {
         font-size: 25px;
     }
