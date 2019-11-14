@@ -1078,7 +1078,7 @@ i.fas.fa-chevron-right {
         height: 4px;
         background: var(--primary);
         position: absolute;
-        bottom: 0px;
+        bottom: 5px;
         z-index: -1;
     }
 
@@ -1088,7 +1088,7 @@ i.fas.fa-chevron-right {
         height: 4px;
         background: var(--primary);
         position: absolute;
-        bottom: 71px;
+        bottom: 76px;
         left: 0;
         z-index: -1;
     }
