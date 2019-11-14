@@ -1131,6 +1131,15 @@ i.fas.fa-chevron-right {
         top: 24px;
     }
 
+    .about-clippy {
+        height: 300px;
+        width: 100%;
+        background: #f5f3f3;
+        clip-path: polygon(0 86%, 0 100%, 100% 100%, 100% 86%, 50% 98%);
+        position: absolute;
+        bottom: -3px;
+    }
+
     /* 
                                Parters
     */
@@ -1153,14 +1162,70 @@ i.fas.fa-chevron-right {
         justify-content: center;
     }
 
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 600px;
+        width: 90%;
+        padding: 0;
+        margin: 40px auto;
+        grid-gap: 20px;
+        position: relative;
+    }
+
+    .gallery div {
+        background: #1a1a1a;
+    }
+
+    #img1 {
+        grid-column: span 2;
+        position: relative;
+    }
+
+    #img2 {
+        grid-column: span 2;
+        grid-row: span 2;
+        position: relative;
+    }
+
+    #img3 {
+        grid-column: span 2;
+        position: relative;
+    }
+
+    #img4 {
+        grid-column: span 2;
+        grid-row: span 2;
+        position: relative;
+    }
+
+    #img5 {
+        grid-column: span 2;
+        grid-row: span 2;
+        position: relative;
+    }
+
+    #img6 {
+        grid-column: span 2;
+        position: relative;
+    }
+
+    .image {
+       height: 100%;
+       width: 100%;
+       position: absolute;
+
+    }
+
     .gallery-button {
-        margin: 70px auto !important;
+        margin: 30px auto 90px auto !important;
         display: block;  
     }
 
     .clippy-gallery {
         height: 500px;
-        bottom: -40px;
+        bottom: -3px;
     }
 
     /* 
