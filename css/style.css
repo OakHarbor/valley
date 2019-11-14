@@ -1112,6 +1112,7 @@ i.fas.fa-chevron-right {
     }
 
     .numbers {
+        margin: auto;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -1179,7 +1180,8 @@ i.fas.fa-chevron-right {
     }
 
     .future-card {
-        margin-bottom: 70px;
+        margin-bottom: -40px;
+        height: 650px;
     }
 
     .future-card:last-child {
@@ -1192,7 +1194,7 @@ i.fas.fa-chevron-right {
 
     .future-card-content {
         width: 65%;
-        top: 68%;
+        top: 48%;
         padding: 25px;
         height: 250px;
     }
