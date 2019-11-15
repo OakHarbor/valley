@@ -1468,8 +1468,6 @@ i.fas.fa-chevron-right {
         display: block;
     }
 
-
-
     .top-content {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1565,7 +1563,7 @@ i.fas.fa-chevron-right {
     */
 
     #landing-page {
-        height: 700px;
+        min-height: 750px;
         position: relative;
         background-attachment: fixed;
         -webkit-box-align: start;
@@ -1574,7 +1572,7 @@ i.fas.fa-chevron-right {
     }
 
     .landing-group {
-        margin: auto;
+        margin: 0 auto;
         width: 1100px;
     }
 
@@ -1593,6 +1591,7 @@ i.fas.fa-chevron-right {
     .landing-text h2 {
         width: 610px;
         margin-left: 0;
+        line-height: 1.4em;
     }
 
     button.about {
@@ -1667,6 +1666,10 @@ i.fas.fa-chevron-right {
         font-size: 38px;
     }
 
+    .about-content h2 span {
+        display: inline-block
+    }
+
     .about-content h2:before {
         top: 14px;
     }
@@ -1681,15 +1684,26 @@ i.fas.fa-chevron-right {
     }
 
     .about-content img {
-        width: 650px;
+        width: 670px;
         height: 416px;
     }
 
     .about-box {
-        width: 350px;
+        box-sizing: border-box;
+        width: 370px;
         float: right;
         position: relative;
         top: 0px;
+        height: 416px;
+    }
+
+    .about-box p {
+        margin-bottom: 35px;
+    }
+
+    .about-clippy {
+        background: #f5f3f3 !important;
+        height: 80% !important;
     }
 
     /* 
@@ -1752,6 +1766,85 @@ i.fas.fa-chevron-right {
         position: absolute;
         bottom: -3px;
     }
+
+    /* 
+                               Future
+    */
+
+    .future-topper {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 60px;
+        height: 150px;
+    }
+
+    .future-topper .heading-lines {
+        height: 50px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .future-topper h2 {
+        width: 500px;
+        margin: 0;
+    }
+
+    .future-topper h2 span {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .future-topper h2:before {
+        left: 470px;
+        top: 15px;
+    }
+
+    .future-topper h2:after {
+        left: 470px;
+        top: 24px;
+    }
+
+    .future-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 50px;
+    }
+
+    .icon-group {
+        height: 50px;
+    }
+
+    .icon-group h3 {
+        margin: 0;
+    }
+
+    /* Future Cards */
+
+    .future-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 1164px;
+        margin: auto;
+        height: auto;
+    }
+
+    .future-card {
+        width: 300px;
+        height: 450px;
+    }
+
+    .future-card-content {
+        top: 140px;
+        width: 80%;
+        padding: 0 18px;
+    }
+
 
     /* 
                                Partners
