@@ -1771,13 +1771,19 @@ i.fas.fa-chevron-right {
                                Future
     */
 
+    #building-the-future {
+        height: 870px;
+        padding-top: 50px;
+    }
+
     .future-topper {
         margin: auto;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 60px;
-        height: 150px;
+        height: auto;
     }
 
     .future-topper .heading-lines {
@@ -1788,8 +1794,15 @@ i.fas.fa-chevron-right {
     }
     
     .future-topper h2 {
-        width: 500px;
+        width: 550px;
         margin: 0;
+    }
+
+    .future-topper p {
+        float: right;
+        width: 700px !important;
+        order: 4;
+        padding-bottom: 50px;
     }
 
     .future-topper h2 span {
@@ -1798,12 +1811,12 @@ i.fas.fa-chevron-right {
     }
 
     .future-topper h2:before {
-        left: 470px;
+        left: 454px;
         top: 15px;
     }
 
     .future-topper h2:after {
-        left: 470px;
+        left: 454px;
         top: 24px;
     }
 
@@ -1816,6 +1829,15 @@ i.fas.fa-chevron-right {
 
     .icon-group {
         height: 50px;
+        margin-right: 22px;
+    }
+
+    .icon-group:last-child {
+        margin-right: 0;
+    }
+
+    .icon-group i {
+        margin-right: 13px;
     }
 
     .icon-group h3 {
@@ -1827,10 +1849,11 @@ i.fas.fa-chevron-right {
     .future-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        max-width: 1164px;
+        max-width: 1132px;
         margin: auto;
+        padding: 0 2em 40px 2em;
         height: auto;
     }
 
