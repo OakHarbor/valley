@@ -2155,6 +2155,7 @@ footer {
 
     .about-box h3 {
         margin-top: 0;
+        width: 300px;
     }
 
     .about-content h2:before, 
@@ -2191,6 +2192,7 @@ footer {
 
     .about-box button {
         width: 180px;
+        height: 40px;
     }
 
     .about-box p {
