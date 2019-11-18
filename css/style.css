@@ -297,7 +297,7 @@ nav img {
 */
 
 #landing-page {
-    background:url("../images/Project\ 1.jpg");
+    background:url("../images/Project-1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2130,7 +2130,7 @@ footer {
                 justify-content: space-between;
         margin: auto;
         position: relative;
-        top: -120px;
+        top: -100px;
     }
 
     .clippy {
