@@ -2186,17 +2186,25 @@ footer {
                 justify-content: center;
         top: 0px;
         height: 416px;
-        padding-top: 27px;
-        padding-bottom: 27px;
+        padding: 0;
+    }
+
+    .about-box h3 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about-box p {
+        margin-bottom: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .about-box button {
         width: 180px;
         height: 40px;
-    }
-
-    .about-box p {
-        margin-bottom: 35px;
+        margin-left: 20px;
+        padding-right: 20px;
     }
 
     .about-clippy {
