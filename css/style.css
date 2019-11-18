@@ -1706,7 +1706,7 @@ footer {
 
     .future-card-content {
         width: 65%;
-        top: 90px;
+        top: 150px;
         padding: 25px;
         height: 150px;
         border-top: 5px solid var(--primary);
