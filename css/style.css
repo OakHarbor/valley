@@ -455,6 +455,20 @@ nav img {
     font-size: 14px;
     color: var(--heading);
     margin: 0 auto;
+    position: relative;
+    padding-left: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 20px;
+}
+
+.card-content button:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 86px;
+    height: 2px;
+    background: var(--primary);
 }
 
 i.fas.fa-chevron-right {
@@ -2547,16 +2561,16 @@ footer {
     }
 
     .gallery-topper h2:before {
-        left: 560px;
+        left: 540px;
     }
 
     .gallery-topper h2:after {
-        left: 560px;
+        left: 540px;
     }
 
     .gallery-topper h2 span:before {
         content: '';
-        right: 560px;
+        right: 540px;
         width: 50px;
         height: 2px;
         background: var(--primary);
@@ -2566,7 +2580,7 @@ footer {
 
     .gallery-topper h2 span:after {
         content: '';
-        right: 560px;
+        right: 540px;
         width: 30px;
         height: 2px;
         background: var(--primary);
