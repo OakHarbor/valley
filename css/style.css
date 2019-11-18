@@ -381,7 +381,7 @@ nav img {
 }
 
 .card {
-    height: 400px;
+    height: 450px;
     max-width: 250px;
     background: #f6f7f8;
     margin: 40px auto;
@@ -460,6 +460,7 @@ nav img {
     text-transform: uppercase;
     font-weight: 700;
     height: 20px;
+    margin-bottom: 20px;
 }
 
 .card-content button:before {
@@ -544,7 +545,7 @@ i.fas.fa-chevron-right {
 
 .about-content {
     position: relative;
-    top: -450px;
+    top: -350px;
     height: 750px;
 }
 
@@ -627,7 +628,7 @@ i.fas.fa-chevron-right {
 */
 
 #icons {
-    height: 900px;
+    height: 970px;
     background:url("../images/construction.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -1392,7 +1393,7 @@ footer {
     */
 
     .about-content {
-        top: -400px;
+        top: -350px;
     }
 
     .about-content h2 {
@@ -2084,13 +2085,13 @@ footer {
     }
 
     .clippy-desktop {
-        height: 70px;
+        height: 90px;
         width: 100%;
         background: #fff;
         -webkit-clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
                 clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
         position: absolute;
-        bottom: -1px;
+        bottom: 0px;
     }
 
     /* 
@@ -2099,13 +2100,13 @@ footer {
 
     #cards {
         position: relative;
-        height: 700px;
+        height: 750px;
     }
 
     .card {
         width: 270px;
         margin: 0;
-        height: 450px;;
+        height: 500px;
     }
 
     .card-content button:hover {
@@ -2134,12 +2135,12 @@ footer {
     }
 
     .clippy {
-        height: 70px;
+        height: 200px;
         background: #fff;
         -webkit-clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
                 clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
         position: relative;
-        top: -190px;
+        bottom: 300px;
     }
 
     /* 
@@ -2148,7 +2149,7 @@ footer {
 
     .about-content {
         margin: auto;
-        top: -300px;
+        top: -250px;
     }
 
     .about-content h2 {
