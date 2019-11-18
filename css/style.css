@@ -458,7 +458,7 @@ nav img {
     position: relative;
     padding-left: 0;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
     height: 20px;
     margin-bottom: 20px;
 }
@@ -829,7 +829,7 @@ i.fas.fa-chevron-right {
     position: relative;
     padding-left: 0;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .future-card-content button:before {
@@ -905,7 +905,8 @@ i.fas.fa-chevron-right {
     border: none;
     margin-bottom: 50px;
     background: #000;
-    color: #f5f3f3
+    color: #f5f3f3;
+    font-weight: bold;
 }
 
 .gallery-button:before {
@@ -1001,7 +1002,7 @@ i.fas.fa-chevron-right {
 }
 
 .sales-topper h2 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 40px;
     margin-bottom: 30px;
     position: relative;
@@ -1075,6 +1076,10 @@ i.fas.fa-chevron-right {
 .sales-card h4 {
     margin: 0;
     color: #f5f3f3;
+}
+
+.sales-card h3 {
+    letter-spacing: 1px;
 }
 
 .sales-card h4 {
@@ -2842,7 +2847,7 @@ footer {
     }
 
     /*-- -------------------------- -->
-    <---           FOOTER           -->
+    <---          CONTACT           -->
     <--- -------------------------- -*/
 
     #contact {
