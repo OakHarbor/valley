@@ -1139,6 +1139,7 @@ i.fas.fa-chevron-right {
 .contact-group button {
     margin-top: 10px;
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 /*-- -------------------------- -->
@@ -1173,9 +1174,8 @@ footer {
 .footer-item h3 {
     text-align: left;
     color: #fff;
-    font-size: 30px;
+    font-size: 19px;
     font-weight: 500;
-    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -1190,7 +1190,7 @@ footer {
     width: 70%;
     background: #fff;
     margin: 7px 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .footer-dark {
@@ -1266,6 +1266,7 @@ footer {
 
 .branding a {
     color: var(--primary);
+    text-decoration: none;
 }
 
 .branding a:hover {
