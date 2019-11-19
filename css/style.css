@@ -38,6 +38,10 @@ h2 {
     font-size: 1em;
 }
 
+button {
+    text-transform: uppercase;
+}
+
 /* Buttons */
 .solid {
     background: #000;
@@ -567,7 +571,7 @@ i.fas.fa-chevron-right {
     background: var(--primary);
     width: 50px;
     height: 2px;
-    left: 155px;
+    left: 145px;
     top: 10px;
 }
 
@@ -577,7 +581,7 @@ i.fas.fa-chevron-right {
     background: var(--primary);
     width: 30px;
     height: 2px;
-    left: 155px;
+    left: 145px;
     top: 19px;
 }
 
@@ -728,7 +732,7 @@ i.fas.fa-chevron-right {
     margin-bottom: 30px;
     position: relative;
     margin: 0;
-    padding-top: 60px;
+    padding-top: 100px;
     margin-bottom: 30px;
     line-height: 1em;
 }
@@ -744,8 +748,8 @@ i.fas.fa-chevron-right {
     background: var(--primary);
     width: 50px;
     height: 2px;
-    left: 200px;
-    top: 70px;
+    left: 190px;
+    top: 60px;
 }
 
 .future-topper h2:after {
@@ -754,8 +758,8 @@ i.fas.fa-chevron-right {
     background: var(--primary);
     width: 30px;
     height: 2px;
-    left: 200px;
-    top: 79px;
+    left: 190px;
+    top: 69px;
 }
 
 .future-icons {
@@ -830,6 +834,7 @@ i.fas.fa-chevron-right {
     padding-left: 0;
     text-transform: uppercase;
     font-weight: 900;
+    cursor: pointer;
 }
 
 .future-card-content button:before {
@@ -872,6 +877,7 @@ i.fas.fa-chevron-right {
     font-size: 40px;
     margin-bottom: 30px;
     position: relative;
+    margin-top: 50px;
 }
 
 .gallery-topper h2 span {
@@ -885,7 +891,7 @@ i.fas.fa-chevron-right {
     background: var(--primary);
     width: 50px;
     height: 2px;
-    left: 200px;
+    left: 190px;
     top: 14px;
 }
 
@@ -895,7 +901,7 @@ i.fas.fa-chevron-right {
     background: var(--primary);
     width: 30px;
     height: 2px;
-    left: 200px;
+    left: 190px;
     top: 23px;
 }
 
@@ -946,7 +952,7 @@ i.fas.fa-chevron-right {
     font-size: 40px;
     margin-bottom: 30px;
     position: relative;
-    padding-top: 30px;
+    padding-top: 100px;
     line-height: 1em;
 }
 
@@ -961,8 +967,8 @@ i.fas.fa-chevron-right {
     background: var(--primary);
     width: 50px;
     height: 2px;
-    left: 105px;
-    top: 40px;
+    left: 95px;
+    top: 110px;
 }
 
 .partners-topper h2:after {
@@ -971,8 +977,8 @@ i.fas.fa-chevron-right {
     background: var(--primary);
     width: 30px;
     height: 2px;
-    left: 105px;
-    top: 49px;
+    left: 95px;
+    top: 119px;
 }
 
 .partners-logo {
@@ -990,6 +996,7 @@ i.fas.fa-chevron-right {
 
 .partners-logo img {
     margin: 20px auto;
+    margin-bottom: 0;
 }
 
 /* 
@@ -1006,7 +1013,7 @@ i.fas.fa-chevron-right {
     font-size: 40px;
     margin-bottom: 30px;
     position: relative;
-    padding-top: 40px;
+    padding-top: 100px;
     line-height: 1em;
 }
 
@@ -1021,8 +1028,8 @@ i.fas.fa-chevron-right {
     background: var(--primary);
     width: 50px;
     height: 2px;
-    left: 105px;
-    top: 50px;
+    left: 95px;
+    top: 110px;
 }
 
 .sales-topper h2:after {
@@ -1031,8 +1038,8 @@ i.fas.fa-chevron-right {
     background: var(--primary);
     width: 30px;
     height: 2px;
-    left: 105px;
-    top: 59px;
+    left: 95px;
+    top: 119px;
 }
 
 .sales-topper h2,
@@ -1250,7 +1257,7 @@ footer {
     width: 100%;
     height: 1px;
     background: #fff;
-    margin: 40px 0 15px 0;
+    margin: 0px 0 15px 0;
     position: relative;
     z-index: 6;
 }
@@ -1404,6 +1411,7 @@ footer {
 
     .about-content h2 {
         font-size: 50px;
+        padding-top: 50px;
     }
 
     .numbers {
@@ -1422,12 +1430,12 @@ footer {
 
     .about-content h2:before {
         left: 200px;
-        top: 15px;
+        top: 65px;
     }
 
     .about-content h2:after {
         left: 200px;
-        top: 24px;
+        top: 74px;
     }
 
     .about-clippy {
@@ -1483,6 +1491,16 @@ footer {
                 justify-content: center;
     }
 
+    .gallery-topper {
+        margin: 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .gallery-topper h2 {
+        margin-top: 0;
+    }
+
     .gallery {
         display: -ms-grid;
         display: grid;
@@ -1493,7 +1511,7 @@ footer {
         height: 450px;
         width: 100%;
         padding: 0;
-        margin: 40px auto;
+        margin: 0px auto;
         grid-gap: 20px;
         position: relative;
     }
@@ -1669,12 +1687,12 @@ footer {
 
     .future-topper h2:before {
         left: 250px;
-        top: 75px;
+        top: 110px;
     }
 
     .future-topper h2:after {
         left: 250px;
-        top: 84px;
+        top: 119px;
     }
 
     .future-icons {
@@ -1724,8 +1742,12 @@ footer {
 
     .partners-topper {
         padding: 0 10%;
-        padding-top: 50px;
         margin: auto;
+        margin-top: 0;
+    }
+
+    .partners-topper h2 {
+        margin-top: 0;
     }
 
     .partners-logo {
@@ -1744,7 +1766,7 @@ footer {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        padding-bottom: 80px;
+        padding-bottom: 100px;
         padding-top: 50px;
     }
 
@@ -1762,7 +1784,7 @@ footer {
         font-size: 40px;
         margin-bottom: 30px;
         position: relative;
-        padding-top: 50px;
+        padding-top: 100px;
     }
     
     .sales-topper h2 span {
@@ -1776,8 +1798,8 @@ footer {
         background: var(--primary);
         width: 50px;
         height: 2px;
-        left: 120px;
-        top: 60px;
+        left: 110px;
+        top: 110px;
     }
     
     .sales-topper h2:after {
@@ -1786,8 +1808,8 @@ footer {
         background: var(--primary);
         width: 30px;
         height: 2px;
-        left: 120px;
-        top: 69px;
+        left: 110px;
+        top: 119px;
     }
     
     .sales-people {
@@ -2141,12 +2163,12 @@ footer {
     }
 
     .clippy {
-        height: 200px;
+        height: 90px;
         background: #fff;
         -webkit-clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
                 clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
         position: relative;
-        bottom: 300px;
+        bottom: 190px;
     }
 
     /* 
@@ -2155,7 +2177,7 @@ footer {
 
     .about-content {
         margin: auto;
-        top: -250px;
+        top: -270px;
     }
 
     .about-content h2 {
@@ -2181,7 +2203,7 @@ footer {
 
     .about-content h2:before, 
     .about-content h2:after {
-        left: 310px;
+        left: 290px;
     }
 
     .about-content img {
@@ -2211,20 +2233,20 @@ footer {
     }
 
     .about-box h3 {
-        padding-left: 20px;
+        padding-left: 30px;
         padding-right: 20px;
     }
 
     .about-box p {
         margin-bottom: 35px;
-        padding-left: 20px;
+        padding-left: 23px;
         padding-right: 20px;
     }
 
     .about-box button {
         width: 180px;
         height: 40px;
-        margin-left: 20px;
+        margin-left: 30px;
         padding-right: 20px;
     }
 
@@ -2345,6 +2367,7 @@ footer {
             -ms-flex-order: 4;
                 order: 4;
         padding-bottom: 50px;
+        margin-top: 0;
     }
 
     .future-topper h2 span {
@@ -2353,12 +2376,12 @@ footer {
     }
 
     .future-topper h2:before {
-        left: 454px;
+        left: 444px;
         top: 15px;
     }
 
     .future-topper h2:after {
-        left: 454px;
+        left: 444px;
         top: 24px;
     }
 
@@ -2411,13 +2434,22 @@ footer {
                 align-items: center;
         max-width: 1132px;
         margin: auto;
-        padding: 0 2em 40px 2em;
+        padding: 0 2em 50px 2em;
         height: auto;
     }
 
     .future-card {
-        width: 300px;
+        width: 340px;
         height: 450px;
+    }
+
+    .future-card img {
+        transition-duration: .3s;
+    }
+
+    .future-card img:hover {
+        transform: scale(1.1);
+        transition-duration: .4s;
     }
 
     .future-card-content {
@@ -2445,7 +2477,14 @@ footer {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        height: 1350px;
+        height: auto;
+    }
+
+    .gallery-topper {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 50px;
+
     }
 
     .gallery {
@@ -2654,14 +2693,14 @@ footer {
     }
 
     .gallery-button {
-        margin: auto !important;
+        margin: 20px auto 100px auto !important;
         display: block;  
         width: auto;
     }
 
     .clippy-gallery {
         position: absolute;
-        bottom: 0;
+        bottom: -2px;
         height: 400px;
     }
 
@@ -2671,7 +2710,7 @@ footer {
 
     #partners {
         width: 100%;
-        height: 520px;;
+        height: auto;
         margin: auto;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2690,29 +2729,35 @@ footer {
 
     .partners-topper {
         width: 600px;
-        margin: 40px auto;
+        margin: 0 auto;
     }
 
     .partners-topper h2 {
         text-align: center;
         font-size: 38px;
+        margin-top: 0;
+        padding-top: 100px;
     }
 
     .partners-topper h2:before,
     .partners-topper h2:after {
-        left: 370px;
+        left: 460px;
     }
 
     .partners-topper h2:before {
-        top: 45px;
+        top: 110px;
     }
     
     .partners-topper h2:after {
-        top: 54px;
+        top: 119px;
     }
 
     .partners-topper p {
         text-align: center;
+    }
+
+    .partners-topper h2 span {
+        display: inline-block;
     }
 
     .partners-topper span:before {
@@ -2721,8 +2766,8 @@ footer {
         background: var(--primary);
         width: 50px;
         height: 2px;
-        right: 370px;
-        top: 45px;
+        right: 460px;
+        top: 110px;
     }
         
     .partners-topper span:after {
@@ -2731,8 +2776,8 @@ footer {
         background: var(--primary);
         width: 30px;
         height: 2px;
-        right: 370px;
-        top: 54px;
+        right: 460px;
+        top: 119px;
     }
 
     .partners-logo {
@@ -2749,12 +2794,13 @@ footer {
             -ms-flex-pack: justify;
                 justify-content: space-between;
         width: 1100px;
-        height: auto;;
+        height: auto;
+        padding-bottom: 100px;
     }
 
     .partners-logo img {
         width: 150px;
-        margin: 50px auto;
+        margin: 50px auto 0px auto;
     }
 
     /* 
@@ -2781,13 +2827,13 @@ footer {
         font-size: 40px;
         margin-bottom: 30px;
         position: relative;
-        padding-top: 30px;
+        padding-top: 50px;
         line-height: 1em;
     }
     
     .sales-topper h2 span {
         color: var(--primary);
-        display: block;
+        display: inline-block;
     }
     
     .sales-topper h2:before {
@@ -2796,8 +2842,8 @@ footer {
         background: var(--primary);
         width: 50px;
         height: 2px;
-        left: 105px;
-        top: 40px;
+        left: 345px;
+        top: 60px;
     }
     
     .sales-topper h2:after {
@@ -2806,8 +2852,8 @@ footer {
         background: var(--primary);
         width: 30px;
         height: 2px;
-        left: 105px;
-        top: 49px;
+        left: 345px;
+        top: 69px;
     }
 
     .sales-topper h2 {
@@ -2834,15 +2880,25 @@ footer {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
+        padding-bottom: 100px !important;
     }
 
     .sales-card {
         margin: 0;
         padding: 25px 0;
+        width: 200px;
+    }
+
+    .sales-card h3 {
+        font-size: 16px;
+    }
+
+    .sales-card h4 {
+        font-size: 14px
     }
 
     .sales-card img {
-        width: 150px;
+        width: 100%;
         height: auto;
     }
 
@@ -2852,6 +2908,24 @@ footer {
 
     #contact {
         height: 210px;
+    }
+
+    .contact-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 650px;
+    }
+
+    .contact-group h2 {
+        margin-bottom: 0;
+        font-size: 29px;
+    }
+
+    .contact-group button {
+        height: 46px;
+        width: auto;
     }
 
 
@@ -2952,6 +3026,15 @@ footer {
 
     .valley-footer-icon {
         width: 23px;
+    }
+
+    .branding p {
+        display: block;
+        width: 100%;
+    }
+
+    .branding p {
+        display: inline-block;
     }
 
 }
