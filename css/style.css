@@ -1961,7 +1961,9 @@ footer {
     }
 
     .top-nav-container {
-        width: 650px;
+        position: relative;
+        right: 50px;
+        width: 590px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2001,6 +2003,7 @@ footer {
 
     #main-navigation {
         visibility: visible;
+        padding-left: 20px;
     }
 
     nav ul li {
@@ -2014,6 +2017,8 @@ footer {
         margin-bottom: 0;
         margin-right: 20px;
         top: 0px;
+        padding-bottom: 0;
+        font-size: 15px;
     }
 
     .side-nav a:hover {
@@ -2030,20 +2035,48 @@ footer {
 
     .side-nav li {
         margin: 0;
+        display: flex;
+        align-items: center;
     }
 
+    .sub1 {
+        top: -10px;
+        z-index: -1;;
+    }
+
+    .sub1 li:first-child {
+        padding-top: 50px;
+    }
+
+    /* about sub menu */
     .about-li:hover .sub1 {
         display: block;
     }
 
-    .about-li:hover .about-li a {
-
+    .sub2 {
+        top: -10px;
+        z-index: -1;;
     }
 
+    .sub2 li:first-child {
+        padding-top: 50px;
+    }
+
+    /*services sub menu */
     .services-li:hover .sub2 {
         display: block;
     }
 
+    .sub3 {
+        top: -10px;
+        z-index: -1;;
+    }
+
+    .sub3 li:first-child {
+        padding-top: 50px;
+    }
+
+    /* contact sub menu */
     .contact-li:hover .sub3 {
         display: block;
     }
@@ -2130,11 +2163,11 @@ footer {
     }
 
     .location-info p:first-child {
-        font-size: 16px;
+        font-size: 14px;
         color: #1a1a1a;
         font-family: 'Poppins', sans-serif;
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: 900;
         margin: 0;
     }
 
@@ -2210,6 +2243,15 @@ footer {
         height: 500px;
     }
 
+    .card-content button {
+        position: relative;
+        left: 15px;
+    }
+
+    .card-content button:before {
+        width: 93px;
+    }
+
     .card-content button:hover {
         cursor: pointer;
     }
@@ -2250,7 +2292,7 @@ footer {
 
     .about-content {
         margin: auto;
-        top: -270px;
+        top: -300px;
     }
 
     .about-content h2 {
@@ -2308,11 +2350,12 @@ footer {
     .about-box h3 {
         padding-left: 30px;
         padding-right: 20px;
+        padding-top: 7px;
     }
 
     .about-box p {
-        margin-bottom: 35px;
-        padding-left: 23px;
+        margin-bottom: 33px;
+        padding-left: 30px;
         padding-right: 20px;
     }
 
@@ -2321,6 +2364,7 @@ footer {
         height: 40px;
         margin-left: 30px;
         padding-right: 20px;
+        padding-left: 20px;
     }
 
     .about-clippy {
@@ -2513,15 +2557,6 @@ footer {
     .future-card {
         width: 340px;
         height: 450px;
-    }
-
-    .future-card img {
-        transition-duration: .3s;
-    }
-
-    .future-card img:hover {
-        transform: scale(1.1);
-        transition-duration: .4s;
     }
 
     .future-card-content {
