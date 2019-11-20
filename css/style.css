@@ -3104,8 +3104,8 @@ footer {
     .footer-item {
         height: 280px;
         width: auto;
-        max-width: 200px;
-        min-width: 200px;
+        max-width: 220px;
+        min-width: 220px;
         position: relative;
     }
 
@@ -3135,10 +3135,15 @@ footer {
     }
 
     .footer-location2 {
-        width: 160px;
+        width: 180px;
+        margin: 0 !important;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 15px !important;
     }
 
-    .valley-footer-icon {
+    .valley-footer-icon i {
         width: 23px;
     }
 
