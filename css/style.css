@@ -20,6 +20,10 @@ p, li {
     font-family: 'Poppins', sans-serif;
 }
 
+button {
+    font-weight: 900;
+}
+
 p {
     color: #4c4c4c;
     font-size: 1em;
@@ -2354,7 +2358,7 @@ footer {
     }
 
     .about-box p {
-        margin-bottom: 33px;
+        margin-bottom: 30px;
         padding-left: 30px;
         padding-right: 20px;
     }
@@ -2377,7 +2381,7 @@ footer {
     */
 
     #icons {
-        height: 600px;
+        height: 530px;
         background-attachment: fixed;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2397,9 +2401,29 @@ footer {
             -ms-flex-pack: justify;
                 justify-content: space-between;
         position: relative;
-        top: 30px;
+        top: 40px;
         margin: auto;
-        left: 30px;
+    }
+
+    .first-item {
+        margin-left: 0 !important
+    }
+
+    .last-item {
+        margin-right: 0 !important;
+    }
+
+    .number-last h4 {
+        width: 110px;
+        margin-right: 0;
+    }
+
+    .numbers-item {
+        margin-left: 50px;
+    }
+
+    .numbers-item h4 {
+        font-weight: normal;
     }
 
     .location {
@@ -2438,8 +2462,8 @@ footer {
     */
 
     #building-the-future {
-        height: 870px;
-        padding-top: 50px;
+        height: 770px !important;
+        padding-top: 30px;
     }
 
     .future-topper {
@@ -2482,7 +2506,7 @@ footer {
         -webkit-box-ordinal-group: 5;
             -ms-flex-order: 4;
                 order: 4;
-        padding-bottom: 50px;
+        padding-bottom: 25px;
         margin-top: 0;
     }
 
@@ -2563,6 +2587,19 @@ footer {
         top: 140px;
         width: 80%;
         padding: 0 18px;
+        height: 180px;
+    }
+
+    .future-card-content p {
+        margin-bottom: 0;
+    }
+
+    .future-card-content button {
+        padding-top: 25px;
+    }
+
+    .future-card-content button:before {
+        width: 95px; 
     }
 
 
@@ -2803,6 +2840,9 @@ footer {
         margin: 20px auto 100px auto !important;
         display: block;  
         width: auto;
+        font-weight: 900;
+        width: 180px;
+        font-size: 14px;
     }
 
     .clippy-gallery {
@@ -2927,6 +2967,7 @@ footer {
     .showcase-button {
         margin-left: 0 !important;
         margin-bottom: 0 !important;
+        width: auto;
     }
 
     .partners-logo {
@@ -3035,7 +3076,7 @@ footer {
     .sales-card {
         margin: 0;
         padding: 25px 0;
-        width: 200px;
+        width: 190px;
     }
 
     .sales-card h3 {
@@ -3064,17 +3105,21 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 650px;
+        width: 730px;
     }
 
     .contact-group h2 {
         margin-bottom: 0;
-        font-size: 29px;
+        font-size: 33px;
     }
 
     .contact-group button {
         height: 46px;
         width: auto;
+        font-weight: 900;
+        width: 200px;
+        font-size: 16px;
+        margin: 0;
     }
 
 
