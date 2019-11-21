@@ -1263,7 +1263,7 @@ i.fas.fa-chevron-right {
     }
 
     .gallery-button {
-        margin: 30px auto 90px 0 !important;
+        margin: 30px auto 90px auto !important;
         display: block;  
         width: auto !important;
         font-size: 20px;
