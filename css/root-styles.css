@@ -46,6 +46,99 @@ button {
     text-transform: uppercase;
 }
 
+.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+    position: relative;
+    z-index: 2000;
+}
+
+.hamburger:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.hamburger.is-active:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: #fff;
+}
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    z-index: 2000;
+}
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+.hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block;
+}
+.hamburger-inner::before {
+    top: -10px;
+}
+.hamburger-inner::after {
+    bottom: -10px;
+}
+
+/* * Spring */
+.hamburger--spring .hamburger-inner {
+    top: 2px;
+    transition: background-color 0s 0.13s linear;
+    transition-delay: .22s;
+}
+.hamburger--spring .hamburger-inner::before {
+    top: 10px;
+    transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition-delay: .22s;
+}
+.hamburger--spring .hamburger-inner::after {
+    top: 20px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition-delay: .22s;
+}
+.hamburger--spring.is-active .hamburger-inner {
+    transition-delay: 0.22s;
+    background-color: transparent !important;
+}
+.hamburger--spring.is-active .hamburger-inner::before {
+    top: 0;
+    transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+.hamburger--spring.is-active .hamburger-inner::after {
+    top: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 10px, 0) rotate(-45deg);
+}
+
 /* Buttons */
 .solid {
     background: #000;
@@ -301,6 +394,86 @@ nav img {
 }
 
 /*-- -------------------------- -->
+<---          LANDING           -->
+<--- -------------------------- -*/
+
+#landing-page {
+    background:url("../images/Project-1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.landing-dark {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .65;
+}
+
+.landing-group {
+    position: relative;
+    z-index: 10;
+}
+
+.landing-text {
+    position: relative;
+    z-index: 2;
+    display: hidden;
+}
+
+.landing-text h1 {
+    margin: 0;
+    padding-top: 110px;
+    color: #f5f3f3;
+    font-weight: 900;
+    line-height: 1.2em;
+} 
+
+.landing-text h2 {
+    color: #f5f3f3;
+    margin: 30px auto;
+}
+
+.landing-b {
+    margin-bottom: 25px;
+    margin-top: 10px;
+
+}
+
+.landing-text button {
+    width: 160px;
+}
+.about {
+    display: block;
+    font-weight: 900;
+    background: #f5f3f3;
+    color: #000
+}
+
+.primary {
+    color: #1a1a1a;
+    font-weight: 900;
+    margin-right: 50px;
+}
+
+/*-- -------------------------- -->
 <---           TABLET           -->
 <--- -------------------------- -*/
 
@@ -338,6 +511,73 @@ nav img {
         width: 40px;
         height: 4px;
     }
+
+    /*-- -------------------------- -->
+    <---          LANDING           -->
+    <--- -------------------------- -*/
+
+    #landing-page {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    .landing-text {
+        max-width: 700px;
+    }
+
+    .landing-text h1 {
+        font-size: 60px;
+        position: relative;
+        z-index: 15;
+    }
+
+    .landing-text h1:before {
+        content: '';
+        width: 280px;
+        height: 4px;
+        background: var(--primary);
+        position: absolute;
+        bottom: 5px;
+        z-index: -1;
+    }
+
+    .landing-text h1:after {
+        content: '';
+        width: 558px;
+        height: 4px;
+        background: var(--primary);
+        position: absolute;
+        bottom: 76px;
+        left: 0;
+        z-index: -1;
+    }
+
+    .landing-text h2 {
+        font-size: 25px;
+    }
+
+    button.about {
+        margin-right: 40px;
+        display: inline-block;
+        height: 60px;
+        width: 200px;
+        font-size: 18px;
+    }
+
+    button.primary {
+        height: 60px;
+        width: 200px;
+        font-size: 18px;
+    }
+
 }
 
 /*-- -------------------------- -->
@@ -585,6 +825,57 @@ nav img {
         font-size: 13px;
         color: 
     }
+
+    /*-- -------------------------- -->
+    <---          LANDING           -->
+    <--- -------------------------- -*/
+
+    #landing-page {
+        min-height: 750px;
+        position: relative;
+        background-attachment: fixed;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    .landing-group {
+        margin: 0 auto;
+        width: 1100px;
+    }
+
+    .landing-text {
+        width: 900px;
+        left: 0;
+        top: -30px;
+    }
+
+    .landing-text h1 {
+        padding-top: 30px;
+        font-size: 59px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .landing-text h2 {
+        width: 610px;
+        margin-left: 0;
+        line-height: 1.4em;
+    }
+
+    button.about {
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    .clippy-desktop {
+        height: 90px;
+        width: 100%;
+        background: #fff;
+        -webkit-clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
+                clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
+        position: absolute;
+        bottom: -2px;
+    }
 }
 
 
@@ -638,6 +929,14 @@ footer {
     color: #fff;
     font-size: 15px;
     margin: 0;
+}
+
+.footer-item a {
+    color: #fff;
+    font-size: 15px;
+    margin: 0;
+    float: left;
+    text-decoration: none;
 }
 
 .item-line {
@@ -800,6 +1099,13 @@ footer {
         margin-bottom: 10px;
     }
 
+    .footer-item a {
+        display: block;
+        float: left;
+        margin-right: 100px;
+        margin-bottom: 10px;
+    }
+
     .footer-item:first-child {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -833,12 +1139,12 @@ footer {
         width: 23px;
     }
 
-    .branding p {
+    .branding a {
         display: block;
         width: 100%;
     }
 
-    .branding p {
+    .branding a {
         display: inline-block;
     }
 }

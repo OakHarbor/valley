@@ -1,0 +1,7 @@
+https://colorandtonepaintingseattle.netlify.com https://colorandtonepaintingseattle.com/ 301!
+
+https://colorandtonepaintingseattle.netlify.com/* https://colorandtonepaintingseattle.com/:splat 301!
+
+https://colorandtonepaintingseattle.com https://colorandtonepaintingseattle.com/
+
+colorandtonepaintingseattle.com https://colorandtonepaintingseattle.com/ 301!

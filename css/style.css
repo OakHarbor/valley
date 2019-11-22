@@ -1937,6 +1937,10 @@ i.fas.fa-chevron-right {
         margin-bottom: 30px;
     }
 
+    .gallery img {
+        cursor: pointer;
+    }
+
     .gallery > *:nth-child(1) {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
