@@ -897,12 +897,21 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    height: auto;
 }
 
 .footer-item {
+    margin-bottom: 50px;
+}
+
+.footer-item:nth-child(2) {
     width: 250px;
     margin-top: 40px;
-    margin-bottom: 60px;
+    height: 250px;
+}
+
+.footer-item:nth-child(2) a {
+    margin-bottom: 10px;
 }
 
 .footer-item:first-child {
@@ -923,6 +932,8 @@ footer {
     font-size: 19px;
     font-weight: 500;
     text-transform: uppercase;
+    height: auto;
+    margin-bottom: 0;
 }
 
 .footer-item p {
@@ -937,7 +948,8 @@ footer {
     margin: 0;
     float: left;
     text-decoration: none;
-    
+    display: block;
+    margin-right: 80px;
 }
 
 .item-line {
@@ -945,7 +957,7 @@ footer {
     width: 70%;
     background: #fff;
     margin: 7px 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .footer-dark {

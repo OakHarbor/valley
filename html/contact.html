@@ -7,7 +7,7 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/css/root-styles.css">
-    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
     <!-- Fonts -->
@@ -111,7 +111,7 @@
                 </li>
                 <li><a href="products.html">PRODUCTS</a></li>
                 <li><a href="promotions.html">PROMOTIONS</a></li>
-                <li class="contact-li"><a class="active-menu" href="concrete.html">CONTACT<i class="fas fa-chevron-down"></i></a>
+                <li class="contact-li"><a class="active-menu" href="contact.html">CONTACT<i class="fas fa-chevron-down"></i></a>
                     <ul class="sub-nav sub3">
                         <li><a href="apply.html">APPLY FOR CREDIT</a></li>
                     </ul>
@@ -127,21 +127,88 @@
 
 <main id="main-content">
 
-        <!-- ============================================ -->
-        <!--                   LANDING                    -->
-        <!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                   LANDING                    -->
+    <!-- ============================================ -->
 
-        <section id="landing-page">
-            <div class="landing-dark"></div>
-            <div class="container landing-group">
-                <div class="landing-text">
+    <section id="landing-page" class="contact-landing">
+        <div class="landing-dark"></div>
+        <div class="container landing-group">
+            <div class="landing-text">
 
-                    <h1>About Valley Construction Supply</h1>
-                    
+                <h1>CONTACT VALLEY</h1>
+                
+            </div>
+        </div>
+        <div class="clippy-desktop"></div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    FORM                      -->
+    <!-- ============================================ -->
+
+    <section id="valley-form">
+        <div class="form-topper container">
+            <h3><span>VALLEY</span> CONSTRUCTION SUPPLY</h3>
+            <p class="form-text">If you have any questions about products or quotes, feel free to send us an email here or give us a call!</p>
+        </div>
+        <div class="form container">  
+            <div class="contact-info">
+                <h4>MARYSVILLE</h4>
+                <div class="info">
+                    <i class="phone fas fa-phone"></i>
+                    <p class="phone-number">(800) 559-8566</p>
+                </div>
+                <div class="info">
+                    <i class="map fas fa-map-marker-alt"></i>
+                    <p>4806 56th Pl NE <br>
+                        Marysville, WA <br>98270</p>
+                </div>
+                <h4>PACIFIC</h4>
+                <div class="info">
+                    <i class="phone fas fa-phone"></i>
+                    <p class="phone-number">(800) 922-2082</p>
+                </div>
+                <div class="info info-last">
+                    <i class="map fas fa-map-marker-alt"></i>
+                    <p>234 Stewart Rd SE <br>
+                        Pacidic, WA <br>98047</p>
                 </div>
             </div>
-            <div class="clippy-desktop"></div>
-        </section>
+            <h3 class="contact-topper"><span>CONTACT</span> VALLEY</h3>
+            <form id="contact" name="Contact Form" method="post" data-netlify="true">
+                <p>
+                    <input name="name" placeholder="Your name" type="text" tabindex="1" required>
+                </p>
+                <p>
+                    <input name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+                </p>
+                <p>
+                    <input name="phone" placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                </p>
+                <p>
+                    <textarea name="message" placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                </p>
+                <p>
+                    <button name="submit" type="submit" id="contact-submit" class="primary" data-submit="...Sending">Submit</button>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+	<!--                    CONTACT                   -->
+    <!-- ============================================ -->
+
+    <section id="contact-bottom">
+        <div class="contact-group container">
+            <h2>Learn more about VCS</h2>
+            <button class="solid about-content-button contact-button"  type="button" onclick="location.href='html/about.html'">
+                ABOUT US
+            </button>
+        </div>
+        <div class="clippy-form"></div>
+    </section>
 </main>
 
 <footer>
