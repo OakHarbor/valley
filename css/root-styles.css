@@ -878,10 +878,6 @@ nav img {
     }
 }
 
-
-
-
-
 /*-- -------------------------- -->
 <---           FOOTER           -->
 <--- -------------------------- -*/
@@ -1041,6 +1037,14 @@ footer {
     cursor: pointer;
     opacity: .5;
     text-decoration: none;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+        .footer-item {
+            width: 250px;
+        }
+
 }
 
 @media screen and (min-width: 1025px) {
