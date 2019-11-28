@@ -46,6 +46,18 @@ button {
     text-transform: uppercase;
 }
 
+/* Global Variables */
+
+:root {
+    --primary: #fdd008;
+
+    --button-reg: .9em;
+    --button-sm: .75em;
+
+    --heading: #1a1a1a;
+    --p: #4c4c4c;
+}
+
 .hamburger {
     padding: 15px 15px;
     display: inline-block;
@@ -252,18 +264,6 @@ button {
 
 .active-menu {
     border-bottom: 9px solid var(--primary);
-}
-
-/* Global Variables */
-
-:root {
-    --primary: #fdd008;
-
-    --button-reg: .9em;
-    --button-sm: .75em;
-
-    --heading: #1a1a1a;
-    --p: #4c4c4c;
 }
 
 /*-- -------------------------- -->

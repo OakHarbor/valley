@@ -569,6 +569,136 @@ i.fas.fa-chevron-right {
 }
 
 /* 
+                                Service
+*/
+
+
+#services-heading h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    margin: 0;
+    padding-top: 100px;
+    margin-bottom: 30px;
+    line-height: 1em;
+}
+
+#services-heading h2 span {
+    color: var(--primary);
+    display: block;
+}
+
+#services-heading h2:before {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 50px;
+    height: 2px;
+    left: 190px;
+    top: 110px;
+}
+
+#services-heading h2:after {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 30px;
+    height: 2px;
+    left: 190px;
+    top: 119px;
+}
+
+.service-topper p {
+    margin-bottom: 40px;
+}
+
+.service-topper img {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.service-card {
+    height: auto;
+    margin-bottom: 90px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.service-card h3 {
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+.person-highlight {
+    position: relative;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.person-highlight p {
+    position: absolute;
+    text-align: center;
+    background: var(--primary);
+    width: 100%;
+    padding: 20px 0;
+    bottom: 0;
+    font-weight: 900 !important;
+}
+
+.person-highlight span {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.service-card:last-child {
+    margin-bottom: 50px;
+}
+
+.service-card svg {
+    width: 70px;
+    height: auto;
+    float: left;
+    margin: 0 25px 180px 0;
+}
+
+@media screen and (max-width: 325px) {
+
+    .service-card svg {
+        margin: 0 25px 0 0;
+    }
+
+}
+
+.service-card button {
+    border: transparent;
+    background: transparent;
+    font-size: 14px;
+    color: var(--heading);
+    margin: 0 auto;
+    position: relative;
+    padding-left: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.service-card button:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 86px;
+    height: 2px;
+    background: var(--primary);
+}
+
+/* 
                                 Gallery
 */
 
@@ -591,7 +721,7 @@ i.fas.fa-chevron-right {
 }
 
 .gallery-topper {
-    margin: 70px auto 40px auto;
+    margin: 0px auto 40px auto;
 }
 
 .gallery-topper h2 {
@@ -1098,6 +1228,33 @@ i.fas.fa-chevron-right {
             justify-content: space-around;
         margin: auto;
         width: auto;
+    }
+
+    /* 
+                               Service
+    */
+
+    .service-topper {
+        height: auto;
+    }
+
+    .person-highlight {
+        width: 40%;
+        float: left;
+        margin: 25px;
+        margin-bottom: 70px;
+    }
+
+    .person-highlight span {
+        font-size: 17px;
+    }
+
+    .person-highlight p {
+        font-size: 14px;
+    }
+
+    .service-card svg {
+        margin-bottom: 100px;
     }
 
     /* 
@@ -1924,6 +2081,66 @@ i.fas.fa-chevron-right {
 
     .future-card-content button:before {
         width: 95px; 
+    }
+
+    /* 
+                               Service
+    */
+
+    #service {
+        margin: auto;
+    }
+
+    #services-heading {
+        width: 450px;
+    }
+
+    #services-heading h2 {
+        text-align: right;
+    }
+
+    #services-heading h2:before {
+        left: 200px;
+    }
+
+    #services-heading h2:after {
+        left: 220px;
+    }
+
+    #services-heading p {
+        text-align: right;
+    }
+
+    .service-topper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 100px 0;
+    }
+
+    .person-highlight {
+        width: 270px;
+    }
+
+    .person-highlight p {
+        margin: 0
+    }
+
+    .service-card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .service-card {
+        width: 500px;
+        margin-bottom: 0;
+    }
+
+    #service button {
+        width: auto;
     }
 
 
