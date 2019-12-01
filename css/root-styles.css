@@ -13,6 +13,7 @@ body, html {
 
 a, h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
+    color: #1a1a1a;
 }
 
 p, li {
@@ -333,7 +334,7 @@ nav ul li {
     margin: 15px 0;
     width: auto;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 0.625em;
 }
 
 .side-nav a {
@@ -341,7 +342,7 @@ nav ul li {
     padding: 0 0 5px 20px;
     margin-bottom: 25px;
     color: #fff;
-    font-size: 16px;
+    font-size: 1em;
     opacity: 0;
     visibility: hidden;
     display: none;
@@ -350,7 +351,7 @@ nav ul li {
 }
 
 i.fas.fa-chevron-down {
-    font-size: 16px;
+    font-size: 1em;
     margin-left: 10px;
 } 
 
@@ -489,7 +490,7 @@ nav img {
     }
 
     .side-nav ul li a {
-        font-size: 18px;
+        font-size: 1.125em;
     }
 
     .valley-mobile-logo {
@@ -534,7 +535,7 @@ nav img {
     }
 
     .landing-text h1 {
-        font-size: 60px;
+        font-size: 3.75em;
         position: relative;
         z-index: 15;
     }
@@ -561,7 +562,7 @@ nav img {
     }
 
     .landing-text h2 {
-        font-size: 25px;
+        font-size: 1.5625em;
     }
 
     button.about {
@@ -569,13 +570,13 @@ nav img {
         display: inline-block;
         height: 60px;
         width: 200px;
-        font-size: 18px;
+        font-size: 1.125em;
     }
 
     button.primary {
         height: 60px;
         width: 200px;
-        font-size: 18px;
+        font-size: 1.125em;
     }
 
 }
@@ -667,7 +668,7 @@ nav img {
         margin-right: 20px;
         top: 0px;
         padding-bottom: 0;
-        font-size: 15px;
+        font-size: 0.9375em;
     }
 
     .side-nav a:hover {
@@ -812,7 +813,7 @@ nav img {
     }
 
     .location-info p:first-child {
-        font-size: 14px;
+        font-size: 0.875em;
         color: #1a1a1a;
         font-family: 'Poppins', sans-serif;
         text-transform: uppercase;
@@ -822,7 +823,7 @@ nav img {
 
     .location-info p:nth-child(2) {
         margin: 0;
-        font-size: 13px;
+        font-size: 0.8125em;
         color: 
     }
 
@@ -852,7 +853,7 @@ nav img {
 
     .landing-text h1 {
         padding-top: 30px;
-        font-size: 59px;
+        font-size: 3.6875em;
         font-family: 'Roboto', sans-serif;
     }
 
@@ -876,13 +877,75 @@ nav img {
         position: absolute;
         bottom: -2px;
     }
+
+    
 }
 
 /*-- -------------------------- -->
 <---           FOOTER           -->
 <--- -------------------------- -*/
 
+/* 
+                               Contact
+*/
 
+.clippy-sales {
+    height: 200px;
+    width: 100%;
+    background: var(--primary);
+    -webkit-clip-path: polygon(0 86%, 0 100%, 100% 100%, 100% 86%, 50% 98%);
+            clip-path: polygon(0 86%, 0 100%, 100% 100%, 100% 86%, 50% 98%);
+    position: absolute;
+    bottom: 0px;
+}
+
+#contact {
+    background: var(--primary);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 150px;
+}
+
+.contact-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+}
+
+.contact-group h2 {
+    margin-top: 0;
+    font-size: 1.25em;
+}
+
+.contact-group button {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+.contact-button:before,
+.contact-button:after {
+    border-color: #000;
+}
 
 /*-- -------------------------- -->
 <---        MOBILE FOOTER       -->
@@ -925,7 +988,7 @@ footer {
 .footer-item h3 {
     text-align: left;
     color: #fff;
-    font-size: 19px;
+    font-size: 1.1875em;
     font-weight: 500;
     text-transform: uppercase;
     height: auto;
@@ -934,13 +997,13 @@ footer {
 
 .footer-item p {
     color: #fff;
-    font-size: 15px;
+    font-size: 0.9375em;
     margin: 0;
 }
 
 .footer-item a {
     color: #fff;
-    font-size: 15px;
+    font-size: 0.9375em;
     margin: 0;
     float: left;
     text-decoration: none;
@@ -982,7 +1045,7 @@ footer {
 .valley-footer-icon i {
     color: var(--primary);
     margin-right: 15px;
-    font-size: 20px;
+    font-size: 1.25em;
     margin-top: 5px;
 }
 
@@ -1041,6 +1104,31 @@ footer {
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
 
+    #contact {
+        height: 250px;
+    }
+
+    .contact-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+    }
+
+    .contact-group h2 {
+        margin-bottom: 30px;
+        font-size: 1.5625em;
+    }
+
+    .contact-button {
+        margin: 10px auto !important;
+        font-size: 1.25em;
+    }
+
         .footer-item {
             width: 250px;
         }
@@ -1048,6 +1136,41 @@ footer {
 }
 
 @media screen and (min-width: 1025px) {
+
+    #contact {
+        height: 210px;
+    }
+
+    .contact-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 730px;
+    }
+
+    .contact-group h2 {
+        margin-bottom: 0;
+        font-size: 2.0625em;
+    }
+
+    .contact-group button {
+        height: 46px;
+        width: auto;
+        font-weight: 900;
+        width: 200px;
+        font-size: 1em;
+        margin: 0;
+    }
 
     footer {
         background-attachment: fixed;
@@ -1117,7 +1240,7 @@ footer {
     }
 
     .footer-item h3 {
-        font-size: 18px;
+        font-size: 1.125em;
         margin-bottom: 10px;
     }
 

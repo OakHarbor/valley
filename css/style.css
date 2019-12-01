@@ -2143,15 +2143,24 @@ i.fas.fa-chevron-right {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        padding: 100px 0;
+        padding: 100px 0 50px 0;
     }
 
     .person-highlight {
         width: 270px;
+        position: relative;
+        width: 240px;
+    }
+
+    .person-highlight span {
+        font-size: 17px;
     }
 
     .person-highlight p {
-        margin: 0
+        margin: 0;
+        position: absolute;
+        bottom: 40px;
+        font-size: 14px;
     }
 
     .service-card-container {

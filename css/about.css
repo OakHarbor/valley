@@ -2,42 +2,31 @@
 <---           LANDING          -->
 <--- -------------------------- -*/
 
-#landing-page {
-    min-height: 300px;
-    background:url("../images/Random\ 2.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+html, body {
+    overflow-x: hidden;
 }
 
-.landing-group {
-    padding: 0;
-    margin: auto;
-    margin-right: auto;
+#landing-page {
+    position: relative;
+    background:url("../images/Random\ 2.jpg");
 }
 
 .landing-text h1 {
-    padding-top: 0;
-    margin: 40px auto;
-    font-size: 30px;
+    padding: 0 0 0 20px ;
     border-left: 5px solid var(--primary);
-    text-align: right;
-    box-sizing: border-box;
-    width: 280px;
+}
+
+#landing-page p {
+    display: none;
+    position: absolute;
+    width: 100%;
+    bottom: 8px;
+    font-size: 80px;
+    color: #4c4c4c;
+    opacity: .9;
+    font-weight: 900;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .clippy-desktop {
@@ -49,21 +38,572 @@
     clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
+
+/*-- -------------------------- -->
+<---         COMMUNITIES        -->
+<--- -------------------------- -*/
+
+#communities h2 span {
+    color: var(--primary);
+    position: relative;
+    display: block;
+}
+
+#communities h2 span:before {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 50px;
+    height: 2px;
+    left: 165px;
+    top: 10px;
+}
+
+#communities h2 span:after {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 30px;
+    height: 2px;
+    left: 165px;
+    top: 19px;
+}
+
+#communities h2 {
+    display: block;
+    font-size: 35px;
+    font-weight: 900;
+    color: #4c4c4c;
+    text-transform: uppercase;
+}
+
+.sub-text {
+    color: #4c4c4c;
+}
+
+.image-box {
+    width: 100%;
+    position: relative;
+    height: 430px;
+    margin: 50px 0;
+}
+
+.image-box:before {
+    content: '';
+    background:url("/images/stock-1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.image-box:after {
+    content: '';
+    width: 90%;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--primary);
+    opacity: .9;
+}
+
+.image-box img {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.experience-content {
+    margin-bottom: 40px;
+}
+
+.experience-content span {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 55px;
+    height: auto;
+    display: inline-block;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    border-left: 5px solid var(--primary);
+    padding-left: 20px;
+}
+
+.experience-content p:nth-child(2) {
+    display: inline-block;
+    padding-top: 0px;
+    margin: 15px 0 0 15px;
+    font-weight: 900;
+    line-height: 1.2em;
+}
+
+.experience-content h3 {
+    position: relative;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.experience-content h3:before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    background: var(--primary);
+    height: 2px;
+    bottom: -8px;
+}
+
+.experience-content button {
+    width: auto;
+    margin-top: 15px;
+}
+
+.experience-content button:before,
+.experience-content button:after {
+    border-color: #000;
+}
+
+@media screen and (max-width: 350px) {
+
+    .image-box {
+        height: 380px;
+    }
+
+}
+
+
+/*-- -------------------------- -->
+<---           MISSION          -->
+<--- -------------------------- -*/
+
+#mission {
+    background:url("/images/weird.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+}
+
+#mission:before {
+    content: '';
+    position: absolute;
+    background: #000;
+    opacity: .8;
+    height: 100%;
+    width: 100%;
+}
+
+#mission h2 {
+    margin: 0;
+    padding-top: 35px;
+    color: #f3f3f3;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+#mission h2:before {
+    content: '';
+    position: absolute;
+    background: #f3f3f3;
+    height: 10px;
+    width: 10px;
+    left: 15px;
+    border-radius: 50%;
+}
+
+#mission p {
+    color: var(--primary);
+    padding-left: 70px;
+    position: relative;
+    z-index: 1;
+}
+
+.clippy-desktop {
+    bottom: -10px;
+}
+
+.clippy-desktop-yellow {
+    height: 80px;
+    background: var(--primary);
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+@media screen and (max-width: 350px) {
+
+    #mission {
+        height: 400px;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---           SALES            -->
+<--- -------------------------- -*/
+
+.sales-topper h2 span {
+    color: var(--primary);
+    position: relative;
+}
+
+.sales-topper h2 span:before {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 50px;
+    height: 2px;
+    left: 80px;
+    top: 10px;
+}
+
+.sales-topper h2 span:after {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 30px;
+    height: 2px;
+    left: 80px;
+    top: 19px;
+}
+
+.sales-topper h2 {
+    display: block;
+    font-size: 35px;
+    font-weight: 900;
+    color: #4c4c4c;
+    text-transform: uppercase;
+}
+
+.sales-people img {
+    width: 100%;
+    border-bottom: 5px solid var(--primary);
+}
+
+.sales-card h3 {
+    margin-bottom: 5px;
+}
+
+.sales-card h4 {
+    margin: 0;
+}
+
+.sales-contact {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.sales-contact:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background: var(--primary);
+    left: 0;
+}
+
+.sales-contact:last-child {
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 350px) {
+
+    .sales-contact {
+        font-size: 12px;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---       OPPORTUNITIES        -->
+<--- -------------------------- -*/
+
+#job-opportunities {
+    position: relative;
+    height: auto;
+    background: #f5f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.job-content {
+    padding-bottom: 0px;
+}
+
+.job-content h2 {
+    display: block;
+    font-size: 35px;
+    font-weight: 900;
+    color: #4c4c4c;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.job-content h2 span {
+    color: var(--primary);
+    position: relative;
+    display: block;
+}
+
+.job-content h2 span:before {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 50px;
+    height: 2px;
+    left: 80px;
+    top: 10px;
+}
+
+.job-content h2 span:after {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 30px;
+    height: 2px;
+    left: 80px;
+    top: 19px;
+}
+
+.job-content h3 {
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    margin-bottom: 50px;
+}
+
+.job {
+    text-align: center;
+    background: var(--primary);
+    line-height: 1.2em;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.job-content p:last-child {
+    margin: 40px 0 0 0;
+}
+
+.jobs-button {
+    margin: 50px auto 80px auto;
+}
+
+.jobs-button:before,
+.jobs-button:after {
+    border-color: #000;
+}
+
+.clippy-sales {
+    bottom: -1px;
+}
+
+@media screen and (max-width: 350px) {
+
+    .job {
+        font-size: 13px;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---           CONTACT          -->
+<--- -------------------------- -*/
+
+.contact-button {
+    width: auto;
+}
+
+
 @media screen and (min-width: 600px) and (max-width: 1024px) {
 
     /*-- -------------------------- -->
     <---          LANDING           -->
     <--- -------------------------- -*/
 
-    h1:after,
-    h1:before {
+    .landing-text h1:before,
+    .landing-text h1:after {
         display: none;
     }
 
-    .landing-text h1 {
-        font-size: 45px;
+    /*-- -------------------------- -->
+    <---          COMMUNITY         -->
+    <--- -------------------------- -*/
+
+    #communities h2 {
+        margin-top: 100px;
+    }
+
+    /*-- -------------------------- -->
+    <---         EXPERIENCE         -->
+    <--- -------------------------- -*/
+
+    .experience-content {
+        margin-bottom: 100px;
+    }
+
+    /*-- -------------------------- -->
+    <---          MISSION           -->
+    <--- -------------------------- -*/
+
+    #mission {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #mission h2,
+    #mission p {
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 0;
+    }
+
+    #mission h2 {
+        font-size: 25px;
+    }
+
+    #mission p {
+        padding-bottom: 50px;
+        padding-left: 100px;
+    }
+
+    /*-- -------------------------- -->
+    <---           SALES            -->
+    <--- -------------------------- -*/
+
+    #sales h2 {
+        margin-top: 100px;
+    }
+
+    .sales-people {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .store {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .store:before {
+        content: '';
+        position: absolute;
+        background: #4c4c4c;
+        height: 2px;
+        width: 100px;
+        left: 30px;
+        top: 14px;
+    }
+
+    .store:after {
+        content: '';
+        position: absolute;
+        background: #4c4c4c;
+        height: 2px;
+        width: 100px;
+        right: 30px;
+        top: 14px;
+    }
+
+    .store2 {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .store2:before {
+        content: '';
+        position: absolute;
+        background: #4c4c4c;
+        height: 2px;
+        width: 100px;
+        left: 10px;
+        top: 14px;
+    }
+
+    .store2:after {
+        content: '';
+        position: absolute;
+        background: #4c4c4c;
+        height: 2px;
+        width: 100px;
+        right: 10px;
+        top: 14px;
+    }
+
+    .sales-people h3 {
+        display: block;
+        width: 100%;
+    }
+     
+    .sales-card {
         width: auto;
-        padding: 0 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .sales-card img {
+        width: 225px;
+        height: 340px;
+        float: left;
+        box-sizing: border-box;
+    }
+    
+    .people-content {
+        width: 350px;
+    }
+
+    .people-content h3 {
+        margin-top: 0;
+    }
+
+    p.sales-contact {
+        margin-bottom: 0 !important;
+    }
+
+    /*-- -------------------------- -->
+    <---            JOBS            -->
+    <--- -------------------------- -*/
+
+    .job-content h2 {
+        padding-top: 100px;
+    }
+
+    .jobs-button {
+        margin-bottom: 100px;
     }
 
 }
@@ -74,21 +614,255 @@
     <---          LANDING           -->
     <--- -------------------------- -*/
 
-    .landing-group {
+    #landing-page {
+        background-attachment: fixed;
+    }
+
+
+    /*-- -------------------------- -->
+    <---        COMMUNITIES         -->
+    <--- -------------------------- -*/
+
+    #communities {
+        margin: 100px auto;
+    }
+
+    #communities h2 {
+        text-align: center;
+        position: relative;
+    }
+
+    #communities h2 span:before {
+        left: 400px;
+    }
+    
+    #communities h2 span:after {
+        left: 420px;
+    }
+
+    #communities h2:before {
+        content: '';
+        position: absolute;
+        background: var(--primary);
+        width: 50px;
+        height: 2px;
+        right: 400px;
+        top: 10px;
+    }
+    
+    #communities h2:after {
+        content: '';
+        position: absolute;
+        background: var(--primary);
+        width: 30px;
+        height: 2px;
+        right: 420px;
+        top: 19px;
+    }
+
+    .sub-text {
+        width: 750px;
+        text-align: center;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    .image-box {
+        width: 450px;
+    }
+
+    .experience {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        height: 400px;
     }
 
-    .landing-text {
-        margin-top: 25px;
+    .experience-content {
+        width: 1200px !important;
+        padding: 0 0 0 100px;
+        margin: 0;
+        height: 450px;
     }
 
-    .landing-text h1 {
-        font-size: 55px;
-        width: 550px;
-        padding: 0 20px;
+    /*-- -------------------------- -->
+    <---          MISSION           -->
+    <--- -------------------------- -*/
+
+    #mission h2 {
+        padding-top: 90px;
+        padding-bottom: 10px;
     }
+
+    #mission h2,
+    #mission p {
+        margin: auto;
+        width: 700px;
+    }
+
+    /*-- -------------------------- -->
+    <---           SALES            -->
+    <--- -------------------------- -*/
+
+    .sales-container {
+        margin: 50px auto 100px auto;
+    }
+
+    .store, .store2 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .store:before {
+        content: '';
+        position: absolute;
+        background: #4c4c4c;
+        height: 2px;
+        width: 320px;
+        left: 0px;
+        top: 14px;
+    }
+
+    .store:after {
+        content: '';
+        position: absolute;
+        background: #4c4c4c;
+        height: 2px;
+        width: 320px;
+        right: 0px;
+        top: 14px;
+    }
+
+    .store2:before {
+        content: '';
+        position: absolute;
+        background: #4c4c4c;
+        height: 2px;
+        width: 180px;
+        left: 10px;
+        top: 14px;
+    }
+
+    .store2:after {
+        content: '';
+        position: absolute;
+        background: #4c4c4c;
+        height: 2px;
+        width: 170px;
+        right: 10px;
+        top: 14px;
+    }
+
+    .south-store {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+
+    .south-store .sales-card {
+        width: 200px;
+    }
+
+    .north-store {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 880px;
+        margin: auto;
+    }
+
+    .north-store .sales-card {
+        width: 200px;
+    }
+
+    .sales-people-description,
+    .sales-contact {
+        display: none;
+    }
+
+    .sales-card h3 {
+        margin-bottom: 0;
+    }
+
+    .sales-card h4 {
+        font-size: 14px;
+    }
+
+
+    /*-- -------------------------- -->
+    <---           JOBS             -->
+    <--- -------------------------- -*/
+
+    .job-content {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 100px;
+    }
+
+    .job-content h2 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-top: 0px;
+        position: relative;
+    }
+
+    .job-content h2 span:before {
+        left: 430px;
+    }
+    
+    .job-content h2 span:after {
+        left: 450px;
+    }
+
+    .job-content h2:before {
+        content: '';
+        position: absolute;
+        background: var(--primary);
+        width: 50px;
+        height: 2px;
+        right: 430px;
+        top: 10px;
+    }
+    
+    .job-content h2:after {
+        content: '';
+        position: absolute;
+        background: var(--primary);
+        width: 30px;
+        height: 2px;
+        right: 450px;
+        top: 19px;
+    }
+
+    .job-content h3 {
+        width: 600px;
+        display: block;
+        width: 700px;
+        text-align: center;
+    }
+
+    .job-bottom-text {
+        width: 700px;
+        text-align: center;
+    }
+
+    .job {
+        width: 400px;
+        margin: 10px;
+        display: inline-block;
+    }
+    
 
 }
