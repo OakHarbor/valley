@@ -689,6 +689,10 @@ nav img {
         align-items: center;
     }
 
+    .sub-nav li {
+        font-size: 1em;
+    }
+
     .sub1 {
         top: -10px;
         z-index: -1;;
