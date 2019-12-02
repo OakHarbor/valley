@@ -1093,6 +1093,7 @@ i.fas.fa-chevron-right {
 @media screen and (min-width: 600px) and (max-width: 1024px) {
 
     /* 
+
                                Landing
     */
 
@@ -1252,23 +1253,22 @@ i.fas.fa-chevron-right {
                                Service
     */
 
+    .test {
+        width: 100%;
+    }
+
     .service-topper {
         height: auto;
+        margin-bottom: 100px;
+        padding-top: 100px;
     }
 
-    .person-highlight {
-        width: 40%;
-        float: left;
-        margin: 25px;
-        margin-bottom: 70px;
+    .service-topper p {
+        width: 600px;
     }
 
-    .person-highlight span {
-        font-size: 17px;
-    }
-
-    .person-highlight p {
-        font-size: 14px;
+    .service-card h3 {
+        height: 15px;
     }
 
     .service-card svg {
