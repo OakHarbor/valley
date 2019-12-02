@@ -463,6 +463,10 @@ html, body {
         margin-bottom: 0;
     }
 
+    .service-card h3 {
+        margin-top: 0;
+    }
+
     #service button {
         width: auto;
     }
