@@ -40,7 +40,8 @@
     font-size: 30px;
     border-left: 5px solid var(--primary);
     text-align: right;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 280px;
 }
 
@@ -55,7 +56,8 @@
     width: 100%;
     position: absolute;
     bottom: -5px;
-    clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+            clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 /*-- -------------------------- -->
@@ -153,12 +155,13 @@ form p{
     background:#FFF;
     margin:0 0 5px;
     padding:10px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
     -webkit-transition:border-color 0.3s ease-in-out;
-    -moz-transition:border-color 0.3s ease-in-out;
+    -o-transition:border-color 0.3s ease-in-out;
     transition:border-color 0.3s ease-in-out;
     border:1px solid #AAA;
 }
@@ -191,11 +194,12 @@ form p{
 #contact button[type="submit"]:hover {
     opacity: .6;
     -webkit-transition:background 0.3s ease-in-out;
-    -moz-transition:background 0.3s ease-in-out;
+    -webkit-transition:background-color 0.3s ease-in-out;
+    -o-transition:background-color 0.3s ease-in-out;
     transition:background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+#contact button[type="submit"]:active { -webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
 
 #contact input:focus, #contact textarea:focus {
     outline:0;
@@ -417,9 +421,15 @@ form p{
     }
 
     .landing-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 600px;
     }
 
@@ -459,11 +469,20 @@ form p{
         margin-bottom: 50px;
         max-width: 100% !important;
         min-width: 100% !important;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     #contact input[type="email"], #contact input[type="tel"], #contact input[type="text"], .half {
@@ -542,9 +561,15 @@ form p{
     }
 
     .landing-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 600px;
     }
 
@@ -590,11 +615,20 @@ form p{
         margin-bottom: 50px;
         max-width: 1100px !important;
         min-width: 1100px !important;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     .contact-topper {
@@ -625,7 +659,9 @@ form p{
     }
 
     .contact-info {
-        order: 2; 
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; 
         width: 190px;
     }
 
@@ -645,9 +681,16 @@ form p{
     }
 
     .info {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .contact-info h4:first-child {
@@ -706,8 +749,12 @@ form p{
         position: relative;
         height: 300px;
         background: #000;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .card {
@@ -718,9 +765,16 @@ form p{
 
     .card-content {
         width: 90%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .card-content button {
@@ -801,7 +855,8 @@ form p{
         height: 100px;
         width: 100%;
         background: #000;
-        clip-path: polygon(50% 68%, 100% 0, 100% 96%, 0 100%, 0 0);
+        -webkit-clip-path: polygon(50% 68%, 100% 0, 100% 96%, 0 100%, 0 0);
+                clip-path: polygon(50% 68%, 100% 0, 100% 96%, 0 100%, 0 0);
         position: absolute;
         bottom: 70px;
     }
@@ -815,10 +870,19 @@ form p{
     }
 
     .contact-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         width: 730px;
     }
 
