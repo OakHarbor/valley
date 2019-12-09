@@ -9,6 +9,7 @@ html, body {
 #landing-page {
     position: relative;
     background:url("../images/Random\ 2.jpg");
+    background-size: cover;
 }
 
 .landing-text h1 {

@@ -410,7 +410,7 @@ i.fas.fa-chevron-right {
 
 .numbers-item svg {
     color: var(--primary);
-    width: 150px;
+    width: 90px;
     height: auto;
     margin-right: 40px !important;
 }
@@ -641,7 +641,7 @@ i.fas.fa-chevron-right {
     width: 70px;
     height: auto;
     float: left;
-    margin: 0 25px 180px 0;
+    margin: 0 25px 200px 0;
 }
 
 @media screen and (max-width: 325px) {
@@ -673,6 +673,19 @@ i.fas.fa-chevron-right {
     width: 86px;
     height: 2px;
     background: var(--primary);
+}
+
+.service-button {
+    font-size: 14px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 900;
+    width: auto;
+}
+
+.service-button:before,
+.service-button:after {
+    border-color: #000;
 }
 
 /* 
@@ -735,13 +748,12 @@ i.fas.fa-chevron-right {
 }
 
 .gallery-button {
-    font-size: 13px;
     margin: 30px auto;
     border: none;
     margin-bottom: 50px;
     background: #000;
     color: #f5f3f3;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .gallery-button:before {
@@ -912,6 +924,9 @@ i.fas.fa-chevron-right {
 #sales {
     background: #1a1a1a;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sales-topper h2 {
@@ -1003,6 +1018,18 @@ i.fas.fa-chevron-right {
     padding-bottom: 50px;
 }
 
+.sales-button {
+    background: var(--primary);
+    width: auto;
+    margin-bottom: 100px;
+    color: #000;
+}
+
+.sales-button:before,
+.sales-button:after {
+    border-color: var(--primary);
+}
+
 .clippy-sales {
     height: 200px;
     width: 100%;
@@ -1057,7 +1084,7 @@ i.fas.fa-chevron-right {
 .contact-group button {
     margin-top: 10px;
     margin-bottom: 0;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 
@@ -1178,6 +1205,10 @@ i.fas.fa-chevron-right {
                 justify-content: space-between;
     }
 
+    .numbers-item svg {
+        width: 96px;
+    }
+
     .about-content h2:before {
         left: 200px;
         top: 65px;
@@ -1199,11 +1230,49 @@ i.fas.fa-chevron-right {
     }
 
     /* 
+                               Future
+    */
+
+    .future-icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 450px;
+        margin: auto;
+    }
+
+    .icon-group {
+        width: 160px;
+    }
+
+    /* 
                                Parters
     */
 
     .partners-topper {
         padding: 0 2em;
+    }
+
+    .partner-showcase-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .partner-showcase-content h3 {
+        width: 100%;
+        align-content: left;
+        font-size: 22px;
+    }
+
+    .showcase-button {
+        margin: 25px 0 50px 0;
+    }
+
+    .showcase-button:before,
+    .showcase-button:after {
+        border-color: #000;
     }
 
     .partners-logo {
@@ -1231,6 +1300,10 @@ i.fas.fa-chevron-right {
         padding-top: 100px;
     }
 
+    .service-topper img {
+        height: auto;
+    }
+
     .service-topper p {
         width: 600px;
     }
@@ -1240,6 +1313,10 @@ i.fas.fa-chevron-right {
     }
 
     .service-card svg {
+        margin-bottom: 100px;
+    }
+
+    .service-card:last-child {
         margin-bottom: 100px;
     }
 
@@ -1432,11 +1509,9 @@ i.fas.fa-chevron-right {
     }
 
     .gallery-button {
-        margin: 30px auto 90px auto !important;
+        margin: 90px auto 90px auto !important;
         display: block;  
         width: auto !important;
-        font-size: 20px;
-        font-weight: bold;
     }
 
     .clippy-gallery {
@@ -1635,7 +1710,7 @@ i.fas.fa-chevron-right {
 
     .contact-button {
         margin: 10px auto !important;
-        font-size: 20px;
+        font-size: 14px;
     }
 }
 
@@ -1947,8 +2022,9 @@ i.fas.fa-chevron-right {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        padding-top: 60px;
+        margin-top: 60px;
         height: auto;
+        position: relative;
     }
 
     .future-topper .heading-lines {
@@ -1969,11 +2045,12 @@ i.fas.fa-chevron-right {
 
     .future-topper p {
         float: right;
-        width: 700px !important;
+        width: 620px !important;
         -webkit-box-ordinal-group: 5;
             -ms-flex-order: 4;
                 order: 4;
         padding-bottom: 25px;
+        padding-top: 40px;;
         margin-top: 0;
     }
 
@@ -2003,7 +2080,12 @@ i.fas.fa-chevron-right {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        height: 50px;
+        height: auto;
+        flex-wrap: wrap;
+        max-width: 400px;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
     .icon-group {
@@ -2078,19 +2160,22 @@ i.fas.fa-chevron-right {
     }
 
     #services-heading {
-        width: 450px;
+        width: 500px;
     }
 
     #services-heading h2 {
+        padding-top: 0;
         text-align: right;
     }
 
     #services-heading h2:before {
-        left: 200px;
+        left: 250px;
+        top: 10px;
     }
 
     #services-heading h2:after {
-        left: 220px;
+        left: 270px;
+        top: 19px;
     }
 
     #services-heading p {
@@ -2112,6 +2197,11 @@ i.fas.fa-chevron-right {
             -ms-flex-pack: justify;
                 justify-content: space-between;
         padding: 100px 0 50px 0;
+    }
+
+    .service-topper img {
+        width: 500px;
+        height: auto;
     }
 
     .service-card-container {
@@ -2555,6 +2645,7 @@ i.fas.fa-chevron-right {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        width: 1100px;
     }
 
     .sales-topper {
