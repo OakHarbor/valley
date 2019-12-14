@@ -1,9 +1,11 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 /*-- -------------------------- -->
 <---           LANDING          -->
 <--- -------------------------- -*/
 
 #landing-page {
-    min-height: 300px;
+    min-height: 400px;
     background:url("../images/Random\ 2.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -36,7 +38,8 @@
     font-size: 30px;
     border-left: 5px solid var(--primary);
     text-align: right;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 280px;
 }
 
@@ -46,8 +49,222 @@
     width: 100%;
     position: absolute;
     bottom: -5px;
-    clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+            clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
+
+/*-- -------------------------- -->
+<---          ADVANTECH         -->
+<--- -------------------------- -*/
+
+#advantech-promotion {
+    margin-bottom: 100px;
+}
+
+#advantech-promotion h2 span {
+    color: var(--primary);
+    position: relative;
+    display: block;
+}
+
+#advantech-promotion h2 span:before {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 50px;
+    height: 2px;
+    left: 165px;
+    top: 10px;
+}
+
+#advantech-promotion h2 span:after {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 30px;
+    height: 2px;
+    left: 165px;
+    top: 19px;
+}
+
+#advantech-promotion h2 {
+    display: block;
+    font-size: 2.1875em;
+    font-weight: 900;
+    color: #4c4c4c;
+    text-transform: uppercase;
+}
+
+.image-box {
+    width: 100%;
+    position: relative;
+    height: 230px;
+    margin: 50px 0;
+}
+
+.image-box:before {
+    content: '';
+    background:url("../images/geo-steel.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 216px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.image-box:after {
+    content: '';
+    width: 90%;
+    height: 216px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: var(--primary);
+    opacity: .9;
+}
+
+.image-box img {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.experience-content {
+    margin-bottom: 40px;
+}
+
+.promo {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.6em;
+    height: auto;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 20px;
+    margin: 0 0 10px 0;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.promo:before {
+    content: '';
+    height: 65px;
+    width: 5px;
+    background: var(--primary);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.code {
+    display: inline-block;
+    padding-top: 0px;
+    padding-left: 20px;
+    margin: 0;
+    font-weight: 900;
+    line-height: 1.2em;
+    font-size: 1.2em;
+}
+
+.experience-content h3 {
+    position: relative;
+    font-size: 1.25em;
+    padding-top: 15px;
+}
+
+.experience-content h3:before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    background: var(--primary);
+    height: 2px;
+    bottom: -8px;
+}
+
+.experience-content h4 {
+    font-size: 2em;
+}
+
+.list {
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.header {
+    list-style: none;
+    padding-left: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #4c4c4c;
+}
+
+.header li {
+    font-weight: normal;
+    text-transform: none;
+    padding-top: 10px;
+    color: #4c4c4c;
+}
+
+ul li {
+    font-size: 1em;
+}
+
+.experience-content button {
+    width: auto;
+    margin-top: 15px;
+}
+
+.experience-content button:before,
+.experience-content button:after {
+    border-color: #000;
+}
+
+.email {
+    font-weight: 900;
+}
+
+/*-- -------------------------- -->
+<---            JOTO            -->
+<--- -------------------------- -*/
+
+.image-box.joto-box {
+}
+
+.joto-box img {
+    height: 216px;
+}
+
+/*-- -------------------------- -->
+<---           GROUP            -->
+<--- -------------------------- -*/
+
+.group {
+    border: 1px solid #000;
+    height: 216px;
+}
+
+.group-box {
+    height: 200px;
+}
+
+.group-box:before,
+.group-box:after {
+    height: 189px;
+}
+
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
 
@@ -66,6 +283,82 @@
         padding: 0 20px;
     }
 
+    /*-- -------------------------- -->
+    <---          ADVANTECH         -->
+    <--- -------------------------- -*/
+
+    #advantech-promotion {
+        margin-bottom: 150px;
+    }
+
+    .image-box {
+        width: 450px;
+        height: 350px;
+    }
+
+    .image-box img {
+        height: 300px;
+        width: auto;
+    }
+
+    .image-box:before,
+    .image-box:after {
+        height: 300px;
+        width: 420px;
+    }
+
+    .experience-content button {
+        margin-top: 70px;
+    }
+
+    /*-- -------------------------- -->
+    <---            JOTO            -->
+    <--- -------------------------- -*/
+
+    .joto-box {
+        width: 510px !important;
+        height: 350px;
+    }
+
+    .joto-box img {
+        height: 300px;
+        width: auto;
+    }
+
+    .joto-box:before,
+    .joto-box:after {
+        height: 300px;
+        width: 450px;
+    }
+
+    .experience-content button {
+        margin-top: 70px;
+    }
+
+    /*-- -------------------------- -->
+    <---           15% OFF          -->
+    <--- -------------------------- -*/
+
+    .group-box {
+        width: 510px !important;
+        height: 320px;
+    }
+
+    .group-box img {
+        height: 300px;
+        width: auto;
+    }
+
+    .group-box:before,
+    .group-box:after {
+        height: 300px;
+        width: 480px;
+    }
+
+    .experience-content button {
+        margin-top: 70px;
+    }
+
 }
 
 @media screen and (min-width: 1025px) {
@@ -74,21 +367,103 @@
     <---          LANDING           -->
     <--- -------------------------- -*/
 
+    .container {
+        max-width: 1100px;
+    }
+
+    #landing-page {
+        min-height: 600px;
+        background-attachment: fixed;
+        margin-bottom: 100px;
+    }
+
     .landing-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 400px;
     }
 
     .landing-text {
         margin-top: 25px;
+        width: auto;
     }
 
     .landing-text h1 {
-        font-size: 55px;
+        font-size: 3.438em;
         width: 550px;
         padding: 0 20px;
+        text-align: center;
+    }
+
+    /*-- -------------------------- -->
+    <---          ADVANTECH         -->
+    <--- -------------------------- -*/
+
+    #advantech-promotion {
+        margin-bottom: 200px;
+    }
+
+    .image-box {
+        height: 350px;
+        width: 450px;
+    }
+
+    .image-box:before,
+    .image-box:after {
+        height: 300px;
+        width: 420px
+    }
+
+    .image-box img {
+        height: 300px;
+        width: auto;
+    }
+
+    /*-- -------------------------- -->
+    <---             JOTO           -->
+    <--- -------------------------- -*/
+
+    .joto-box {
+        height: 350px;
+        width: 500px;
+    }
+
+    .joto-box:before,
+    .joto-box:after {
+        height: 300px;
+        width: 450px
+    }
+
+    .joto-box img {
+        height: 300px;
+        width: auto;
+    }
+
+    /*-- -------------------------- -->
+    <---           15% OFF          -->
+    <--- -------------------------- -*/
+
+    .group-box {
+        height: 350px;
+        width: 520px;
+    }
+
+    .group-box:before,
+    .group-box:after {
+        height: 300px;
+        width: 480px
+    }
+
+    .group-box img {
+        height: 300px;
+        width: auto;
     }
 
 }

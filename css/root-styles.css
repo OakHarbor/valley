@@ -202,7 +202,7 @@ button {
     color: #fff;
     font-size: var(--button-reg);
     border: none;
-    width: 150px;
+    width: auto;
     height: auto;
     padding: 10px 25px;
     margin-bottom: 15px;
@@ -218,8 +218,8 @@ button {
     content: '';
     width: 20px;
     height: 20px;
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
     position: absolute;
     top: -5px;
     left: -5px;
@@ -232,8 +232,8 @@ button {
     content: '';
     width: 20px;
     height: 20px;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
     position: absolute;
     bottom: -5px;
     right: -5px;
@@ -416,6 +416,23 @@ nav img {
     padding: 0;
     top: 42px;
     display: none;
+}
+
+.sub1.drop {
+    display: inline-block;
+    height: auto !important;
+    right: -20px;
+    position: absolute;
+    top: -20px;
+    z-index: -1;
+}
+
+.about-li.drop {
+    height: 160px;\
+}
+
+.about-drop-link.drop {
+    text-align: right;
 }
 
 .sub-nav li a:hover {
@@ -634,7 +651,7 @@ nav img {
     .container {
         max-width: 1100px !important;
         padding: 0 2em;
-        margin: 0;
+        margin: auto;
     }
 
     #top-navbar {

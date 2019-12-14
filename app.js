@@ -1,6 +1,14 @@
-var $hamburger = $(".hamburger");
+var $hamburger = $(".hamburger");var $dropdown = $(".about-dropdown");
+var $reveal = $(".sub1");
+var $aboutli = $(".about-li");
+var $aboutLink = $(".about-drop-link");
+
   $hamburger.on("click", function(e) {
     $hamburger.toggleClass("is-active");
+
+    $reveal.removeClass("drop");
+    $aboutli.removeClass("drop");
+    $aboutLink.removeClass("drop");
     // Do something else, like open/close menu
   });
 
@@ -47,4 +55,18 @@ let toggleNav = function () {
 
         toggleNavStatus = false;
     }
+}
+
+/* Toggle the submenu on mobile */
+
+if ($(window).width() < 1024 || $(window).height() < 550) {
+  
+  $dropdown.on("click", function(e) {
+    $reveal.toggleClass("drop");
+    $aboutli.toggleClass("drop");
+    $aboutLink.toggleClass("drop");
+
+    // Do something else, like open/close menu
+  });
+
 }
