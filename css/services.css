@@ -417,6 +417,11 @@ html, body {
     <---          LANDING           -->
     <--- -------------------------- -*/
 
+    #landing-page {
+        background-attachment: fixed;
+        height: 750px;
+    }
+
     .landing-group {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -499,8 +504,9 @@ html, body {
     }
 
     .service-card {
-        width: 500px;
+        max-width: 500px;
         margin-bottom: 0;
+        height: 400px;
     }
 
     .service-card h3 {
@@ -517,6 +523,7 @@ html, body {
 
     #rebar-fabrication {
         max-height: 600px !important;
+        background-attachment: fixed;
     }
 
     #rebar-fabrication h2 {

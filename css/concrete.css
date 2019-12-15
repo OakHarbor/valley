@@ -1,10 +1,12 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 /*-- -------------------------- -->
 <---           LANDING          -->
 <--- -------------------------- -*/
 
 #landing-page {
     min-height: 300px;
-    background:url("../images/Random\ 2.jpg");
+    background:url("../images/cement.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,10 +35,11 @@
 .landing-text h1 {
     padding-top: 0;
     margin: 40px auto;
-    font-size: 30px;
+    font-size: 1.875em;
     border-left: 5px solid var(--primary);
     text-align: right;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 280px;
 }
 
@@ -46,7 +49,222 @@
     width: 100%;
     position: absolute;
     bottom: -5px;
-    clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+            clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+/*-- -------------------------- -->
+<---            REBAR           -->
+<--- -------------------------- -*/
+
+#about-rebar img {
+    width: 100%;
+}
+
+.rebar-group h2 {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    margin-top: 0;
+    position: relative;
+    padding-top: 50px;
+    line-height: 1em;
+}
+
+.rebar-group h2 span {
+    color: var(--primary);
+    display: block;
+}
+
+.rebar-group h2:before {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 50px;
+    height: 2px;
+    left: 155px;
+    top: 60px;
+}
+
+.rebar-group h2:after {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 30px;
+    height: 2px;
+    left: 155px;
+    top: 69px;
+}
+
+.rebar-group h2 {
+    text-align: left;
+}
+
+.rebar-group button {
+    margin: 50px 0;
+}
+
+/*-- -------------------------- -->
+<---         REBAR STATS        -->
+<--- -------------------------- -*/
+
+#rebar-stats {
+    background:url("../images/concrete-wall.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#rebar-stats:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+}
+
+.st-top {
+    padding-top: 50px;
+}
+
+.stat-item {
+    position: relative;
+    z-index: 5;
+    padding-bottom: 100px;
+}
+
+.stat-item h3 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.stat-item p {
+    color: #fff;
+    text-align: center;
+}
+
+.stat-item svg {
+    margin: auto;
+    width: 70px;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.stat-item svg:before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: #fff;
+    z-index: 4;
+}
+
+.st-last {
+    padding-bottom: 250px;
+}
+
+/*-- -------------------------- -->
+<---          PROMOTIONS        -->
+<--- -------------------------- -*/
+
+#promotions {
+    background: #f5f3f3;
+    position: relative;
+}
+
+.card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: var(--primary);
+    position: absolute;
+    top: -150px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+}
+
+.card-info h3,
+.card-info p {
+    padding: 0 20px;
+}
+
+.card-info h3 {
+    font-size: 1.5em;
+}
+
+.card-info p {
+    margin-bottom: 40px;
+}
+
+.card-info button {
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    padding-top: 500px;
+}
+
+#promotions img {
+    width: 100%;
+}
+
+.contact-info h2 {
+    font-size: 1.5em;
+}
+
+.contact-info h3 {
+    margin-top: 0;
+}
+
+.contact-info-group {
+    height: auto;
+    margin-bottom: 90px;
+    margin-top: 50px;
+    position: relative;
+    max-width: 340px;
+}
+
+.contact-info-group:last-child {
+    margin-bottom: 50px;
+}
+
+.contact-info-group h3 {
+    text-transform: uppercase;
+    font-size: 1.188em;
+}
+
+.contact-info-group svg {
+    width: 50px;
+    height: auto;
+    float: left;
+    margin: 0 25px 150px 0;
+}
+
+.valley-exterior {
+    margin-bottom: 100px;
+}
+
+.clippy-sales {
+    bottom: -1px;
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -60,10 +278,133 @@
         display: none;
     }
 
+    #landing-page {
+        height: 400px;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    .landing-group {
+        margin-left: 0;
+    }
+
     .landing-text h1 {
-        font-size: 45px;
-        width: auto;
+        font-size: 2.813em;
+        width: 100%;
         padding: 0 20px;
+        margin-left: 20%;
+        text-align: center;
+    }
+
+    /*-- -------------------------- -->
+    <---         REBAR STATS        -->
+    <--- -------------------------- -*/
+
+    #rebar-stats {
+        height: 1300px;
+    }
+
+    #rebar-stats h2 {
+        font-weight: 700;
+        font-size: 2.5em;
+        margin-bottom: 80px;
+        margin-top: 0;
+        position: relative;
+        padding-top: 100px;
+        line-height: 1em;
+        color: #f5f3f3;
+        text-align: center !important;
+    }
+    
+    #rebar-stats h2 span {
+        color: var(--primary);
+    }
+    
+    #rebar-stats h2 {
+        text-align: left;
+    }
+
+    .stat-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+
+    #rebar-stats h2 {
+        display: block;
+    }
+
+    .stat-item {
+        width: 260px;
+        padding: 15px;
+    }
+
+    .stat-item p {
+        height: 175px;
+    }
+
+    /*-- -------------------------- -->
+    <---          PROMOTIONS        -->
+    <--- -------------------------- -*/
+
+    .card {
+        top: -200px;
+    }
+
+    .contact-info {
+        padding-top: 650px;
+    }
+
+    .contact-info h2 {
+        font-size: 35px;
+        text-align: left;
+    }
+
+    .card-info h3 {
+        font-size: 2.188em;
+        text-transform: uppercase;
+        padding: 0 30px;
+    }
+
+    .card-info p {
+        padding: 0 30px;
+    }
+
+    .card-info button {
+        margin-left: 30px;
+    }
+
+    .contact-info-group {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .contact-info-group svg {
+        margin-bottom: 20px;
+    }
+
+    .contact-info-group p {
+        height: auto;
+    }
+
+    .valley-exterior {
+        margin-top: 50px;
     }
 
 }
@@ -74,22 +415,203 @@
     <---          LANDING           -->
     <--- -------------------------- -*/
 
+    .container {
+        max-width: 1100px;
+    }
+
+    #landing-page {
+        min-height: 600px;
+        background-attachment: fixed;
+    }
+
     .landing-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 400px;
     }
 
     .landing-text {
         margin-top: 25px;
+        width: auto;
     }
 
     .landing-text h1 {
-        font-size: 55px;
+        font-size: 3.438em;
         width: 550px;
         padding: 0 20px;
+        text-align: left;
+    }
+
+    /*-- -------------------------- -->
+    <---            REBAR           -->
+    <--- -------------------------- -*/
+
+    #about-rebar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 120px 0;
+    }
+
+    #about-rebar img {
+        width: 400px;
+        height: 650px;
+    }
+
+    .rebar-group {
+        width: 620px;
+    }
+
+    .rebar-group h2:before,
+    .rebar-group h2:after {
+        left: 200px;
+    }
+
+    /*-- -------------------------- -->
+    <---         REBAR STATS        -->
+    <--- -------------------------- -*/
+
+    #rebar-stats {
+        height: 1000px;
+        background-attachment: fixed;
+    }
+
+    #rebar-stats h2 {
+        font-weight: 700;
+        font-size: 2.5em;
+        margin-bottom: 120px;
+        margin-top: 0;
+        position: relative;
+        padding-top: 180px;
+        line-height: 1em;
+        color: #f5f3f3;
+        text-align: center !important;
+        width: 800px;
+    }
+    
+    #rebar-stats h2 span {
+        color: var(--primary);
+    }
+
+    .stat-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        padding-bottom: 250px;
+    }
+
+    .stat-group span {
+        display: block;
+    }
+
+    .stat-item {
+        width: 250px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .stat-item h3 {
+        margin-top: 50px;
+    }
+
+    /*-- -------------------------- -->
+    <---          PROMOTIONS        -->
+    <--- -------------------------- -*/
+
+    .card {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 0;
+        top: -190px;
+    }
+
+    .card img {
+        width: 550px !important;
+    }
+
+    .card-info {
+        padding: 50px 30px;
+    }
+
+    .card-info h3 {
+        margin-top: 15px;
+        font-size: 1.563em;
+        text-transform: uppercase;
+    }
+
+    .card-info button {
+        margin-bottom: 0;
+    }
+
+    .contact-info {
+        padding-top: 400px;
+    }
+
+    .contact-info h2 {
+        display: block;
+        font-size: 2.188em;
+    }
+
+    .valley-exterior {
+        width: 600px !important;
+        height: 450px !important;
+        padding-top: 400px;
+        margin: 0;
+    }
+
+    .flex-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-bottom: 190px;
+        height: 800px;
+    }
+
+    .clippy-sales {
+        bottom: -2px;
     }
 
 }
-
