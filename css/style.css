@@ -76,7 +76,11 @@ body, html {
     display: block;
     font-weight: 900;
     background: #f5f3f3;
-    color: #000
+}
+
+.about:before,
+.about:after {
+    border-color: #fff;
 }
 
 .primary {
