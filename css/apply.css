@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 /*-- -------------------------- -->
 <---           LANDING          -->
 <--- -------------------------- -*/
@@ -21,7 +23,8 @@
     width: 100%;
     position: absolute;
     bottom: -5px;
-    clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+            clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
 } 
 
 /*-- -------------------------- -->
@@ -30,9 +33,16 @@
 
 #credit-app-google-doc-preview {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .clippy-sales {
@@ -74,9 +84,16 @@ iframe {
     }
 
     .credit-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     h1:after,
@@ -111,9 +128,15 @@ iframe {
     }
 
     .landing-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-start ;
-        align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start ;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 500px;
     }
 
