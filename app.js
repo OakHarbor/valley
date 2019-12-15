@@ -1,7 +1,4 @@
-var $hamburger = $(".hamburger");var $dropdown = $(".about-dropdown");
-var $reveal = $(".sub1");
-var $aboutli = $(".about-li");
-var $aboutLink = $(".about-drop-link");
+var $hamburger = $(".hamburger");
 
   $hamburger.on("click", function(e) {
     $hamburger.toggleClass("is-active");
@@ -35,7 +32,7 @@ let toggleNav = function () {
           item.style.opacity = "1";
           item.style.visibility = "visible";
          })
-        getSidebar.style.height = "540px";
+        getSidebar.style.height = "100%";
 
         toggleNavStatus = true;
     } 
@@ -59,14 +56,78 @@ let toggleNav = function () {
 
 /* Toggle the submenu on mobile */
 
+var $dropdown = $(".about-dropdown");
+var $dropdownService = $(".service-dropdown");
+var $dropdownContact = $(".contact-dropdown");
+
+var $reveal = $(".sub1");
+var $revealService = $(".sub2");
+var $revealContact = $(".sub3");
+
+var $aboutli = $(".about-li");
+var $serviceli = $(".services-li");
+var $Contactli = $(".contact-li");
+
+var $aboutLink = $(".about-drop-link");
+var $serviceLink = $(".service-drop-link");
+var $ContactLink = $(".contact-drop-link");
+
 if ($(window).width() < 1024 || $(window).height() < 550) {
   
+  /* About Dropdown */
   $dropdown.on("click", function(e) {
+
     $reveal.toggleClass("drop");
     $aboutli.toggleClass("drop");
     $aboutLink.toggleClass("drop");
 
-    // Do something else, like open/close menu
+    /* Reset any clicked sub menus */
+    $revealService.removeClass("drop");
+    $serviceli.removeClass("drop");
+    $serviceLink.removeClass("drop");
+
+    $revealContact.removeClass("drop");
+    $contactli.removeClass("drop");
+    $contactLink.removeClass("drop");
+    
+  });
+
+  /* Service Dropdown */
+  $dropdownService.on("click", function(e) {
+
+    /* On services click */
+    $revealService.toggleClass("drop");
+    $serviceli.toggleClass("drop");
+    $serviceLink.toggleClass("drop");
+
+    /* Reset any clicked sub menus */
+    $reveal.removeClass("drop");
+    $aboutli.removeClass("drop");
+    $aboutLink.removeClass("drop");
+
+    $revealContact.removeClass("drop");
+    $contactli.removeClass("drop");
+    $contactLink.removeClass("drop");
+    
+  });
+
+  /* Contact Dropdown */
+  $dropdownContact.on("click", function(e) {
+
+    /* On services click */
+    $revealContact.toggleClass("drop");
+    $contactli.toggleClass("drop");
+    $contactLink.toggleClass("drop");
+
+    /* Reset any clicked sub menus */
+    $reveal.removeClass("drop");
+    $aboutli.removeClass("drop");
+    $aboutLink.removeClass("drop");
+
+    $revealService.removeClass("drop");
+    $serviceli.removeClass("drop");
+    $serviceLink.removeClass("drop");
+    
   });
 
 }

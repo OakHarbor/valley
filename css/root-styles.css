@@ -16,6 +16,13 @@ a, h1, h2, h3, h4, h5, h6 {
     color: #1a1a1a;
 }
 
+.icon-drop {
+    position: relative;
+    z-index: 200;
+    color: #f5f3f3;
+    font-size: 14px !important;
+}
+
 p, li {
     font-size: 1.125em;
     font-family: 'Poppins', sans-serif;
@@ -418,21 +425,152 @@ nav img {
     display: none;
 }
 
+/* Dropdown js */
+
+@media screen and (max-width: 1024px) {
+    .sub-nav li {
+        text-align: right;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+}
+
+.sub1 {
+    position: absolute;
+    top: 0px !important;
+}
+
 .sub1.drop {
     display: inline-block;
     height: auto !important;
-    right: -20px;
+    right: 0px;
     position: absolute;
     top: -20px;
     z-index: -1;
 }
 
+.sub1.drop:before {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 2px;
+    right: 0;
+    top: 50px;
+    background: var(--primary)
+}
+
 .about-li.drop {
-    height: 160px;\
+    height: 160px;
 }
 
 .about-drop-link.drop {
     text-align: right;
+}
+
+.sub2 {
+    top: 10px !important;
+}
+
+.sub2.drop {
+    display: inline-block;
+    height: auto !important;
+    right: 0px;
+    position: absolute;
+    top: -25px;
+    z-index: -1;
+    text-align: left;
+}
+
+.sub2.drop:before {
+    content: '';
+    position: absolute;
+    height: 140px;
+    width: 2px;
+    right: 0;
+    top: 55px;
+    background: var(--primary)
+}
+
+.services-li.drop {
+    height: 260px;\
+}
+
+.service-drop-link.drop {
+    text-align: right;
+    width: 150px;
+}
+
+/* Contact Dropdown Click */
+
+.contact-li, .services-li, .about-li {
+    position: relative;
+}
+
+.contact-li .icon-drop {
+    padding: 9px 100px 9px 0;
+    right: -10px;
+    top: -4px;
+    position: absolute;
+    z-index: 50;
+}
+
+.contact-li a, .services-li a, .about-li a {
+    position: relative;
+    z-index: 1;
+}
+
+.services-li .icon-drop {
+    padding: 9px 110px 9px 0;
+    right: -20px;
+    top: -3px;
+    position: absolute;
+    z-index: 50;
+}
+
+.about-li .icon-drop {
+    padding: 9px 90px 9px 0;
+    right: -20px;
+    top: -3px;
+    position: absolute;
+    z-index: 50;
+}
+
+.contact-li a, .about-li a, .services-li a {
+    padding-left: 10px;
+}
+
+.sub3.drop {
+    display: inline-block;
+    height: auto !important;
+    right: 0px;
+    position: absolute;
+    top: -10px;
+    z-index: -1;
+    text-align: left;
+}
+
+.sub3.drop:before {
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 2px;
+    right: 0;
+    top: 60px;
+    background: var(--primary)
+}
+
+.contact-li.drop {
+    height: 260px;
+}
+
+.contact-drop-link.drop {
+    text-align: right;
+}
+
+#contact-width-change {
+    width: 200px;
 }
 
 .sub-nav li a:hover {
@@ -721,6 +859,10 @@ nav img {
         top: 0;
     }
 
+    .about-li a, .services-li a, .contact-li a {
+        padding-left: 10px;
+    }
+
     .side-nav a {
         display: block;
         visibility: visible;
@@ -734,6 +876,27 @@ nav img {
 
     .side-nav a:hover {
         color: var(--primary);
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease;
+    }
+
+    .about-li:hover .icon-drop {
+        color: var(--primary) !important;
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease;
+    }
+
+    .services-li:hover .icon-drop {
+        color: var(--primary) !important;
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease;
+    }
+
+    .contact-li:hover .icon-drop {
+        color: var(--primary) !important;
         -webkit-transition: .3s ease;
         -o-transition: .3s ease;
         transition: .3s ease;
@@ -754,6 +917,18 @@ nav img {
                 align-items: center;
     }
 
+    .about-li:hover .a-link {
+        color: var(--primary) !important;
+    }
+
+    .services-li:hover .s-link {
+        color: var(--primary) !important;
+    }
+
+    .contact-li:hover .c-link {
+        color: var(--primary) !important;
+    }
+
     .sub-nav li {
         font-size: 1em;
     }
@@ -768,6 +943,13 @@ nav img {
     }
 
     /* about sub menu */
+    
+    .about-li .icon-drop {
+        position: relative;
+        padding: 0;
+        right: 0;
+    }
+
     .about-li:hover .sub1 {
         display: block;
     }
@@ -782,6 +964,12 @@ nav img {
     }
 
     /*services sub menu */
+    .services-li .icon-drop {
+        position: relative;
+        padding: 0;
+        right: 0;
+    }
+
     .services-li:hover .sub2 {
         display: block;
     }
@@ -796,6 +984,13 @@ nav img {
     }
 
     /* contact sub menu */
+
+    .contact-li .icon-drop {
+        position: relative;
+        padding: 0;
+        right: 0;
+    }
+
     .contact-li:hover .sub3 {
         display: block;
     }
