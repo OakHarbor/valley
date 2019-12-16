@@ -33,13 +33,13 @@
 </head>
 <header>
     <!-- Top Navigation Bar  -->
-    <div aria-hidden="true" id="top-navbar">
+    <div id="top-navbar">
         <div class="top-content container">
-            <img class="valley-mobile-logo vcs-black" src="/images/vcs-black.png" alt="" height="80px">
+            <img aria-hidden="true" class="valley-mobile-logo vcs-black" src="/images/vcs-black.png" alt="valley constrcution logo" height="80px">
             <div class="top-nav-container">
                 <div class="location">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px"><g><g>
+                        <svg aria-hidden="true" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px"><g><g>
                                 <g>
                                     <path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035    c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719    c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FDD008"/>
                                 </g>
@@ -54,7 +54,7 @@
     
                 <div class="location">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px"><g><g>
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px"><g><g>
                                 <g>
                                     <path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035    c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719    c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FDD008"/>
                                 </g>
@@ -69,7 +69,7 @@
     
                 <div class="location">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 488.152 488.152" style="enable-background:new 0 0 488.152 488.152;" xml:space="preserve" class=""><g><g>
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 488.152 488.152" style="enable-background:new 0 0 488.152 488.152;" xml:space="preserve" class=""><g><g>
                                 <g>
                                     <path d="M177.854,269.311c0-6.115-4.96-11.069-11.08-11.069h-38.665c-6.113,0-11.074,4.954-11.074,11.069v38.66    c0,6.123,4.961,11.079,11.074,11.079h38.665c6.12,0,11.08-4.956,11.08-11.079V269.311L177.854,269.311z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FDD008"/>
                                     <path d="M274.483,269.311c0-6.115-4.961-11.069-11.069-11.069h-38.67c-6.113,0-11.074,4.954-11.074,11.069v38.66    c0,6.123,4.961,11.079,11.074,11.079h38.67c6.108,0,11.069-4.956,11.069-11.079V269.311z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FDD008"/>
@@ -92,7 +92,7 @@
             </div>
         </div>
     </div>
-    <button id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
+    <button aria-label="mobile menu button" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -102,24 +102,26 @@
         <div id="bottom-nav-bar" class="side-nav" class="container">
             <ul id="main-navigation" class="side-nav">
                 <li><a href="/index.html">HOME</a></li>
-                <li class="about-li"><a class="active-menu" class="about-dropdown" href="about.html">ABOUT<i class="fas fa-chevron-down"></i></a>
+                <li class="about-li"><a class="a-link active-menu" href="about.html">ABOUT</a><i class="fas fa-chevron-down about-dropdown icon-drop active-menu"></i>
                     <ul class="sub-nav sub1">
-                        <li><a href="jobs.html">JOBS</a></li>
-                        <li><a class="active-menu" href="about.html">ABOUT VCS</a></li>
+                        <li><a class="about-drop-link" href="jobs.html">JOBS</a></li>
+                        <li><a class="about-drop-link" href="about.html">ABOUT VCS</a></li>
                     </ul>
                 </li>
-                <li class="services-li"><a href="services.html">SERVICES<i class="fas fa-chevron-down"></i></a>
+                <li class="services-li"></i><a class="s-link" href="services.html">SERVICES</a><i class="fas fa-chevron-down service-dropdown icon-drop"></i>
                     <ul class="sub-nav sub2">
-                        <li><a href="rebar-fabrication.html">REBAR FABRICATION</a></li>
-                        <li><a href="concrete.html">CONCRETE ACCESSORIES</a></li>
-                        <li><a href="materials.html">BUILDING MATERIALS</a></li>
+                        <li><a id="contact-width-change" class="service-drop-link"href="services.html">OUR SERVICES</a></li>
+                        <li><a id="contact-width-change" class="service-drop-link" href="rebar-fabrication.html">REBAR FABRICATION</a></li>
+                        <li><a id="contact-width-change" class="service-drop-link" href="concrete.html">CONCRETE ACCESSORIES</a></li>
+                        <li><a id="contact-width-change" class="service-drop-link"href="materials.html">BUILDING MATERIALS</a></li>
                     </ul>
                 </li>
                 <li><a href="promotions.html">PROMOTIONS</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
-                <li class="contact-li"><a href="contact.html">CONTACT<i class="fas fa-chevron-down"></i></a>
+                <li class="contact-li"><a class="c-link" href="contact.html">CONTACT</a><i class="fas fa-chevron-down contact-dropdown icon-drop"></i>
                     <ul class="sub-nav sub3">
-                        <li><a href="apply.html">APPLY FOR CREDIT</a></li>
+                        <li><a id="contact-width-change" class="contact-drop-link"href="contact.html">CONTACT VCS</a></li>
+                        <li><a id="contact-width-change" class="contact-drop-link" href="apply.html">APPLY FOR CREDIT</a></li>
                     </ul>
                 </li>
             </ul>
@@ -149,7 +151,7 @@
             </div>
         </div>
         <p aria-hidden="true">WhoWeAre</p>
-        <div class="clippy-desktop"></div>
+        <div aria-hidden="true" class="clippy-desktop"></div>
     </section>
 
     <!-- ============================================ -->
@@ -163,7 +165,7 @@
             customer needs on our shelves & next day deliveries.</p>
         <div class="experience">
             <div class="image-box">
-                <img src="/images/scaffold.jpg" alt="" height="400px" width="300px">
+                <img src="/images/scaffold.jpg" alt="scaffolding along a building" height="400px" width="300px">
             </div>
             <div class="experience-content">
                 <p><span>35</span></p>
@@ -178,7 +180,7 @@
                    pro contractors with the top quality home builders in the greater Puget sound 
                    area. At the end of the day “ all we have is our word “ and we at Valley 
                    Construction Supply never take that lightly.</P>
-                <button class="solid gallery-button"  type="button" onclick="location.href='html/services.html'">
+                <button class="solid gallery-button"  type="button" onclick="location.href='services.html'">
                     SEE OUR SERVICES
                 </button>
             </div>
@@ -191,7 +193,7 @@
 
     <section id="mission">
         <div class="mission-content">
-        <h2 class="container">Our Mission, Our Mission</h2>
+        <h2 class="container">Our Mission:</h2>
         <p class="container">Valley Construction Supply's mission hasn't changed from the day Cliff Beatty 
             opened the doors to passing it on to his son Mark Beatty. We strive to be loyal to our partners, 
             build long lasting relationships with our customers, built on integrity while offering top-notch 
@@ -199,8 +201,8 @@
             importantly our word is our bond. Thank you to the ever growing list of relationships we have 
             developed over the 35+ years who stayed loyal to Valley Construction Supply.</p>
         </div>
-        <div class="clippy-desktop-yellow"></div>  
-        <div class="clippy-desktop"></div>              
+        <div aria-hidden="true" class="clippy-desktop-yellow"></div>  
+        <div aria-hidden="true" class="clippy-desktop"></div>              
     </section>
 
     <!-- ============================================ -->
@@ -220,7 +222,7 @@
             <div class="sales-people south-store">
                 <h3 class="store">South Store - PACIFIC, WA</h3>
                 <div class="sales-card">
-                    <img src="../images/Gene Gierek-copy.jpg" alt="">
+                    <img src="../images/Gene Gierek-copy.jpg" alt="portrait of gene gierek">
                     <div class="people-content">
                         <h3>Gene Gierek</h3>
                         <h4>Estimator/Project Assistant</h4>
@@ -234,7 +236,7 @@
                     </div>
                 </div>
                 <div class="sales-card">
-                    <img src="../images/Gus Laramore-copy.jpg" alt="">
+                    <img src="../images/Gus Laramore-copy.jpg" alt="portrait of gus laramore">
                     <div class="people-content">
                         <h3>Gus Laramore</h3>
                         <h4>Outside Sales</h4>
@@ -248,7 +250,7 @@
                     </div>
                 </div>
                 <div class="sales-card">
-                    <img src="../images/Jeff Buxton-copy.jpg" alt="">
+                    <img src="../images/Jeff Buxton-copy.jpg" alt="portrait of jeff buxton">
                     <div class="people-content">
                         <h3>Jeff Buxton</h3>
                         <h4>Outside Sales</h4>
@@ -262,7 +264,7 @@
                     </div>
                 </div>
                 <div class="sales-card">
-                    <img src="../images/Joe Garcia-copy.jpg" alt="">
+                    <img src="../images/Joe Garcia-copy.jpg" alt="joe garcia">
                     <div class="people-content">
                         <h3>Joe Garcia</h3>
                         <h4>Outside Sales</h4>
@@ -275,7 +277,7 @@
                     </div>
                 </div>
                 <div class="sales-card">
-                    <img src="../images/Mark Howard-copy.jpg" alt="">
+                    <img src="../images/Mark Howard-copy.jpg" alt="portrait of mark howard">
                     <div class="people-content">
                         <h3>Mark Howard</h3>
                         <h4>Outside Sales</h4>
@@ -292,7 +294,7 @@
             <div class="sales-people north-store">
                 <h3 class="store2">North Store - MARYSVILLE, WA</h3>
                 <div class="sales-card">
-                    <img src="../images/JOHN L WILLIAMS.jpg" alt="">
+                    <img src="../images/JOHN L WILLIAMS.jpg" alt="portrait of john williams">
                     <div class="people-content">
                         <h3>John Williams</h3>
                         <h4>Sales Manager</h4>
@@ -306,7 +308,7 @@
                     </div>
                 </div>
                 <div class="sales-card">
-                    <img src="../images/JON WOLD.jpg" alt="">
+                    <img src="../images/JON WOLD.jpg" alt="portrait of jon wold">
                     <div class="people-content">
                         <h3>Jon Wold</h3>
                         <h4>Outside Sales</h4>
@@ -321,7 +323,7 @@
                     </div>
                 </div>
                 <div class="sales-card">
-                    <img src="../images/BILLY OWEN (2).jpg" alt="">
+                    <img src="../images/BILLY OWEN (2).jpg" alt="portrait of billy owen">
                     <div class="people-content">
                         <h3>Billy Owen</h3>
                         <h4>Outside Sales</h4>
@@ -333,7 +335,7 @@
                     </div>
                 </div>
                 <div class="sales-card">
-                    <img src="../images/DAVE PUGSLEY.jpg" alt="">
+                    <img src="../images/DAVE PUGSLEY.jpg" alt="portrait of dave pugsley">
                     <div class="people-content">
                         <h3>Dave Pugsley</h3>
                         <h4>Outside Sales</h4>
@@ -370,10 +372,10 @@
                possimus.
             </p>
         </div>
-        <button class="solid about-content-button jobs-button"  type="button" onclick="location.href='html/jobs.html'">
+        <button class="solid jobs-button"  type="button" onclick="location.href='jobs.html'">
             VIEW JOBS
         </button>
-        <div class="clippy-sales"></div>
+        <div aria-hidden="true" class="clippy-sales"></div>
     </section>
 
     <!-- ============================================ -->
@@ -383,7 +385,7 @@
     <section id="contact">
         <div class="contact-group container">
             <h2>Questions? Get in touch today.</h2>
-            <button class="solid about-content-button contact-button"  type="button" onclick="location.href='html/contact.html'">
+            <button class="solid about-content-button contact-button"  type="button" onclick="location.href='contact.html'">
                 CONTACT VCS
             </button>
         </div>
@@ -396,7 +398,7 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-item">
-                <img src="/images/current-logo.png" alt="logo" width="250" height="90">
+                <img src="/images/current-logo.png" alt="valley construction logo" width="250" height="90">
                 <p class="first-p"> 
                     Here at Valley Construction Supply we believe that the construction industry is a relationship 
                     business and that our customers deserve personalized, hands-on customer service 
@@ -404,21 +406,21 @@
             </div>
             <div class="footer-item">
                 <h3>Quick Links</h3>
-                <div class="item-line"></div>
-                <a href="html/services">Services</a>
-                <a href="html/contact">Sales Team</a>
-                <a href="html/about.html">About</a>
-                <a href="html/products.html">Products</a>
-                <a href="html/rebar-fabrication.html">Rebar Fabrication</a>
-                <a href="html/contact.html">Contact</a>
+                <div aria-hidden="true" class="item-line"></div>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Sales Team</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="rebar-fabrication.html">Rebar Fabrication</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-item">
                 <h3>Address</h3>
-                <div class="item-line"></div>
+                <div aria-hidden="true" class="item-line"></div>
 
                 <div class="location footer-location2">
                     <div class="icon valley-footer-icon">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
                     </div>
                     <div class="footer-location-info">
                         <p>234 Stewart Rd SE</p>
@@ -428,7 +430,7 @@
 
                 <div class="location footer-location2">
                     <div class="icon valley-footer-icon">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
                     </div>
                     <div class="footer-location-info">
                         <p>4806 56th Pl NE</p>
@@ -438,11 +440,11 @@
             </div>
             <div class="footer-item">
                 <h3>Contact</h3>
-                <div class="item-line"></div>
+                <div aria-hidden="true" class="item-line"></div>
 
                 <div class="footer-location location">
                     <div class="icon valley-footer-icon">
-                        <i class="fas fa-phone"></i>
+                        <i aria-hidden="true" class="fas fa-phone"></i>
                     </div>
                     <div class="footer-location-info">
                         <p class="uppercase">Marysville, WA</p>
@@ -452,7 +454,7 @@
 
                 <div class="location footer-location">
                     <div class="icon valley-footer-icon">
-                        <i class="fas fa-phone"></i>
+                        <i aria-hidden="true" class="fas fa-phone"></i>
                     </div>
                     <div class="footer-location-info">
                         <p class="uppercase">Pacific, WA</p>
@@ -462,7 +464,7 @@
             </div>
         </div>
         <div class="branding">
-            <div class="branding-line"></div>
+            <div aria-hidden="true" class="branding-line"></div>
             <p>Designed By <span><a href="">Oak Harbor Web Designs</a></span></p>
             <p>&copy Copyright 2019</p>
         </div>

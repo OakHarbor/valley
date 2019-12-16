@@ -252,7 +252,7 @@ i.fas.fa-chevron-right {
     -webkit-clip-path: polygon(0 90%, 0 100%, 100% 100%, 100% 90%, 50% 100%);
             clip-path: polygon(0 90%, 0 100%, 100% 100%, 100% 90%, 50% 100%);
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
 }
 
 /* 

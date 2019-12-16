@@ -947,7 +947,8 @@ nav img {
     .about-li .icon-drop {
         position: relative;
         padding: 0;
-        right: 0;
+        right: 20px;
+        top: 0;
     }
 
     .about-li:hover .sub1 {
@@ -967,7 +968,8 @@ nav img {
     .services-li .icon-drop {
         position: relative;
         padding: 0;
-        right: 0;
+        right: 20px;
+        top: 0;
     }
 
     .services-li:hover .sub2 {
@@ -988,7 +990,8 @@ nav img {
     .contact-li .icon-drop {
         position: relative;
         padding: 0;
-        right: 0;
+        right: 20px;
+        top: 0;
     }
 
     .contact-li:hover .sub3 {
