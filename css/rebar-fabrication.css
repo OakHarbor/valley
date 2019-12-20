@@ -8,7 +8,7 @@
 
 #landing-page {
     min-height: 300px;
-    background:url("../images/rebar-2.jpg");
+    background:url("../images/cement.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +60,7 @@
 <--- -------------------------- -*/
 
 #about-rebar img {
-    width: 100%;
+    width: 50%;
 }
 
 .rebar-group h2 {
@@ -84,7 +84,7 @@
     background: var(--primary);
     width: 50px;
     height: 2px;
-    left: 155px;
+    left: 205px;
     top: 60px;
 }
 
@@ -94,7 +94,7 @@
     background: var(--primary);
     width: 30px;
     height: 2px;
-    left: 155px;
+    left: 205px;
     top: 69px;
 }
 
@@ -111,7 +111,7 @@
 <--- -------------------------- -*/
 
 #rebar-stats {
-    background:url("../images/rebar-3.jpg");
+    background:url("../images/concrete-wall.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,11 +124,27 @@
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .85;
+    opacity: .7;
 }
 
 .st-top {
     padding-top: 50px;
+}
+
+#rebar-stats h2 {
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 30px;
+    margin-top: 0;
+    position: relative;
+    padding-top: 100px;
+    line-height: 1em;
+    color: #f5f3f3;
+    text-align: center !important;
+}
+
+#rebar-stats h2 span {
+    color: var(--primary);
 }
 
 .stat-item {
@@ -210,14 +226,15 @@
 
 .card-info h3 {
     font-size: 1.5em;
+    padding: 0;
 }
 
 .card-info p {
     margin-bottom: 40px;
+    padding: 0;
 }
 
 .card-info button {
-    margin-left: 20px;
     margin-bottom: 50px;
 }
 
@@ -227,6 +244,7 @@
 
 #promotions img {
     width: 100%;
+    padding-top: 20px;
 }
 
 .contact-info h2 {
@@ -307,7 +325,7 @@
     <--- -------------------------- -*/
 
     #rebar-stats {
-        height: 1300px;
+        height: 1250px;
     }
 
     #rebar-stats h2 {
@@ -365,30 +383,49 @@
     <--- -------------------------- -*/
 
     .card {
-        top: -200px;
+        width: 700px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 0;
+        top: -190px;
+        margin: auto;
     }
 
-    .contact-info {
-        padding-top: 650px;
+    #promotions img {
+        width: 50%;
+        padding: 0;
     }
 
-    .contact-info h2 {
-        font-size: 35px;
-        text-align: left;
+    .card-info {
+        width: 50%;
     }
 
     .card-info h3 {
-        font-size: 2.188em;
+        margin-top: 15px;
+        font-size: 1.563em;
         text-transform: uppercase;
-        padding: 0 30px;
+        padding: 0 20px;
     }
 
     .card-info p {
-        padding: 0 30px;
+        padding: 0 20px;
+        margin-bottom: 20px;
     }
 
     .card-info button {
-        margin-left: 30px;
+        margin: 0 auto 25px 20px;
+    }
+
+    .contact-info {
+        padding-top: 250px;
     }
 
     .contact-info-group {
@@ -448,7 +485,7 @@
         font-size: 3.438em;
         width: 550px;
         padding: 0 20px;
-        text-align: center;
+        text-align: left;
     }
 
     /*-- -------------------------- -->
@@ -459,6 +496,9 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -471,10 +511,16 @@
 
     #about-rebar img {
         width: 400px;
+        height: 650px;
     }
 
     .rebar-group {
         width: 620px;
+    }
+
+    .rebar-group h2:before,
+    .rebar-group h2:after {
+        left: 200px;
     }
 
     /*-- -------------------------- -->
@@ -553,8 +599,9 @@
         top: -190px;
     }
 
-    .card img {
-        width: 550px !important;
+    #promotions img {
+        width: 550px;
+        padding-top: 0;
     }
 
     .card-info {
@@ -572,7 +619,7 @@
     }
 
     .contact-info {
-        padding-top: 400px;
+        padding: 0;
     }
 
     .contact-info h2 {
@@ -602,6 +649,8 @@
             -ms-flex-align: center;
                 align-items: center;
         padding-bottom: 100px;
+        padding-top: 300px;
+        height: auto;
     }
 
     .clippy-sales {

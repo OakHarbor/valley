@@ -420,6 +420,15 @@ html, body {
     margin: 40px 0 0 0;
 }
 
+.job-button {
+    background: var(--primary);
+    border: none;
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0;
+    height: 40px;
+}
+
 .jobs-button {
     margin: 50px auto 80px auto;
 }
@@ -767,6 +776,7 @@ html, body {
 
     #mission {
         height: 450px;
+        background-attachment: fixed;
     }
 
     #mission h2 {
@@ -967,6 +977,11 @@ html, body {
         width: 400px;
         margin: 10px;
         display: inline-block;
+    }
+
+    .job-button {
+        width: 40%;
+        margin: 10px;
     }
     
 

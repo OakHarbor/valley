@@ -1,0 +1,150 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+/*-- -------------------------- -->
+<---           LANDING          -->
+<--- -------------------------- -*/
+
+#landing-page {
+    min-height: 300px;
+    background:url("../images/Random\ 2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.landing-group {
+    padding: 0;
+    margin: auto;
+    margin-right: auto;
+}
+
+.landing-text h1 {
+    padding-top: 0;
+    padding-left: 20px;
+    margin: 40px auto;
+    font-size: 30px;
+    border-left: 5px solid var(--primary);
+    text-align: left;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 280px;
+}
+
+.clippy-desktop {
+    height: 80px;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    -webkit-clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+            clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+/*-- -------------------------- -->
+<---       JOB DESCRIPTION      -->
+<--- -------------------------- -*/
+
+#job-description img {
+    margin: 40px 0 30px 0;
+}
+
+#job-description h2 {
+    font-size: 24px;
+}
+
+#job-description p,
+#job-description ul,
+#job-description button {
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    /*-- -------------------------- -->
+    <---          LANDING           -->
+    <--- -------------------------- -*/
+
+    h1:after,
+    h1:before {
+        display: none;
+    }
+
+    .landing-text h1 {
+        font-size: 45px;
+        width: auto;
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+
+    /*-- -------------------------- -->
+    <---          LANDING           -->
+    <--- -------------------------- -*/
+
+    .container {
+        max-width: 1100px;
+    }
+
+    .container2 {
+        max-width: 900px;
+        width: 900px;
+        margin: auto;
+    }
+
+    #landing-page {
+        min-height: 600px;
+        background-attachment: fixed;
+    }
+
+    .landing-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 400px;
+    }
+
+    .landing-text {
+        margin-top: 25px;
+        width: auto;
+    }
+
+    .landing-text h1 {
+        font-size: 3.438em;
+        width: 550px;
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    #job-description img {
+        width: 400px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    #job-description button {
+        margin-bottom: 100px;
+    }
+
+}

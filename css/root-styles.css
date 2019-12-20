@@ -317,7 +317,30 @@ button {
 }
 
 .active-menu {
-    border-bottom: 9px solid var(--primary);
+    color: var(--primary) !important;
+}
+
+.active-menu-main {
+    position: relative;
+}
+
+.active-menu-main:before {
+    content: '';
+    right: -15px;
+    top: -1px;
+    width: 5px;
+    height: 25px;
+    background: var(--primary);
+    position: absolute;
+}
+
+i.active-menu {
+    border-right: 5px solid var(--primary);
+    color: var(--primary) !important;
+}
+
+.active-sub-menu {
+    color: var(--primary) !important;
 }
 
 /*-- -------------------------- -->
@@ -480,7 +503,7 @@ nav img {
     height: auto !important;
     right: 0px;
     position: absolute;
-    top: -25px;
+    top: 15px;
     z-index: -1;
     text-align: left;
 }
@@ -488,7 +511,7 @@ nav img {
 .sub2.drop:before {
     content: '';
     position: absolute;
-    height: 140px;
+    height: 180px;
     width: 2px;
     right: 0;
     top: 55px;
@@ -496,7 +519,7 @@ nav img {
 }
 
 .services-li.drop {
-    height: 260px;
+    height: 300px;
 }
 
 .service-drop-link.drop {
@@ -881,6 +904,14 @@ nav img {
         -webkit-transition: .3s ease;
         -o-transition: .3s ease;
         transition: .3s ease;
+    }
+
+    .active-menu-main:before {
+        display: none;
+    }
+
+    i.active-menu {
+        border: none;
     }
 
     .about-li:hover .icon-drop {

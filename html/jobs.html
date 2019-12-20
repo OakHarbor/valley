@@ -16,7 +16,7 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/css/root-styles.css">
-    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/apply.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
     <!-- Fonts -->
@@ -35,7 +35,7 @@
     <!-- Top Navigation Bar  -->
     <div id="top-navbar">
         <div class="top-content container">
-            <img aria-hidden="true" class="valley-mobile-logo vcs-black" src="/images/vcs-black.png" alt="valley construction supply logo" height="80px">
+            <img aria-hidden="true" class="valley-mobile-logo vcs-black" src="/images/vcs-black.png" alt="valley construction logo" height="80px">
             <div class="top-nav-container">
                 <div class="location">
                     <div class="icon">
@@ -99,17 +99,10 @@
     </button>
     <nav class="container">
         <!-- Desktop Navigation -->
-        <img aria-hidden="true" class="valley-mobile-logo" src="images/current-logo.png" alt="valley construction supply logo" height="80px">
-        <img aria-hidden="true" class="valley-mobile-logo" src="images/vcs-black.png" alt="valley construction supply logo" height="80px">
         <div id="bottom-nav-bar" class="side-nav" class="container">
             <ul id="main-navigation" class="side-nav">
                 <li><a href="/index.html">HOME</a></li>
-                <li class="about-li"><a class="a-link active-menu" href="about.html">ABOUT</a><i class="fas fa-chevron-down about-dropdown icon-drop active-menu"></i>
-                    <ul class="sub-nav sub1">
-                        <li><a class="about-drop-link active-menu" href="jobs.html">JOBS</a></li>
-                        <li><a class="about-drop-link" href="about.html">ABOUT VCS</a></li>
-                    </ul>
-                </li>
+                <li class="about-li"><a class="a-link" href="about.html">ABOUT</a></li>
                 <li class="services-li"></i><a class="s-link" href="services.html">SERVICES</a><i class="fas fa-chevron-down service-dropdown icon-drop"></i>
                     <ul class="sub-nav sub2">
                         <li><a id="contact-width-change" class="service-drop-link"href="services.html">OUR SERVICES</a></li>
@@ -120,10 +113,11 @@
                 </li>
                 <li><a href="promotions.html">PROMOTIONS</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
-                <li class="contact-li"><a class="c-link" href="contact.html">CONTACT</a><i class="fas fa-chevron-down contact-dropdown icon-drop"></i>
+                <li class="contact-li"><a class="c-link active-menu" href="contact.html">CONTACT</a><i class="fas fa-chevron-down contact-dropdown icon-drop active-menu"></i>
                     <ul class="sub-nav sub3">
+                        <li><a class="about-drop-link" href="jobs.html">JOBS</a></li>
                         <li><a id="contact-width-change" class="contact-drop-link"href="contact.html">CONTACT VCS</a></li>
-                        <li><a id="contact-width-change" class="contact-drop-link" href="apply.html">APPLY FOR CREDIT</a></li>
+                        <li><a id="contact-width-change" class="contact-drop-link active-menu" href="apply.html">APPLY FOR CREDIT</a></li>
                     </ul>
                 </li>
             </ul>
@@ -137,21 +131,69 @@
 
 <main id="main-content">
 
-        <!-- ============================================ -->
-        <!--                   LANDING                    -->
-        <!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                   LANDING                    -->
+    <!-- ============================================ -->
 
-        <section id="landing-page">
-            <div class="landing-dark"></div>
-            <div class="container landing-group">
-                <div class="landing-text">
+    <section id="landing-page">
+        <div class="landing-dark"></div>
+        <div class="container landing-group">
+            <div class="landing-text">
 
-                    <h1>About Valley Construction Supply</h1>
-                    
-                </div>
+                <h1>LIST Credit Application</h1>
+                
             </div>
-            <div aria-hidden="true" class="clippy-desktop"></div>
-        </section>
+        </div>
+        <div aria-hidden="true" class="clippy-desktop"></div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--               CREDIT APPLICATION             -->
+    <!-- ============================================ -->
+
+    <section id="credit-app-google-doc-preview">
+        <div class="credit-container container">
+            <p>Please print and fill out the form and when you are done you can either scan it and email it to us, fax it, or mail it.
+            </p>
+            <ul class="app-list">
+                <li>Whether a business or a home owner/builder, billing information, and and physical
+                    address must be filled in under firm name.
+                </li>
+                <li>Tax exempt customers must send a copy of their RESELLER'S PERMIT issued from 
+                    the state.
+                </li>
+                <li>
+                    Make sure the second page is signed.
+                </li>
+                <li>
+                    Fax application back to 206-343-5840, but please mail the application as we 
+                    need the original signiature on file.
+                </li>
+            </ul>
+            <p class="bottom-p">If you have any questions please call 253-447-2251.  Thank you for your inquiry and we look forward
+                to doing business with you.
+            </p>
+            <button class="solid app-button" type="submit" onclick="window.open('/images/JOB APPLICATION.pdf')">
+                CLICK TO DOWNLOAD
+            </button>
+            <iframe src="https://drive.google.com/file/d/0By9ZvZAIGxnxa0dhUkxrQkdaTi1PR2lEZVNVX216QzVQX2V3/preview" width="640" height="780"></iframe>
+        </div>
+        <div aria-hidden="true" class="clippy-sales"></div>
+    </section>
+
+    <!-- ============================================ -->
+	<!--                    CONTACT                   -->
+    <!-- ============================================ -->
+
+    <section id="contact">
+        <div class="contact-group container">
+            <h2>Questions? Get in touch today.</h2>
+            <button class="solid about-content-button contact-button"  type="button" onclick="location.href='contact.html'">
+                CONTACT VCS
+            </button>
+        </div>
+    </section>
+
 </main>
 
 <footer>
@@ -159,7 +201,7 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-item">
-                <img src="/images/current-logo.png" alt="valley construction supply logo" width="250" height="90">
+                <img src="/images/current-logo.png" alt="valley construction logo" width="250" height="90">
                 <p class="first-p"> 
                     Here at Valley Construction Supply we believe that the construction industry is a relationship 
                     business and that our customers deserve personalized, hands-on customer service 

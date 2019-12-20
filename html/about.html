@@ -102,7 +102,7 @@
         <div id="bottom-nav-bar" class="side-nav" class="container">
             <ul id="main-navigation" class="side-nav">
                 <li><a href="/index.html">HOME</a></li>
-                <li class="about-li"><a class="a-link active-menu" href="about.html">ABOUT</a><i class="fas fa-chevron-down about-dropdown icon-drop active-menu"></i>
+                <li class="about-li"><a class="a-link active-menu active-menu-main" href="about.html">ABOUT</a><i class="fas fa-chevron-down about-dropdown icon-drop active-menu"></i>
                     <ul class="sub-nav sub1">
                         <li><a class="about-drop-link" href="jobs.html">JOBS</a></li>
                         <li><a class="about-drop-link" href="about.html">ABOUT VCS</a></li>
@@ -363,9 +363,14 @@
                 inventore ex? Facilis doloremque minus mollitia aliquam quam.
             </h3>
 
-            <p class="job">Inside Sales</p>
-            <p class="job">Outside Sales</p>
-            <p class="job">Warehouse/Driver</p>
+            <button class="job-button" type="button" onclick="location.href='inside-sales.html'">
+                Inside Sales</button>
+            <button class="job-button" type="button" onclick="location.href='outside-sales.html'">
+                Outside Sales</button>
+            <button class="job-button" type="button" onclick="location.href='warehouse.html'">
+                Warehouse</button>
+            <button class="job-button" type="button" onclick="location.href='warehouse-driver.html'">
+                Warehouse/Driver</button>
 
             <p class="job-bottom-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum ut ex dolor inventore dolorem? Repellendus 
                ipsum vel commodi vero beatae corrupti numquam optio quaerat dignissimos, eaque excepturi quisquam soluta 
@@ -373,7 +378,7 @@
             </p>
         </div>
         <button class="solid jobs-button"  type="button" onclick="location.href='jobs.html'">
-            VIEW JOBS
+            APPLY NOW
         </button>
         <div aria-hidden="true" class="clippy-sales"></div>
     </section>
