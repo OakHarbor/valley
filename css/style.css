@@ -2515,7 +2515,7 @@ i.fas.fa-chevron-right {
     }
 
     .gallery-button {
-        margin: 20px auto 100px auto !important;
+        margin: 20px auto 120px auto !important;
         display: block;  
         width: auto;
         font-weight: 900;
@@ -2623,7 +2623,7 @@ i.fas.fa-chevron-right {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .partner-showcase h2 {
@@ -2654,7 +2654,6 @@ i.fas.fa-chevron-right {
     .showcase-button {
         margin-left: 0 !important;
         margin-bottom: 0 !important;
-        width: auto;
     }
 
     .partners-logo {
@@ -2759,7 +2758,7 @@ i.fas.fa-chevron-right {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        padding-bottom: 100px !important;
+        padding-bottom: 70px !important;
     }
 
     .sales-card {
