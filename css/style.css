@@ -1993,8 +1993,17 @@ i.fas.fa-chevron-right {
         margin-left: 50px;
     }
 
+    .numbers-item:nth-child(2) {
+        width: 190px;
+    }
+
     .numbers-item h4 {
         font-weight: normal;
+    }
+
+    .numbers-width {
+        margin: 0 !important;
+        width: 140px !important;
     }
 
     .location {
@@ -2121,6 +2130,7 @@ i.fas.fa-chevron-right {
     .icon-group {
         height: 50px;
         margin-right: 22px;
+        width: 160px;
     }
 
     .icon-group:last-child {
@@ -2129,6 +2139,7 @@ i.fas.fa-chevron-right {
 
     .icon-group i {
         margin-right: 13px;
+        width: 34px !important;
     }
 
     .icon-group h3 {
