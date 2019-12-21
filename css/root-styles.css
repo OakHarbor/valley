@@ -978,8 +978,8 @@ nav img {
 
     /* about sub menu */
 
-    .about-li a, .services-li a, .contact-li a {
-        padding-left: 20px;
+    #main-navigation li a {
+        padding-left: 15px;
     }
     
     .about-li .icon-drop {
