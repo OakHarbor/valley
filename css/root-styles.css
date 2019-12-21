@@ -978,7 +978,7 @@ nav img {
 
     /* about sub menu */
 
-    .about-li, .services-li, .contact-li {
+    .about-li a, .services-li a, .contact-li a {
         padding-left: 20px;
     }
     
