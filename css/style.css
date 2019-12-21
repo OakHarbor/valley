@@ -2224,6 +2224,7 @@ i.fas.fa-chevron-right {
     }
 
     .service-topper {
+        width: 1050px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2243,9 +2244,12 @@ i.fas.fa-chevron-right {
     .service-topper img {
         width: 500px;
         height: auto;
+        margin-bottom: 0;
     }
 
     .service-card-container {
+        width: 1050px;
+        margin: auto;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2265,8 +2269,10 @@ i.fas.fa-chevron-right {
         margin-bottom: 0;
     }
 
-    #service button {
+    .service-button {
         width: auto;
+        margin: auto;
+        margin-top: 40px;
     }
 
 
