@@ -4,9 +4,13 @@
 <---           LANDING          -->
 <--- -------------------------- -*/
 
+html, body {
+    overflow-x: hidden;
+}
+
 #landing-page {
     min-height: 300px;
-    background:url("../images/Random\ 2.jpg");
+    background:url("../images/cement.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,7 +39,7 @@
 .landing-text h1 {
     padding-top: 0;
     margin: 40px auto;
-    font-size: 30px;
+    font-size: 1.875em;
     border-left: 5px solid var(--primary);
     text-align: right;
     -webkit-box-sizing: border-box;
@@ -53,6 +57,189 @@
             clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
+/*-- -------------------------- -->
+<---            LIST            -->
+<--- -------------------------- -*/
+
+#tools-list {
+    position: relative;
+}
+
+.wrenches {
+    position: absolute;
+    width: 300px;
+    right: -130px;
+    top: 200px;
+}
+
+p {
+    margin: 0;
+}
+
+.location-name {
+    font-size: 1.5em;
+    position: relative;
+}
+
+.location-name:before {    
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    height: 2px;
+    width: 250px;
+    bottom: -5px;
+}
+
+.h3-2:before {    
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    height: 2px;
+    width: 305px;
+    bottom: -5px;
+}
+
+.number {
+    margin-top: 10px;
+}
+
+.main-list {
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.list-header {
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    list-style: none;
+}
+
+#tools-list h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 80px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+#tools-list h2 span {
+    color: var(--primary);
+    display: block;
+    line-height: 1em;
+}
+
+#tools-list h2:before {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 50px;
+    height: 2px;
+    left: 100px;
+    top: 10px;
+}
+
+#tools-list h2:after {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 30px;
+    height: 2px;
+    left: 100px;
+    top: 19px;
+}
+
+#tools-list ul li ul {
+    margin-bottom: 40px;
+}
+
+.list-body {
+    margin-top: 10px;
+}
+
+.list-body li {
+    font-weight: normal;
+    font-size: 1em !important;
+}
+
+.drainage {
+    position: relative;
+}
+
+.screw {
+    display: none;
+}
+
+/*-- -------------------------- -->
+<---          PARTNERS          -->
+<--- -------------------------- -*/
+
+#partners {
+    padding: 50px 0;
+}
+
+#partners h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#partners h2 span {
+    color: var(--primary);
+    display: block;
+    line-height: 1em;
+}
+
+#partners h2:before {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 50px;
+    height: 2px;
+    left: 115px;
+    top: 10px;
+}
+
+#partners h2:after {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 30px;
+    height: 2px;
+    left: 115px;
+    top: 19px;
+}
+
+.image-box {
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    border-left: 10px solid var(--primary);
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.31);
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.31);
+}
+
+#partners img {
+    width: 200px;
+    margin: 25px auto;
+}
+
+#contact {
+    position: relative;
+}
+
+.clippy-sales {
+    position: absolute;
+    top: -198px;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1024px) {
 
     /*-- -------------------------- -->
@@ -64,10 +251,133 @@
         display: none;
     }
 
+    #landing-page {
+        height: 400px;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    .landing-group {
+        margin-left: 0;
+    }
+
     .landing-text h1 {
-        font-size: 45px;
-        width: auto;
+        font-size: 2.813em;
+        width: 100%;
         padding: 0 20px;
+        margin-left: 20%;
+        text-align: center;
+    }
+
+    /*-- -------------------------- -->
+    <---            LIST            -->
+    <--- -------------------------- -*/
+
+    #tools-list {
+        position: relative;
+    }
+
+    .drainage {
+        position: relative;
+    }
+    
+    .screw {
+        display: block;
+        position: absolute;
+        top: 270px;
+        left: 20px;
+        width: 150px;
+    }
+
+    .location-group {
+        float: left;
+        width: 300px;
+        height: 162px;
+    }
+
+    .landing-group2 {
+        float: right;
+        width: 300px;
+        height: 162px;
+    }
+
+    .wrenches {
+        width: 700px;
+        position: absolute;
+        top: -50px;
+        right: -250px;
+    }
+
+    .h3-2 {
+        display: inline-block;
+        width: 300px !important;
+        margin-top: 40px;
+    }
+
+    .location-group2 {
+        width: 300px;
+    }
+
+    .main-list {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 500px;
+        margin: auto;
+    }
+
+    .list-header {
+        height: auto;
+        width: 240px;
+    }
+
+    .last li {
+        width: 200px;
+        list-style: circle;
+    }
+
+    .last {
+        width: 100%;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+
+    /*-- -------------------------- -->
+    <---          PARTNERS          -->
+    <--- -------------------------- -*/
+
+    #partners {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 100px;
+    }
+
+    #partners h2 {
+        display: block;
+        width: 100%;
+    }
+
+    #partners h2:before {
+        left: 175px;
+    }
+    
+    #partners h2:after {
+        left: 175px;
+    }
+
+    .image-box {
+        margin: 40px;
+        max-width: 770px;
     }
 
 }
@@ -78,13 +388,22 @@
     <---          LANDING           -->
     <--- -------------------------- -*/
 
+    .container {
+        max-width: 1100px;
+    }
+
+    #landing-page {
+        min-height: 500px;
+        background-attachment: fixed;
+    }
+
     .landing-group {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -93,12 +412,102 @@
 
     .landing-text {
         margin-top: 25px;
+        width: auto;
     }
 
     .landing-text h1 {
-        font-size: 55px;
+        font-size: 3.438em;
         width: 550px;
         padding: 0 20px;
+        text-align: left;
+    }
+
+    /*-- -------------------------- -->
+    <---            LIST            -->
+    <--- -------------------------- -*/
+
+    #tools-list {
+        margin-top: 100px;
+    }
+
+    .location-group {
+        display: inline-block;
+    }
+
+    .location-group2 {
+        display: inline-block;
+        float: right;
+        transform: translateX(-470px);
+    }
+
+    .main-list {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+    }
+
+    ul li {
+        width: 250px;
+    }
+
+    .wrenches {
+        width: 1200px;
+        top: 700px;
+        right: -500px;
+    }
+
+    /*-- -------------------------- -->
+    <---          PARTNERS          -->
+    <--- -------------------------- -*/
+
+    #partners {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 100px;
+        height: 1800px;
+    }
+
+    #partners h2 {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 50px;
+    }
+
+    #partners h2:before,
+    #partners h2:after {
+        left: 90px;
+    }
+
+    .image-box {
+        position: relative;
+        margin: 0;
+    }
+
+    .yellow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: .3s ease;
+    }
+
+    .yellow:hover  {
+        background: var(--primary);
+        opacity: .7;
+        transition: .3s ease;
+    }
+
+    .yellow:hover .image-box {
+        background: var(--primary);
+        opacity: 1;
+        transform: scale(1.2);
     }
 
 }
