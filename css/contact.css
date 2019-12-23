@@ -6,7 +6,7 @@
 
 #landing-page {
     min-height: 400px;
-    background:url("../images/Random\ 2.jpg");
+    background:url("/images/Random-2.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -560,7 +560,7 @@ form p{
 
     #landing-page {
         position: relative;
-        background:url("../images/Random\ 2.jpg");
+        background-attachment: fixed;
         background-size: cover;
         height: 550px;
     }
