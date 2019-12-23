@@ -823,10 +823,6 @@ form p{
         margin-bottom: 0px;
     }
 
-    .location-info p:last-child {
-        margin-bottom: 40px;
-    }
-
     .location-info svg {
         position: absolute;
         height: auto;
@@ -852,6 +848,10 @@ form p{
         margin-bottom: 50px;
         font-size: 25px;
         text-transform: uppercase;
+    }
+
+    .location-margin p:last-child {
+        margin-bottom: 40px;
     }
 
     .clippy {
@@ -891,7 +891,7 @@ form p{
 
     .contact-group h2 {
         margin-bottom: 0;
-        font-size: 33px;
+        font-size: 28px;
         text-align: center;
     }
 

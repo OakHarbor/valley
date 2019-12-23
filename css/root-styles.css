@@ -1578,6 +1578,10 @@ footer {
         margin-bottom: 10px;
     }
 
+    .footer-item a:hover {
+        color: var(--primary);
+    }
+
     .footer-item:first-child {
         display: -webkit-box;
         display: -ms-flexbox;
