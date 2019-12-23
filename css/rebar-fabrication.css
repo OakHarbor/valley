@@ -6,7 +6,7 @@
 
 #landing-page {
     min-height: 300px;
-    background:url("../images/cement.jpg");
+    background:url("../images/rebar-2.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,7 +109,7 @@
 <--- -------------------------- -*/
 
 #rebar-stats {
-    background:url("../images/concrete-wall.jpg");
+    background:url("../images/rebar-3.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
