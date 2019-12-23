@@ -8,7 +8,7 @@
 
 #landing-page {
     position: relative;
-    background:url("../images/application.jpg");
+    background:url("/images/interview.jpg");
     background-size: cover;
     min-height: 400px;
     margin-bottom: 40px;
@@ -67,6 +67,19 @@ iframe {
     font-size: 1em;
 }
 
+.jobs-h3 {
+    padding-top: 30px;
+}
+
+.job-button {
+    background: var(--primary);
+    border: none;
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0;
+    height: 40px;
+}
+
 .app-button {
     margin: 50px auto;
 }
@@ -111,6 +124,22 @@ iframe {
 
     .clippy-sales {
         bottom: -1px;
+    }
+
+    .job-button {
+        width: 300px;
+    }
+
+    .jobs-h3 {
+        margin-top: 40px;
+    }
+
+    .jobs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 10px;
     }
 
 }
@@ -160,9 +189,29 @@ iframe {
         position: relative;
     }
 
+    .jobs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .job-button {
+        width: 350px;
+    }
+
+    .job-button:hover {
+        cursor: pointer;
+        opacity: .8;
+    }
+
     .credit-container {
         margin-top: 50px;
         width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .iframe {
@@ -176,7 +225,7 @@ iframe {
     }
 
     .app-button {
-        margin-bottom: 0;
+        margin: 70px auto 0 auto;
     }
 
     .clippy-sales {

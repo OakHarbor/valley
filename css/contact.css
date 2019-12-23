@@ -820,7 +820,11 @@ form p{
         font-size: 18px;
         position: relative;
         z-index: 5;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
+    }
+
+    .location-info p:last-child {
+        margin-bottom: 40px;
     }
 
     .location-info svg {

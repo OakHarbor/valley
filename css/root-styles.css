@@ -369,7 +369,7 @@ nav img:nth-child(2){
 .sub-nav li a {
     padding: 10px 20px;
     margin: 0;
-    width: 100px;
+    width: 150px;
 }
 
 .quote {
@@ -512,7 +512,7 @@ nav img {
 .sub2.drop:before {
     content: '';
     position: absolute;
-    height: 180px;
+    height: 150px;
     width: 2px;
     right: 0;
     top: 55px;
@@ -520,7 +520,7 @@ nav img {
 }
 
 .services-li.drop {
-    height: 300px;
+    height: 250px;
 }
 
 .service-drop-link.drop {
@@ -580,7 +580,7 @@ nav img {
 .sub3.drop:before {
     content: '';
     position: absolute;
-    height: 60px;
+    height: 120px;
     width: 2px;
     right: 0;
     top: 60px;
@@ -711,7 +711,7 @@ nav img {
 
     .side-nav {
         padding-right: 60px;
-        padding-top: 20px;
+        padding-top: 40px;
     }
 
     .side-nav ul li a {
@@ -736,6 +736,19 @@ nav img {
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
         width: 40px;
         height: 4px;
+    }
+
+    .services-li.drop {
+        height: 250px;
+        top: 0px;
+    }
+
+    .sub2.drop:before {
+        height: 180px;
+    }
+
+    .sub3.drop:before {
+        height: 130px;
     }
 
     /*-- -------------------------- -->

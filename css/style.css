@@ -634,12 +634,20 @@ i.fas.fa-chevron-right {
     position: relative;
 }
 
+.service-card:last-child {
+    margin-bottom: 50px;
+}
+
+.service-card-container {
+    margin-bottom: 50px;
+}
+
 .service-card h3 {
     text-transform: uppercase;
     font-size: 19px;
 }
 
-.service-card:last-child {
+.last-card {
     margin-bottom: 50px;
 }
 
@@ -850,7 +858,7 @@ i.fas.fa-chevron-right {
 
 .wey {
     position: absolute;
-    width: 300px !important;
+    width: 250px !important;
 }
 
 .yellow {
@@ -1325,7 +1333,7 @@ i.fas.fa-chevron-right {
 
     .service-topper {
         height: auto;
-        margin-bottom: 100px;
+        margin-bottom: 20px;
         padding-top: 100px;
     }
 
@@ -1335,6 +1343,17 @@ i.fas.fa-chevron-right {
 
     .service-topper p {
         width: 600px;
+    }
+
+    .service-card-container {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .service-card {
+        margin-bottom: 10px;
     }
 
     .service-card h3 {
@@ -1347,6 +1366,11 @@ i.fas.fa-chevron-right {
 
     .service-card:last-child {
         margin-bottom: 100px;
+    }
+
+    .service-button {
+        margin: auto;
+        margin-top: 60px;
     }
 
     /* 
@@ -2274,6 +2298,7 @@ i.fas.fa-chevron-right {
         width: auto;
         margin: auto;
         margin-top: 40px;
+        margin-bottom: 100px;
     }
 
 
@@ -2682,6 +2707,7 @@ i.fas.fa-chevron-right {
     .showcase-button {
         margin-left: 0 !important;
         margin-bottom: 0 !important;
+        transform: translateX(-130px);
     }
 
     .partners-logo {
