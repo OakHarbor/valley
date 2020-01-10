@@ -1016,7 +1016,7 @@ i.fas.fa-chevron-right {
 
 .sales-card img {
     width: 260px;
-    height: 350px;
+    height: auto;
     border-bottom: 5px solid var(--primary);
     margin-bottom: 10px;
 }
