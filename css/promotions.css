@@ -397,6 +397,7 @@ ul li {
     }
 
     .landing-text {
+        width: 932px !important;
         margin-top: 25px;
         width: auto;
         -webkit-transform: translateY(-14px);
@@ -416,6 +417,7 @@ ul li {
 
     .landing-text h2 {
         padding-left: 0;
+        width: 700px;
     }
 
     /*-- -------------------------- -->
