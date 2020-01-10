@@ -1,4 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
 /*-- -------------------------- -->
 <---           LANDING          -->
@@ -685,7 +684,9 @@ html, body {
     }
 
     .landing-text {
-        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+            -ms-transform: translateY(30px);
+                transform: translateY(30px);
     }
 
     .landing-text h1 {
