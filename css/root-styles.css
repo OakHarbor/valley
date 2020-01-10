@@ -1653,8 +1653,7 @@ footer {
     }
 
     .branding a {
-        display: block;
-        width: 100%;
+        display: inline-block;
     }
 
     .branding a {
