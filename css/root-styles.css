@@ -1619,11 +1619,14 @@ footer {
 
     .footer-location-info p:first-child {
         font-weight: bold;
-        text-transform: uppercase;
     }
 
     .location {
         transform: translateX(-40px);
+    }
+
+    .phone-icon {
+        transform: translateY(-8px);
     }
 
     .footer-location {
