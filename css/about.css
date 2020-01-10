@@ -685,7 +685,7 @@ html, body {
     }
 
     .landing-text {
-        transform: translateY(40px);
+        transform: translateY(30px);
     }
 
     .landing-text h1 {
