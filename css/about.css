@@ -681,7 +681,7 @@ html, body {
         background-attachment: fixed;
         max-height: 550px;
         height: 550px;
-        min-height: 580px;
+        min-height: 550px;
     }
 
     .landing-text {
