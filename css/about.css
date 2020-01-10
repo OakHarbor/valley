@@ -684,9 +684,9 @@ html, body {
     }
 
     .landing-text {
-        -webkit-transform: translateY(30px);
-            -ms-transform: translateY(30px);
-                transform: translateY(30px);
+        -webkit-transform: translateY(16px);
+            -ms-transform: translateY(16px);
+                transform: translateY(16px);
     }
 
     .landing-text h1 {
