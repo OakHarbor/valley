@@ -378,7 +378,7 @@ ul li {
     }
 
     #landing-page {
-        min-height: 600px;
+        min-height: 550px;
         background-attachment: fixed;
         margin-bottom: 100px;
     }
@@ -402,8 +402,8 @@ ul li {
     }
 
     .landing-text h1 {
-        font-size: 3.438em;
-        width: 550px;
+        font-size: 60px;
+        width: 600px;
         padding: 0 20px;
         text-align: center;
     }

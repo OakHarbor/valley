@@ -211,7 +211,7 @@ html, body {
 #mission h2 {
     margin: 0;
     padding-top: 35px;
-    color: #f3f3f3;
+    color: var(--primary);
     font-size: 1.25em;
     position: relative;
     display: -webkit-box;
@@ -223,18 +223,8 @@ html, body {
     padding-left: 40px;
 }
 
-#mission h2:before {
-    content: '';
-    position: absolute;
-    background: #f3f3f3;
-    height: 10px;
-    width: 10px;
-    left: 15px;
-    border-radius: 50%;
-}
-
 #mission p {
-    color: var(--primary);
+    color: #f5f3f3;
     padding-left: 70px;
     position: relative;
     z-index: 1;
@@ -689,6 +679,17 @@ html, body {
 
     #landing-page {
         background-attachment: fixed;
+        max-height: 550px;
+        height: 550px;
+        min-height: 580px;
+    }
+
+    .landing-text {
+        transform: translateY(40px);
+    }
+
+    .landing-text h1 {
+        font-size: 60px;
     }
 
 
