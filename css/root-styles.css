@@ -1570,8 +1570,8 @@ footer {
     .footer-item {
         height: 280px;
         width: auto;
-        max-width: 220px;
-        min-width: 220px;
+        max-width: 190px;
+        min-width: 190px;
         position: relative;
     }
 
