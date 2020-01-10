@@ -363,6 +363,10 @@ ul li {
     <---          LANDING           -->
     <--- -------------------------- -*/
 
+    .image-box img {
+        display: none;
+    }
+
     #landing-page {
         height: 550px;
     }
