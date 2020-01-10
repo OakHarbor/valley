@@ -991,8 +991,8 @@ nav img {
     }
 
     .sub1 {
-        top: -10px;
-        z-index: -1;;
+        top: 20px;
+        z-index: -1;
     }
 
     .sub1 li:first-child {
@@ -1017,15 +1017,15 @@ nav img {
     }
 
     .sub2 {
-        top: -10px;
-        z-index: -1;;
+        top: 30px !important;
+        z-index: -1;
     }
 
     .sub2 li:nth-child(2) {
         padding-top: 30px;
     }
 
-    /*services sub menu */
+    /*contact sub menu */
     .services-li .icon-drop {
         position: relative;
         padding: 0;
@@ -1038,8 +1038,9 @@ nav img {
     }
 
     .sub3 {
-        top: -10px;
+        top: 10px;
         z-index: -1;
+        display: block;
     }
 
     .sub3 li:first-child {
