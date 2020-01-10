@@ -693,6 +693,10 @@ html, body {
         font-size: 60px;
     }
 
+    .clippy-desktop {
+        bottom: -5px;
+    }
+
 
     /*-- -------------------------- -->
     <---        COMMUNITIES         -->
