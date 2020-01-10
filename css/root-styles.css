@@ -999,7 +999,7 @@ nav img {
         padding-top: 50px;
     }
 
-    /* about sub menu */
+    /* services sub menu */
 
     #main-navigation li a {
         padding-left: 15px;
@@ -1040,7 +1040,6 @@ nav img {
     .sub3 {
         top: 10px;
         z-index: -1;
-        display: block;
     }
 
     .sub3 li:first-child {
