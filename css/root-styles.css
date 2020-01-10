@@ -1560,7 +1560,7 @@ footer {
     }
 
     .first-p {
-        padding-top: 42px;
+        padding-top: 43px;
         width: 300px !important;
     }
 
@@ -1620,6 +1620,10 @@ footer {
     .footer-location-info p:first-child {
         font-weight: bold;
         text-transform: uppercase;
+    }
+
+    .location {
+        transform: translateX(-40px);
     }
 
     .footer-location {
