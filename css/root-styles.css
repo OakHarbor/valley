@@ -1560,7 +1560,7 @@ footer {
     }
 
     .first-p {
-        padding-top: 43px;
+        padding-top: 45px;
         width: 300px !important;
     }
 
@@ -1650,6 +1650,18 @@ footer {
 
     .valley-footer-icon i {
         width: 23px;
+    }
+
+    .branding {
+        margin-bottom: 50px;
+    }
+
+    .branding-line {
+        margin-bottom: 50px;
+    }
+
+    .branding p {
+        line-height: 1.7em;
     }
 
     .branding a {
