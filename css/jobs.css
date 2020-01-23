@@ -30,7 +30,7 @@
 } 
 
 /*-- -------------------------- -->
-<---         CREDIT APP         -->
+<---           JOB APP          -->
 <--- -------------------------- -*/
 
 #credit-app-google-doc-preview {
@@ -45,6 +45,10 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+}
+
+p span {
+    font-weight: 900;
 }
 
 .clippy-sales {
