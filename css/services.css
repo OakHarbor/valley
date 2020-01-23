@@ -130,6 +130,22 @@ html, body {
     margin: 0 25px 400px 0;
 }
 
+.lateral {
+    margin-bottom: 450px !important;
+}
+
+.tools {
+    margin-bottom: 250px !important;
+}
+
+.seismic {
+    margin-bottom: 250px !important;
+}
+
+.wood {
+    margin-bottom: 250px !important;
+}
+
 .clippy-sales {
     bottom: -1px;
 }
@@ -191,6 +207,8 @@ html, body {
     opacity: .8;
     height: 100%;
     width: 100%;
+    left: 0;
+    top: 0;
 }
 
 .rebar-group {
@@ -371,6 +389,14 @@ html, body {
         margin-bottom: 400px;
         margin-right: 15px;
         width: 50px;
+    }
+
+    .tools {
+        margin-bottom: 300px !important;
+    }
+
+    .seismic {
+        margin-bottom: 300px !important;
     }
 
     .clippy-sales {
