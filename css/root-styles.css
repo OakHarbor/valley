@@ -1150,7 +1150,6 @@ nav img {
     .location-info p:nth-child(2) {
         margin: 0;
         font-size: 0.8125em;
-        color: 
     }
 
     /*-- -------------------------- -->
@@ -1313,7 +1312,7 @@ footer {
 }
 
 .footer-location-info p {
-    width: 138px;
+    width: 155px;
 }
 
 .footer-item h3 {
@@ -1460,9 +1459,9 @@ footer {
         font-size: 1.25em;
     }
 
-        .footer-item {
-            width: 250px;
-        }
+    .footer-item {
+        width: 250px;
+    }
 
 }
 
