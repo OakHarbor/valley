@@ -9,7 +9,7 @@ body, html {
 }
 
 .container {
-    padding: 0 5%;
+    padding: 0 30px;
 }
 
 a, h1, h2, h3, h4, h5, h6 {
@@ -737,8 +737,8 @@ nav img {
     }
 
     .services-li.drop {
-        height: 250px;
-        top: 0px;
+        height: 290px;
+        top: 55px;
     }
 
     .sub2.drop:before {
@@ -746,7 +746,10 @@ nav img {
     }
 
     .sub3.drop:before {
-        height: 130px;
+        height: 110px;
+    }
+
+    .contact-li {
     }
 
     /*-- -------------------------- -->

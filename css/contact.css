@@ -361,6 +361,8 @@ form p{
             justify-content: center;
     height: 150px;
     position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .clippy-form {
@@ -388,8 +390,9 @@ form p{
 }
 
 .contact-group h2 {
-    margin-top: 0;
     font-size: 20px;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .contact-group button {
@@ -445,6 +448,7 @@ form p{
         width: 550px;
         padding: 0 20px;
         margin: 0;
+        text-align: left;
     }
 
     #landing-page p {
@@ -527,6 +531,7 @@ form p{
 
     #contact-bottom{
         height: 250px;
+        padding: 0;
     }
 
     .contact-group {
@@ -541,7 +546,7 @@ form p{
     }
 
     .contact-group h2 {
-        margin-bottom: 30px;
+        margin-bottom: 0;
         font-size: 25px;
     }
 
