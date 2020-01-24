@@ -295,6 +295,7 @@ ul li {
     .image-box img {
         height: 100%;
         width: auto;
+        left: 0;
     }
 
     .image-box:before,
