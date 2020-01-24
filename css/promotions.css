@@ -268,6 +268,10 @@ ul li {
     <---          LANDING           -->
     <--- -------------------------- -*/
 
+    #landing-page {
+        min-height: 500px;
+    }
+
     h1:after,
     h1:before {
         display: none;
