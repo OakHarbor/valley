@@ -358,7 +358,7 @@ i.fas.fa-chevron-right {
 */
 
 #icons {
-    height: 1010px;
+    height: 1210px;
     background:url("../images/construction.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -925,6 +925,13 @@ i.fas.fa-chevron-right {
     margin-bottom: 0;
     width: 70%;
     height: auto;
+    transition: all .2s ease;
+}
+
+.partners-logo img:hover {
+    cursor: pointer;
+    opacity: .7;
+    transition: all .2s ease;
 }
 
 .partners-logo img:last-child {
@@ -1203,6 +1210,10 @@ i.fas.fa-chevron-right {
                                About
     */
 
+    #icons {
+        height: 1100px;
+    }
+
     .about-content {
         top: -350px;
     }
@@ -1210,6 +1221,10 @@ i.fas.fa-chevron-right {
     .about-content h2 {
         font-size: 50px;
         padding-top: 50px;
+    }
+
+    .about-content h3 {
+        width: 500px;
     }
 
     .numbers {
@@ -1401,170 +1416,6 @@ i.fas.fa-chevron-right {
 
     .gallery-topper h2 {
         margin-top: 0;
-    }
-
-    .gallery {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        -ms-grid-rows: 1fr 20px 1fr 20px 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        height: 450px;
-        width: 100%;
-        padding: 0;
-        margin: 0px auto;
-        grid-gap: 20px;
-        position: relative;
-    }
-
-    .gallery > *:nth-child(1) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;
-    }
-
-    .gallery > *:nth-child(2) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 3;
-    }
-
-    .gallery > *:nth-child(3) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 5;
-    }
-
-    .gallery > *:nth-child(4) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 7;
-    }
-
-    .gallery > *:nth-child(5) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 9;
-    }
-
-    .gallery > *:nth-child(6) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 11;
-    }
-
-    .gallery > *:nth-child(7) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 1;
-    }
-
-    .gallery > *:nth-child(8) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 3;
-    }
-
-    .gallery > *:nth-child(9) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 5;
-    }
-
-    .gallery > *:nth-child(10) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 7;
-    }
-
-    .gallery > *:nth-child(11) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 9;
-    }
-
-    .gallery > *:nth-child(12) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 11;
-    }
-
-    .gallery > *:nth-child(13) {
-        -ms-grid-row: 5;
-        -ms-grid-column: 1;
-    }
-
-    .gallery > *:nth-child(14) {
-        -ms-grid-row: 5;
-        -ms-grid-column: 3;
-    }
-
-    .gallery > *:nth-child(15) {
-        -ms-grid-row: 5;
-        -ms-grid-column: 5;
-    }
-
-    .gallery > *:nth-child(16) {
-        -ms-grid-row: 5;
-        -ms-grid-column: 7;
-    }
-
-    .gallery > *:nth-child(17) {
-        -ms-grid-row: 5;
-        -ms-grid-column: 9;
-    }
-
-    .gallery > *:nth-child(18) {
-        -ms-grid-row: 5;
-        -ms-grid-column: 11;
-    }
-
-    .gallery div {
-        background: #1a1a1a;
-    }
-
-    #img1 {
-        -ms-grid-column-span: 2;
-        grid-column: span 2;
-        position: relative;
-    }
-
-    #img2 {
-        -ms-grid-column-span: 2;
-        grid-column: span 2;
-        -ms-grid-row-span: 2;
-        grid-row: span 2;
-        position: relative;
-    }
-
-    #img3 {
-        -ms-grid-column-span: 2;
-        grid-column: span 2;
-        position: relative;
-    }
-
-    #img4 {
-        -ms-grid-column-span: 2;
-        grid-column: span 2;
-        -ms-grid-row-span: 2;
-        grid-row: span 2;
-        position: relative;
-    }
-
-    #img5 {
-        -ms-grid-column-span: 2;
-        grid-column: span 2;
-        -ms-grid-row-span: 2;
-        grid-row: span 2;
-        position: relative;
-    }
-
-    #img6 {
-        -ms-grid-column-span: 2;
-        grid-column: span 2;
-        position: relative;
-    }
-
-    .image {
-       height: 100%;
-       width: 100%;
-       position: absolute;
-
-    }
-
-    .gallery-button {
-        margin: 90px auto 90px auto !important;
-        display: block;  
-        width: auto !important;
     }
 
     .clippy-gallery {
@@ -1902,6 +1753,11 @@ i.fas.fa-chevron-right {
 
     .about-content h2 {
         font-size: 38px;
+        width: 500px;
+    }
+
+    .about-content h3 {
+        width: 500px;
     }
 
     .about-content h2 span {
@@ -1982,7 +1838,7 @@ i.fas.fa-chevron-right {
     */
 
     #icons {
-        height: 530px;
+        height: 650px;
         background-attachment: fixed;
         display: -webkit-box;
         display: -ms-flexbox;

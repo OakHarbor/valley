@@ -1621,6 +1621,10 @@ footer {
         max-width: 300px;
     }
 
+    .footer-location-info p {
+        width: 180px !important;
+    }
+
     .footer-location-info p:first-child {
         font-weight: bold;
     }
@@ -1634,7 +1638,7 @@ footer {
     .phone-icon {
         -webkit-transform: translateY(-8px);
             -ms-transform: translateY(-8px);
-                transform: translateY(-8px);
+                transform: translateY(-20px);
     }
 
     .footer-location {
