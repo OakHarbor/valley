@@ -1643,12 +1643,6 @@ footer {
                 transform: translateX(-40px);
     }
 
-    .phone-icon {
-        -webkit-transform: translateY(-8px);
-            -ms-transform: translateY(-8px);
-                transform: translateY(-20px);
-    }
-
     .footer-location {
         width: 180px;
     }
