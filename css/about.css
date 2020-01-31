@@ -764,7 +764,7 @@ html, body {
         -webkit-box-align: flex-start;
             -ms-flex-align: flex-start;
                 align-items: flex-start;
-        height: 750px;
+        height: 700px;
         padding-bottom: 0px;
         padding-top: 50px;
     }
@@ -803,6 +803,26 @@ html, body {
 
     .sales-container {
         margin: 50px auto 100px auto;
+    }
+
+    .sales-topper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sales-topper p {
+        font-size: 16px;
+    }
+
+    .sales-description {
+        width: 500px;
+    }
+
+    .bridge {
+        padding-top: 70px;
+        font-size: 16px !important;
     }
 
     .store, .store2 {
