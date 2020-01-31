@@ -840,7 +840,7 @@ html, body {
     .store:before {
         content: '';
         position: absolute;
-        background: #4c4c4c;
+        background: var(--primary);
         height: 2px;
         width: 320px;
         left: 0px;
@@ -850,7 +850,7 @@ html, body {
     .store:after {
         content: '';
         position: absolute;
-        background: #4c4c4c;
+        background: var(--primary);
         height: 2px;
         width: 320px;
         right: 0px;
@@ -860,7 +860,7 @@ html, body {
     .store2:before {
         content: '';
         position: absolute;
-        background: #4c4c4c;
+        background: var(--primary);
         height: 2px;
         width: 180px;
         left: 10px;
@@ -870,7 +870,7 @@ html, body {
     .store2:after {
         content: '';
         position: absolute;
-        background: #4c4c4c;
+        background: var(--primary);
         height: 2px;
         width: 170px;
         right: 10px;
