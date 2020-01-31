@@ -288,6 +288,10 @@ html, body {
     text-transform: uppercase;
 }
 
+.sales-topper img {
+    display: none;
+}
+
 .sales-people img {
     width: 100%;
     border-bottom: 5px solid var(--primary);
@@ -807,9 +811,15 @@ html, body {
 
     .sales-topper {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
         justify-content: space-between;
+    }
+
+    .sales-topper img {
+        display: block;
+        width: 300px;
+        margin-right: 100px;
     }
 
     .sales-topper p {
