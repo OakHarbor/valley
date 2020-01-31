@@ -824,6 +824,10 @@ html, body {
         font-size: 16px !important;
     }
 
+    .bridge span {
+        font-weight: 900;
+    }
+
     .store, .store2 {
         display: block;
         width: 100%;
@@ -991,6 +995,7 @@ html, body {
         display: block;
         width: 700px;
         text-align: center;
+        margin-bottom: 40px;
     }
 
     .job-bottom-text {
