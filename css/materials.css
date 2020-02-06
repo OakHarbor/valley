@@ -66,6 +66,7 @@ html, body {
 }
 
 .wrenches {
+    display: none;
     position: absolute;
     width: 300px;
     right: -130px;
@@ -460,9 +461,10 @@ p {
     }
 
     .wrenches {
-        width: 1200px;
-        top: 700px;
-        right: -500px;
+        display: block;
+        width: 700px;
+        top: 1090px;
+        right: 0px;
     }
 
     /*-- -------------------------- -->

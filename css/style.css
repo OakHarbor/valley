@@ -725,69 +725,76 @@ i.fas.fa-chevron-right {
 }
 
 .gallery-topper {
-    margin: 0px auto 40px auto;
+    background: url("/images/concrete.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px auto 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.dark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: .7;
 }
 
 .gallery-topper h2 {
     font-weight: 700;
     font-size: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     position: relative;
     margin-top: 50px;
+    text-align: center;
+    z-index: 10;
+    color: #fff;
 }
 
-.gallery-topper h2 span {
-    color: var(--primary);
-    display: block;
+.gallery-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
-.gallery-topper h2:before {
-    content: '';
-    position: absolute;
-    background: var(--primary);
-    width: 50px;
-    height: 2px;
-    left: 190px;
-    top: 14px;
-}
-
-.gallery-topper h2:after {
-    content: '';
-    position: absolute;
-    background: var(--primary);
-    width: 30px;
-    height: 2px;
-    left: 190px;
-    top: 23px;
-}
 
 .gallery-button {
     margin: 30px auto;
     border: none;
-    margin-bottom: 50px;
-    background: #000;
-    color: #f5f3f3;
+    margin-bottom: 60px;
+    background: var(--primary);
+    color: #000;
     font-weight: 900;
+    display: block;
+    position: relative;
+    z-index: 50;
 }
 
 .gallery-button:before {
-    border-top: 2px solid #000;
-    border-left: 2px solid #000;
+    border-top: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
 }
 
 .gallery-button:after {
-    border-bottom: 2px solid #000;
-    border-right: 2px solid #000;
+    border-bottom: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
 }
 
-.clippy-gallery {
-    height: 200px;
+.gallery-group img {
     width: 100%;
-    background: #f5f3f3;
-    -webkit-clip-path: polygon(0 86%, 0 100%, 100% 100%, 100% 86%, 50% 98%);
-            clip-path: polygon(0 86%, 0 100%, 100% 100%, 100% 86%, 50% 98%);
-    position: absolute;
-    bottom: -35px;
 }
 
 /* 
@@ -1412,15 +1419,15 @@ i.fas.fa-chevron-right {
         margin: 0;
         padding-top: 100px;
         padding-bottom: 100px;
+        height: auto !important;
     }
 
     .gallery-topper h2 {
         margin-top: 0;
     }
 
-    .clippy-gallery {
-        height: 500px;
-        bottom: -3px;
+    .gallery-button {
+        margin-bottom: 0;
     }
 
     /* 
@@ -1523,6 +1530,26 @@ i.fas.fa-chevron-right {
     .partners-logo img {
         width: 150px;
         margin: 15px;
+    }
+
+    /*-- -------------------------- -->
+    <---           GALLERY          -->
+    <--- -------------------------- -*/
+
+    .gallery-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .gallery-group img {
+        width: 50%;
     }
 
     /* 
@@ -2165,284 +2192,34 @@ i.fas.fa-chevron-right {
     }
 
 
-    /* 
-                               Gallery
-    */
+    /*-- -------------------------- -->
+    <---           GALLERY          -->
+    <--- -------------------------- -*/ 
 
-    #gallery {
+    .gallery-group {
+        margin: auto;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
+        -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-direction: row;
+                flex-direction: row;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
+        -ms-flex-pack: center;
                 justify-content: center;
-        height: auto;
-    }
-
-    .gallery-topper p {
-        margin: auto;
-    }
-
-    .gallery {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr 40px 1fr 40px 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        -ms-grid-rows: 1fr 40px 1fr 40px 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        height: 600px;
-        width: 100%;
-        margin: 10px auto;
-        grid-gap: 40px;
-        position: relative;
-        margin-bottom: 30px;
-    }
-
-    .gallery img {
-        cursor: pointer;
-    }
-
-    .gallery > *:nth-child(1) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;
-    }
-
-    .gallery > *:nth-child(2) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 3;
-    }
-
-    .gallery > *:nth-child(3) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 5;
-    }
-
-    .gallery > *:nth-child(4) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 7;
-    }
-
-    .gallery > *:nth-child(5) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 9;
-    }
-
-    .gallery > *:nth-child(6) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 11;
-    }
-
-    .gallery > *:nth-child(7) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 1;
-    }
-
-    .gallery > *:nth-child(8) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 3;
-    }
-
-    .gallery > *:nth-child(9) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 5;
-    }
-
-    .gallery > *:nth-child(10) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 7;
-    }
-
-    .gallery > *:nth-child(11) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 9;
-    }
-
-    .gallery > *:nth-child(12) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 11;
-    }
-
-    .gallery > *:nth-child(13) {
-        -ms-grid-row: 5;
-        -ms-grid-column: 1;
-    }
-
-    .gallery > *:nth-child(14) {
-        -ms-grid-row: 5;
-        -ms-grid-column: 3;
-    }
-
-    .gallery > *:nth-child(15) {
-        -ms-grid-row: 5;
-        -ms-grid-column: 5;
-    }
-
-    .gallery > *:nth-child(16) {
-        -ms-grid-row: 5;
-        -ms-grid-column: 7;
-    }
-
-    .gallery > *:nth-child(17) {
-        -ms-grid-row: 5;
-        -ms-grid-column: 9;
-    }
-
-    .gallery > *:nth-child(18) {
-        -ms-grid-row: 5;
-        -ms-grid-column: 11;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .gallery-topper {
-        background:url("../images/geo-steel.jpg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
         background-attachment: fixed;
-        margin: 0 auto;
-        position: relative;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        padding-top: 70px;
-        padding-bottom: 70px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
     }
 
-    .gallery-topper:before {
-        content: '';
-        background: #000;
-        width: 100%;
-        height: 100%;
-        opacity: .86;
-        position: absolute;
-    }
-
-    .gallery-topper h2 {
-        text-align: center;
-        position: relative;
-        display: inline-block;
-        width: 500px !important;
-        margin: auto;
-        color: #f5f3f3;
-    }
-
-    .gallery-topper h2 span {
-        display: inline-block;
-    }
-
-    .gallery-topper h2:before {
-        position: absolute;
-        left: 10px;
-    }
-
-    .gallery-topper h2:after {
-        left: 30px;
-    }
-
-    .gallery-topper h2 span:before {
-        content: '';
-        right: 10px;
-        width: 50px;
-        height: 2px;
-        background: var(--primary);
-        position: absolute;
-        top: 14px;
-    }
-
-    .gallery-topper h2 span:after {
-        content: '';
-        right: 30px;
-        width: 30px;
-        height: 2px;
-        background: var(--primary);
-        position: absolute;
-        top: 23px;
-    }
-
-    .gallery-topper p {
-        width: 700px;
-        text-align: center;
-        color: #f5f3f3;
-        position: relative;
-        z-index: 10;
-    }
-
-    .gallery div {
-        background: #1a1a1a;
-    }
-
-    #img1 {
-        -ms-grid-column-span: 2;
-        grid-column: span 2;
-        position: relative;
-    }
-
-    #img2 {
-        -ms-grid-column-span: 2;
-        grid-column: span 2;
-        -ms-grid-row-span: 2;
-        grid-row: span 2;
-        position: relative;
-    }
-
-    #img3 {
-        -ms-grid-column-span: 2;
-        grid-column: span 2;
-        position: relative;
-    }
-
-    #img4 {
-        -ms-grid-column-span: 2;
-        grid-column: span 2;
-        -ms-grid-row-span: 2;
-        grid-row: span 2;
-        position: relative;
-    }
-
-    #img5 {
-        -ms-grid-column-span: 2;
-        grid-column: span 2;
-        -ms-grid-row-span: 2;
-        grid-row: span 2;
-        position: relative;
-    }
-
-    #img6 {
-        -ms-grid-column-span: 2;
-        grid-column: span 2;
-        position: relative;
-    }
-
-    .image {
-       height: 100%;
-       width: 100%;
-       position: absolute;
-
-    }
-
-    .gallery-button {
-        margin: 20px auto 120px auto !important;
-        display: block;  
-        width: auto;
-        font-weight: 900;
-        width: 180px;
-        font-size: 14px;
-    }
-
-    .clippy-gallery {
-        position: absolute;
-        bottom: -2px;
-        height: 400px;
+    .gallery-group img {
+        width: 20%;
+        margin: 0;
+        padding: 0;
     }
 
     /* 
