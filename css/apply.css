@@ -53,6 +53,7 @@
 
 iframe {
     width: 100%;
+    display: none;
     margin-bottom: 100px;
 }
 
@@ -69,6 +70,8 @@ iframe {
 
 .app-button {
     margin: 50px auto;
+    margin-bottom: 100px;
+    display: block;
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -107,6 +110,10 @@ iframe {
         font-size: 45px;
         width: auto;
         padding: 0 20px;
+    }
+
+    iframe {
+        display: block;
     }
 
     .clippy-sales {
@@ -170,6 +177,7 @@ iframe {
     }
 
     iframe {
+        display: block;
         margin: 150px auto;
         width: 100%;
         height: 800px;

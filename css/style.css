@@ -2096,6 +2096,7 @@ i.fas.fa-chevron-right {
 
     .future-card-content p {
         margin-bottom: 0;
+        height: 150px;
     }
 
     .future-card-content button {
