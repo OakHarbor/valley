@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://loving-jepsen-620f4e.netlify.com/* http://www.valleyconstsupply.com/:splat 301!
