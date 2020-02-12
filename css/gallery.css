@@ -280,4 +280,8 @@ html.clicked {
         bottom: -101px;
     }
 
+    .clippy-desktop {
+        clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0)
+    }
+
 }
