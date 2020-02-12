@@ -11,6 +11,10 @@
     border-left: 5px solid var(--primary);
 }
 
+.landing-text h1:before, .landing-text h1:after {
+    display: none;
+}
+
 #landing-page p {
     display: none;
     position: absolute;

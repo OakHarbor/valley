@@ -162,6 +162,7 @@ iframe {
 
     #landing-page {
         background-attachment: fixed;
+        margin-bottom: 0;
     }
 
     .landing-group {
@@ -185,6 +186,7 @@ iframe {
         font-size: 55px;
         width: 750px;
         padding: 0 20px;
+        width: 1100px;
     }
 
     /*-- -------------------------- -->
