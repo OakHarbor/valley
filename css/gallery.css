@@ -281,7 +281,8 @@ html.clicked {
     }
 
     .clippy-desktop {
-        clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0)
+        -webkit-clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+                clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0)
     }
 
 }
