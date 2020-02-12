@@ -584,7 +584,7 @@ form p{
         border-left: 5px solid var(--primary);
         font-size: 60px;
         text-align: left;
-        width: auto;
+        width: 1100px;
         margin-bottom: 0;
     }
 
