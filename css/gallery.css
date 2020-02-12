@@ -270,7 +270,7 @@ html.clicked {
 
     .modal img {
         display: block;
-        height: auto;
+        height: 1000px;
         width: auto;
         height: auto;
         margin: auto !important;
