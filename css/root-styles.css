@@ -757,7 +757,8 @@ nav img {
         height: 110px;
     }
 
-    .contact-li {
+    .services-li .icon-drop {
+        right: -8px;
     }
 
     /*-- -------------------------- -->
