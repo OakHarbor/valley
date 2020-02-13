@@ -130,11 +130,27 @@ html, body {
     margin: 0 25px 400px 0;
 }
 
+.erosion {
+    margin-bottom: 300px !important;
+}
+
+#Capa_1 {
+
+}
+
 .lateral {
-    margin-bottom: 450px !important;
+    margin-bottom: 350px !important;
+}
+
+.concrete {
+    margin-bottom: 250px !important;
 }
 
 .tools {
+    margin-bottom: 250px !important;
+}
+
+.drainage {
     margin-bottom: 250px !important;
 }
 
@@ -142,8 +158,12 @@ html, body {
     margin-bottom: 250px !important;
 }
 
-.wood {
+.window {
     margin-bottom: 250px !important;
+}
+
+.wood {
+    margin-bottom: 150px !important;
 }
 
 .clippy-sales {
