@@ -1324,7 +1324,7 @@ footer {
 }
 
 .footer-location-info p {
-    width: 220px;
+    width: auto;
 }
 
 .footer-item h3 {
