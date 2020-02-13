@@ -1325,6 +1325,7 @@ footer {
 
 .footer-location-info p {
     width: 220px;
+    display: block;
 }
 
 .footer-item h3 {
