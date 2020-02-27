@@ -1416,6 +1416,7 @@ footer {
 
 .foot-phone {
     width: 100%;
+    white-space: nowrap !important;
 }
 
 .branding-line {
