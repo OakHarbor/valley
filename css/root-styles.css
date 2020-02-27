@@ -1411,11 +1411,10 @@ footer {
 }
 
 .footer-location-info p {
-    width: 250px;
+    width: 200px;
 }
 
 .foot-phone {
-    width: 100%;
     white-space: nowrap !important;
 }
 
