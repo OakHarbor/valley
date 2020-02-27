@@ -1414,6 +1414,10 @@ footer {
     width: 250px;
 }
 
+.foot-phone {
+    width: 100%;
+}
+
 .branding-line {
     width: 100%;
     height: 2px;
