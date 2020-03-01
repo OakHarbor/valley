@@ -63,7 +63,10 @@
 } 
 
 .modal img {
+    height: auto;
+    max-height: 80%;
     width: 100%;
+    max-width: auto;
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -149,6 +152,11 @@
     position: fixed;
 }
 
+.modal-three.clicked img {
+    width: 80%;
+    max-height: auto;
+}
+
 /* Clicked Images */
 
 html.clicked {
@@ -200,12 +208,24 @@ html.clicked {
     }
 
     .gallery img {
-        width: 50%;
+        width: 40%;
         padding: 20px;
     }
 
+    .modal-four.clicked img {
+        width: 80%;
+        height: auto;
+    }
+
     .modal img {
-        width: 100%;
+        width: 85%;
+        position: absolute;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
     }
 
     .clippy-sales {
@@ -271,9 +291,8 @@ html.clicked {
 
     .modal img {
         display: block;
-        height: 1000px;
         width: auto;
-        height: auto;
+        height: 1000px !important;
         margin: auto !important;
     }
 
