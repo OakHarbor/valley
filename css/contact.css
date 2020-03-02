@@ -737,6 +737,12 @@ form p{
         margin-top: 25px;
     }
 
+    #contact-submit:hover .primary:before,
+    #contact-submit:hover .primary:after {
+        width: 90%;
+        height: 90%;
+    }
+
     .form-h4 {
         width: 750px;
         font-size: 25px;

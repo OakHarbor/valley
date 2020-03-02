@@ -260,8 +260,8 @@ button {
 
 .solid:hover:before,
 .solid:hover:after {
-    width: 150px;
-    height: 35px;
+    width: 90%;
+    height: 90%;
     cursor: pointer;
     -webkit-transition: .2s ease;
     -o-transition: .2s ease;
