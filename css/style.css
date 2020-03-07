@@ -91,6 +91,14 @@ body, html {
     margin-right: 50px;
 }
 
+.desktop-about {
+    display: none;
+}
+
+.mobile-about {
+    margin-bottom: 50px;
+}
+
 /* 
                                 3 Boxes
 */
@@ -1688,6 +1696,14 @@ i.fas.fa-chevron-right {
     button.about {
         display: inline-block;
         margin-right: 40px;
+    }
+
+    .desktop-about {
+        display: inline-block !important;
+    }
+
+    .mobile-about {
+        display: none !important;
     }
 
     .clippy-desktop {

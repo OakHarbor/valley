@@ -1285,6 +1285,10 @@ nav img {
     border-color: #000;
 }
 
+.desktop-contact {
+    display: none;
+}
+
 /*-- -------------------------- -->
 <---        MOBILE FOOTER       -->
 <--- -------------------------- -*/
@@ -1520,6 +1524,14 @@ footer {
         width: 200px;
         font-size: 1em;
         margin: 0;
+    }
+
+    .desktop-contact {
+        display: block;
+    }
+
+    .mobile-contact {
+        display: none;
     }
 
     footer {
