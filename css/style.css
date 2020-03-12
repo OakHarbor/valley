@@ -935,10 +935,14 @@ i.fas.fa-chevron-right {
             align-items: center;
 }
 
+.partners-logo a {
+    width: auto;
+}
+
 .partners-logo img {
     margin: 50px auto;
     margin-bottom: 0;
-    width: 70%;
+    width: 100%;
     height: auto;
     transition: all .2s ease;
 }
@@ -947,10 +951,6 @@ i.fas.fa-chevron-right {
     cursor: pointer;
     opacity: .7;
     transition: all .2s ease;
-}
-
-.partners-logo img:last-child {
-    width: 150px;
 }
 
 /* 
