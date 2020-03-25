@@ -240,6 +240,7 @@ ul li {
 
 .group-box img {
     height: 189px;
+    max-width: 550px;
     border: 1px solid var(--primary);
     margin-bottom: 40px;
 }
