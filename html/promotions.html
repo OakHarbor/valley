@@ -398,6 +398,21 @@
     </div>
 </footer>
 
+<script>
+    var ba = ["MSIE","Trident","Edge"];
+    var b, ua = navigator.userAgent;
+    for(var i=0; i < ba.length; i++){
+        if( ua.indexOf(ba[i]) > -1 ){
+            b = ba[i];
+            break;
+        }
+    }
+    if(b == "MSIE" || b == "Trident" || b == "Edge"){
+        b = "Internet Explorer";
+        alert("You are using the " + b + " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!");
+    }
+</script>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
