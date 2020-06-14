@@ -31,6 +31,7 @@ body, html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 50px;
 }
 
 .landing-dark {
@@ -39,6 +40,8 @@ body, html {
     width: 100%;
     background: #000;
     opacity: .65;
+    top: 0;
+    bottom: 0;
 }
 
 .landing-group {
@@ -57,7 +60,7 @@ body, html {
     padding-top: 110px;
     color: #f5f3f3;
     font-weight: 900;
-    line-height: 1.2em;
+    line-height: 1em;
 } 
 
 .landing-text h2 {
@@ -454,6 +457,8 @@ i.fas.fa-chevron-right {
 
 #building-the-future {
     background: #f5f3f3;
+    position: relative;
+    padding-bottom: 250px;
 }
 
 .future-topper {
@@ -582,9 +587,115 @@ i.fas.fa-chevron-right {
     background: var(--primary);
 }
 
+/*-- -------------------------- -->
+<---          PROMOTIONS        -->
+<--- -------------------------- -*/
+
+#promotions {
+    background: #f5f3f3;
+    position: relative;
+}
+
+.promotions-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: var(--primary);
+    position: absolute;
+    bottom: -300px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+}
+
+.card-info h3,
+.card-info p {
+    padding: 0 20px;
+}
+
+.card-info h3 {
+    font-size: 1.5em;
+    padding: 0;
+}
+
+.card-info p {
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.card-info button {
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    padding-top: 500px;
+}
+
+/*-- -------------------------- -->
+<---          PROMOTIONS        -->
+<--- -------------------------- -*/
+
+.promotion-image {
+    background:url("../images/promotional.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    padding-top: 20px;
+    border: 2px solid var(--primary);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    padding: 0;
+}
+
+.promotion-image:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+}
+
+.promotion-image p {
+    color: var(--primary);
+    margin: 0;
+    line-height: 1.2em;
+    position: relative;
+    z-index: 10;
+}
+
+.promotion-image p:last-child {
+    font-size: 57px;
+    font-weight: 900;
+}
+
 /* 
                                 Service
 */
+
+#service {
+    padding-top: 300px;
+}
 
 
 #services-heading h2 {
@@ -944,12 +1055,16 @@ i.fas.fa-chevron-right {
     margin-bottom: 0;
     width: 100%;
     height: auto;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
     transition: all .2s ease;
 }
 
 .partners-logo img:hover {
     cursor: pointer;
     opacity: .7;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
     transition: all .2s ease;
 }
 
@@ -1284,6 +1399,10 @@ i.fas.fa-chevron-right {
                                Future
     */
 
+    #building-the-future {
+        padding-bottom: 100px;
+    }
+
     .future-icons {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1357,9 +1476,60 @@ i.fas.fa-chevron-right {
         width: auto;
     }
 
+    /*-- -------------------------- -->
+    <---          PROMOTIONS        -->
+    <--- -------------------------- -*/
+
+    .promotions-card {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+
+    .promotion-image {
+        background:url("../images/promotional.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        width: 50%;
+        height: auto;
+        padding-top: 20px;
+        border: 2px solid var(--primary);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: relative;
+        padding: 0;
+    }
+
+    .card-info {
+        width: 50%;
+        padding: 0 1em;
+    }
+
     /* 
                                Service
     */
+
+    #service {
+        padding-top: 200px;
+    }
 
     .service-topper {
         height: auto;
@@ -1377,9 +1547,16 @@ i.fas.fa-chevron-right {
 
     .service-card-container {
         margin-bottom: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .service-card {
@@ -1974,7 +2151,7 @@ i.fas.fa-chevron-right {
     #building-the-future {
         height: 770px !important;
         padding-top: 30px;
-        padding-bottom: 50px;
+        padding-bottom: 250px;
     }
 
     .future-topper {
@@ -2124,12 +2301,69 @@ i.fas.fa-chevron-right {
         width: 95px; 
     }
 
+    /*-- -------------------------- -->
+    <---          PROMOTIONS        -->
+    <--- -------------------------- -*/
+
+    .promotions-card {
+        width: 100%;
+        max-width: 1100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 0;
+        margin: auto;
+        height: 321px;
+        bottom: -170px;
+    }
+
+    .promotion-image {
+        background:url("../images/promotional.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        width: 50%;
+        height: auto;
+        padding-top: 20px;
+        border: 2px solid var(--primary);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: relative;
+        padding: 0;
+    }
+
+    .card-info {
+        width: 50%;
+        padding: 0 1em;
+    }
+
     /* 
                                Service
     */
 
     #service {
         margin: auto;
+        padding-top: 210px;
     }
 
     #services-heading {
@@ -2365,7 +2599,9 @@ i.fas.fa-chevron-right {
     .showcase-button {
         margin-left: 0 !important;
         margin-bottom: 0 !important;
-        transform: translateX(-130px);
+        -webkit-transform: translateX(-130px);
+            -ms-transform: translateX(-130px);
+                transform: translateX(-130px);
     }
 
     .partners-logo {
