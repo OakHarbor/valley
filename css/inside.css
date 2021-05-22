@@ -26,6 +26,14 @@
             justify-content: center;
 }
 
+#job-description li {
+    margin-bottom: 10px;
+}
+
+#job-description h2 {
+    margin-top: 50px;
+}
+
 .landing-group {
     padding: 0;
     margin: auto;
@@ -42,6 +50,46 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 280px;
+}
+
+#multi-story img {
+    width: 100%;
+    margin: auto;
+    max-width: 400px;
+}
+
+#rod img {
+    width: 100%;
+    margin: auto;
+    max-width: 400px;
+}
+
+#tension img {
+    width: 100%;
+    margin: auto;
+    max-width: 400px;
+}
+
+#group1 img {
+    width: 100%;
+    margin: auto;
+    max-width: 400px;
+}
+
+#group2 img {
+    width: 100%;
+    margin: auto;
+    max-width: 400px;
+}
+
+.tie-section {
+    margin: 100px 0;
+}
+
+.strong-tie {
+    display: block;
+    width: auto;
+    margin: auto !important;
 }
 
 .clippy-desktop {
@@ -63,13 +111,13 @@
 }
 
 #job-description h2 {
-    font-size: 24px;
+    font-size: 34px;
 }
 
 #job-description p,
 #job-description ul,
 #job-description button {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -77,6 +125,11 @@
     /*-- -------------------------- -->
     <---          LANDING           -->
     <--- -------------------------- -*/
+
+    #job-description {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
     h1:after,
     h1:before {
@@ -89,6 +142,60 @@
         padding: 0 20px;
     }
 
+    #multi-story img {
+        width: 100%;
+        margin: auto;
+        max-width: 200px;
+        float: left;
+        margin-right: 50px;
+        margin-bottom: 40px;
+    }
+
+    #tension img {
+        width: 100%;
+        margin: auto;
+        max-width: 300px;
+        float: right;
+        margin-left: 50px;
+        margin-bottom: 40px;
+    }
+
+    #tension p:nth-of-type(1) {
+        text-align: justify;
+    }
+
+    #rod img {
+        width: 100%;
+        margin: auto;
+        max-width: 300px;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+
+    #group1 img {
+        width: 100%;
+        margin: auto;
+        max-width: 250px;
+        float: left;
+        margin-right: 50px;
+        margin-bottom: 40px;
+    }
+
+    #group2 img {
+        width: 100%;
+        margin: auto;
+        max-width: 300px;
+        float: right;
+        margin-left: 50px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    #group2 p:nth-of-type(1) {
+        text-align: justify;
+    }
+
 }
 
 @media screen and (min-width: 1025px) {
@@ -96,6 +203,10 @@
     /*-- -------------------------- -->
     <---          LANDING           -->
     <--- -------------------------- -*/
+
+    #job-description {
+        padding: 100px 0;
+    }
 
     .container {
         max-width: 1100px;
@@ -135,6 +246,7 @@
         width: 550px;
         padding: 0 20px;
         text-align: left;
+        margin-left: 30px;
     }
 
     #job-description img {
@@ -143,8 +255,65 @@
         margin-bottom: 50px;
     }
 
+    #multi-story img {
+        float: left;
+        display: block;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        width: 300px;
+        margin-top: 0;
+    }
+
+    #tension img {
+        width: 100%;
+        margin: auto;
+        max-width: 300px;
+        float: right;
+        margin-left: 50px;
+        margin-bottom: 40px;
+    }
+
+    #rod img {
+        width: 100%;
+        margin: auto;
+        max-width: 300px;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+
+    #tension p:nth-of-type(1) {
+        text-align: justify;
+    }
+
+    #group2 p:nth-of-type(1) {
+        text-align: justify;
+    }
+
     #job-description button {
         margin-bottom: 100px;
     }
 
+    #group1 img {
+        width: 100%;
+        margin: auto;
+        max-width: 350px;
+        float: left;
+        margin-right: 50px;
+        margin-bottom: 40px;
+    }
+
+    #group2 img {
+        width: 100%;
+        margin: auto;
+        max-width: 350px;
+        float: right;
+        margin-left: 50px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    #group2 p:nth-of-type(1) {
+        text-align: justify;
+    }
 }
