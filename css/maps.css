@@ -810,6 +810,10 @@
         margin: 0 20px;
     }
 
+    .pipe {
+        max-width: 1100px !important;
+    }
+
     .seal {
         -webkit-box-shadow: 0px 0px 11px 0px rgb(0 0 0 / 21%);
                 box-shadow: 0px 0px 11px 0px rgb(0 0 0 / 21%);
@@ -998,5 +1002,9 @@
 
     .container2 {
         max-width: 1300px !important;
+    }
+
+    .pipe {
+        max-width: 1100px !important;
     }
 }
