@@ -1,4 +1,5 @@
 
+
 /*-- -------------------------- -->
 <---           LANDING          -->
 <--- -------------------------- -*/
@@ -833,7 +834,8 @@
     .image-square {
         max-width: 400px;
         max-height: 400px;
-        align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
         margin-top: 50px;
         margin-right: 50px;
     }
