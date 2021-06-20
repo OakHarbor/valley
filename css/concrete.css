@@ -630,6 +630,7 @@
     #rebar-stats {
         height: 1000px;
         background-attachment: fixed;
+        padding-bottom: 270px;
     }
 
     #rebar-stats h2 {
@@ -663,6 +664,7 @@
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         padding-bottom: 250px;
+        width: 600px;
     }
 
     .stat-group span {
@@ -763,4 +765,15 @@
         bottom: -2px;
     }
 
+}
+
+@media screen and (min-width: 1400px) {
+    #rebar-stats {
+        padding-bottom: 0;
+    }
+
+    .stat-group {
+        width: 100%;
+        max-width: 1200px;
+    }
 }
