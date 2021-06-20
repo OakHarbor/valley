@@ -1,0 +1,938 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+/*-- -------------------------- -->
+<---           LANDING          -->
+<--- -------------------------- -*/
+
+#landing-page {
+    min-height: 300px;
+    background:url("../images/rebar-2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.landing-group {
+    padding: 0;
+    margin: auto;
+    margin-right: auto;
+}
+
+.landing-text h1 {
+    padding-top: 0;
+    margin: 40px auto 60px;
+    font-size: 1.875em;
+    border-left: 5px solid var(--primary);
+    text-align: left;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 280px;
+}
+
+.clippy-desktop {
+    height: 80px;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    -webkit-clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+            clip-path: polygon(71% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+/*-- -------------------------- -->
+<---            REBAR           -->
+<--- -------------------------- -*/
+
+#about-rebar {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#about-rebar img {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.rebar-group h2 {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    margin-top: 0;
+    position: relative;
+    padding-top: 50px;
+    line-height: 1em;
+}
+
+.rebar-group h2 span {
+    color: var(--primary);
+    display: block;
+}
+
+.rebar-group h2:before {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 50px;
+    height: 2px;
+    left: 150px;
+    top: 60px;
+}
+
+.rebar-group h2:after {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 30px;
+    height: 2px;
+    left: 150px;
+    top: 69px;
+}
+
+.rebar-group h2 {
+    text-align: left;
+}
+
+.rebar-group button {
+    margin: 50px 0;
+}
+
+.examples {
+    text-align: center;
+}
+
+.examples h2 {
+    font-size: 30px;
+}
+
+.examples .example {
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.example h3 {
+    margin-top: 5px;
+}
+
+.seal {
+    box-shadow: 0px 0px 11px 0px rgb(0 0 0 / 21%);
+    width: 300px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 30px 0;
+    margin-bottom: 100px;
+}
+
+.seal span {
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.seal a {
+    display: block;
+    background: var(--primary);
+    width: 250px;
+    margin: auto;
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*-- -------------------------- -->
+<---         REBAR STATS        -->
+<--- -------------------------- -*/
+
+#rebar-stats {
+    background:url("../images/map-image.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#rebar-stats:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+}
+
+.st-top {
+    padding-top: 50px;
+}
+
+#rebar-stats h2 {
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 30px;
+    margin-top: 0;
+    position: relative;
+    padding-top: 100px;
+    line-height: 1em;
+    color: #f5f3f3;
+    text-align: center !important;
+}
+
+#rebar-stats h2 span {
+    color: var(--primary);
+}
+
+.stat-item {
+    width: 300px;
+    margin: auto;
+    position: relative;
+    z-index: 5;
+    padding-bottom: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+
+.stat-item h3 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.stat-item p {
+    color: #fff;
+    text-align: center;
+}
+
+.stat-item svg {
+    margin: auto;
+    width: 70px;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.stat-item svg:before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: #fff;
+    z-index: 4;
+}
+
+.st-last {
+    padding-bottom: 250px;
+}
+
+/*-- -------------------------- -->
+<---          PROMOTIONS        -->
+<--- -------------------------- -*/
+
+#promotions {
+    background: #f5f3f3;
+    position: relative;
+}
+
+.card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: var(--primary);
+    position: absolute;
+    top: -150px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+}
+
+.card-info h3,
+.card-info p {
+    padding: 0 20px;
+}
+
+.card-info h3 {
+    font-size: 1.5em;
+    padding: 0;
+}
+
+.card-info p {
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.card-info button {
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    padding-top: 500px;
+}
+
+.promotion-image {
+    background:url("../images/promotional.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    padding-top: 20px;
+    border: 2px solid var(--primary);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    padding: 0;
+}
+
+.promotion-image:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+}
+
+.promotion-image p {
+    color: var(--primary);
+    margin: 0;
+    line-height: 1.2em;
+    position: relative;
+    z-index: 10;
+}
+
+.promotion-image p:last-child {
+    font-size: 57px;
+    font-weight: 900;
+}
+
+.contact-info h2 {
+    font-size: 1.5em;
+}
+
+.contact-info h3 {
+    margin-top: 0;
+}
+
+.contact-info-group {
+    height: auto;
+    margin-bottom: 90px;
+    margin-top: 50px;
+    position: relative;
+    max-width: 340px;
+}
+
+.contact-info-group:last-child {
+    margin-bottom: 50px;
+}
+
+.contact-info-group h3 {
+    text-transform: uppercase;
+    font-size: 1.188em;
+}
+
+.contact-info-group svg {
+    width: 50px;
+    height: auto;
+    float: left;
+    margin: 0 25px 150px 0;
+}
+
+.valley-exterior {
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.clippy-sales {
+    bottom: -1px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    /*-- -------------------------- -->
+    <---          LANDING           -->
+    <--- -------------------------- -*/
+
+    h1:after,
+    h1:before {
+        display: none;
+    }
+
+    #landing-page {
+        height: 400px;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    .landing-group {
+        margin-left: 0;
+    }
+
+    .landing-text h1 {
+        font-size: 2.813em;
+        width: 80%;
+        padding: 0 20px;
+        margin-left: 6%;
+        text-align: left;
+    }
+
+    /*-- -------------------------- -->
+    <---         REBAR STATS        -->
+    <--- -------------------------- -*/
+
+    #rebar-stats {
+        height: 1250px;
+    }
+
+    #rebar-stats h2 {
+        font-weight: 700;
+        font-size: 2.5em;
+        margin-bottom: 80px;
+        margin-top: 0;
+        position: relative;
+        padding-top: 100px;
+        line-height: 1em;
+        color: #f5f3f3;
+        text-align: center !important;
+    }
+    
+    #rebar-stats h2 span {
+        color: var(--primary);
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    #rebar-stats h2 {
+        text-align: left;
+    }
+
+    .stat-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+
+    #rebar-stats h2 {
+        display: block;
+    }
+
+    .stat-item {
+        width: 260px;
+        padding: 15px;
+    }
+
+    .stat-item p {
+        height: 175px;
+    }
+    .examples h2 {
+        width: 100%;
+    }
+
+    .examples p {
+        width: 345px;
+        margin: auto;
+    }
+
+    .examples {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .examples .example {
+        display: inline-block;
+        width: 45%;
+    }
+
+    .seal {
+        box-shadow: 0px 0px 11px 0px rgb(0 0 0 / 21%);
+        width: 300px;
+        margin: auto;
+        border-radius: 5px;
+        padding: 30px 0;
+        margin-bottom: 100px;
+    }
+
+    .seal span {
+        font-size: 25px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .seal a {
+        display: block;
+        background: var(--primary);
+        width: 250px;
+        margin: auto;
+        padding: 15px 0;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .seal a:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    /*-- -------------------------- -->
+    <---          PROMOTIONS        -->
+    <--- -------------------------- -*/
+
+    .card {
+        width: 700px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 0;
+        top: -190px;
+        margin: auto;
+    }
+
+    .promotion-image {
+        background:url("../images/promotional.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        width: 50%;
+        height: auto;
+        padding-top: 20px;
+        border: 2px solid var(--primary);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: relative;
+        padding: 0;
+    }
+    
+    .promotion-image:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .5;
+    }
+    
+    .promotion-image p {
+        color: var(--primary);
+        margin: 0;
+        line-height: 1.2em;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .promotion-image p:last-child {
+        font-size: 57px;
+        font-weight: 900;
+    }
+
+    .card-info {
+        width: 50%;
+        padding: 0 1em;
+    }
+
+    .card-info h3 {
+        margin-top: 15px;
+        font-size: 1.563em;
+        text-transform: uppercase;
+        padding: 0 20px;
+    }
+
+    .card-info p {
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .card-info button {
+        margin: 0 auto 25px 20px;
+    }
+
+    .contact-info {
+        padding-top: 250px;
+    }
+
+    .contact-info-group {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .contact-info-group svg {
+        margin-bottom: 20px;
+    }
+
+    .contact-info-group p {
+        height: auto;
+    }
+
+    .valley-exterior {
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+
+    /*-- -------------------------- -->
+    <---          LANDING           -->
+    <--- -------------------------- -*/
+
+    .container {
+        max-width: 1100px;
+    }
+
+    #landing-page {
+        min-height: 550px;
+        background-attachment: fixed;
+    }
+
+    .landing-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 400px;
+    }
+
+    .landing-text {
+        margin-top: 25px;
+        width: auto;
+    }
+
+    .landing-text h1 {
+        font-size: 3.438em;
+        width: 550px;
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    /*-- -------------------------- -->
+    <---            REBAR           -->
+    <--- -------------------------- -*/
+
+    #about-rebar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 120px 0;
+    }
+
+    #about-rebar img {
+        width: auto;
+        height: auto;
+        align-self: flex-start;
+        margin-top: 70px;
+    }
+
+    .rebar-group {
+        width: 620px;
+    }
+
+    .rebar-group h2:before,
+    .rebar-group h2:after {
+        left: 150px;
+    }
+
+    .examples h2 {
+        width: 100%;
+    }
+    .examples p {
+        width: 345px;
+        margin: auto;
+    }
+    .examples {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .examples .example {
+        display: inline-block;
+        width: auto;
+        margin: 0 20px;
+    }
+
+    .seal {
+        box-shadow: 0px 0px 11px 0px rgb(0 0 0 / 21%);
+        width: 300px;
+        margin: auto;
+        border-radius: 5px;
+        padding: 30px 0;
+        margin-bottom: 100px;
+    }
+
+    .seal span {
+        font-size: 25px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .seal a {
+        display: block;
+        background: var(--primary);
+        width: 250px;
+        margin: auto;
+        padding: 15px 0;
+        text-decoration: none;
+        font-size: 20px;
+        transition: .2s ease;
+    }
+
+    .seal a:hover {
+        background: #000;
+        color: #fff;
+        transition: .2s ease;
+    }
+
+    /*-- -------------------------- -->
+    <---         REBAR STATS        -->
+    <--- -------------------------- -*/
+
+    #rebar-stats {
+        height: 1000px;
+        background-attachment: fixed;
+    }
+
+    #rebar-stats h2 {
+        font-weight: 700;
+        font-size: 2.5em;
+        margin-bottom: 120px;
+        margin-top: 0;
+        position: relative;
+        padding-top: 180px;
+        line-height: 1em;
+        color: #f5f3f3;
+        text-align: center !important;
+        width: 800px;
+    }
+    
+    #rebar-stats h2 span {
+        color: var(--primary);
+    }
+
+    .stat-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        padding-bottom: 250px;
+    }
+
+    .stat-group span {
+        display: block;
+    }
+
+    .stat-item {
+        width: 250px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .stat-item h3 {
+        margin-top: 50px;
+    }
+
+    /*-- -------------------------- -->
+    <---          PROMOTIONS        -->
+    <--- -------------------------- -*/
+
+    .card {
+        max-width: 1100px;
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 0;
+        top: -190px;
+    }
+
+    .promotion-image {
+        width: 50%;
+        padding: 0;
+        height: auto;
+    }
+
+    .card-info {
+        max-width: 50% !important;
+    }
+
+    .card-info {
+        padding: 50px 30px;
+    }
+
+    .card-info h3 {
+        margin-top: 15px;
+        font-size: 1.563em;
+        text-transform: uppercase;
+    }
+
+    .card-info button {
+        margin-bottom: 0;
+    }
+
+    .contact-info {
+        padding: 0;
+    }
+
+    .contact-info h2 {
+        display: block;
+        font-size: 2.188em;
+    }
+
+    .valley-exterior {
+        width: 600px !important;
+        height: 450px !important;
+        padding-top: 0px;
+        margin: 0;
+    }
+
+    .flex-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-bottom: 100px;
+        padding-top: 250px;
+        height: auto;
+    }
+
+    .clippy-sales {
+        bottom: -2px;
+    }
+
+}
+
+@media screen and (min-width: 1425px) {
+    #about-rebar img {
+        width: 600px;
+    }
+
+    .container2 {
+        max-width: 1300px !important;
+    }
+}
