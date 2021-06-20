@@ -141,10 +141,13 @@
 
 .seal span {
     font-size: 25px;
+    line-height: 30px;
     font-weight: bold;
     display: block;
     text-align: center;
     margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
 }
 
 .seal a {
@@ -522,7 +525,7 @@
         font-weight: bold;
         display: block;
         text-align: center;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         font-family: 'Poppins', sans-serif;
     }
 
@@ -765,7 +768,7 @@
         font-weight: bold;
         display: block;
         text-align: center;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
 
     .seal a {
