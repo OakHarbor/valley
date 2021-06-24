@@ -299,6 +299,10 @@
     position: relative;
 }
 
+.container2 {
+    padding: 0 20px;
+}
+
 .card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -585,17 +589,7 @@
     <--- -------------------------- -*/
 
     .card {
-        width: 700px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        width: 650px;
         padding: 0;
         top: -190px;
         margin: auto;
@@ -608,8 +602,8 @@
         background-size: cover;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-        width: 50%;
-        height: auto;
+        width: 100%;
+        height: 250px;
         padding-top: 20px;
         border: 2px solid var(--primary);
         display: -webkit-box;
@@ -627,6 +621,10 @@
                 justify-content: center;
         position: relative;
         padding: 0;
+    }
+
+    .container2 {
+        padding: 0 30px;
     }
     
     .promotion-image:before {
@@ -652,8 +650,8 @@
     }
 
     .card-info {
-        width: 50%;
-        padding: 0 1em;
+        width: 90%;
+        padding: 20px 30px;
     }
 
     .card-info h3 {
@@ -663,9 +661,14 @@
         padding: 0 20px;
     }
 
+    .card-info h4 {
+        padding-left: 20px;
+    }
+
     .card-info p {
         padding: 0 20px;
         margin-bottom: 20px;
+        color: #000;
     }
 
     .card-info button {
@@ -974,12 +977,20 @@
         text-transform: uppercase;
     }
 
+    .card-info p {
+        color: #000;
+    }
+
     .card-info button {
         margin-bottom: 0;
     }
 
     .contact-info {
         padding: 0;
+    }
+
+    .card-info ol {
+        margin-bottom: 30px;
     }
 
     .contact-info h2 {
@@ -1044,5 +1055,220 @@
 
     .landing-text h1 {
         margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 0em) {
+    /*-- -------------------------- -->
+<---            FORM            -->
+<--- -------------------------- -*/
+
+/* Form */
+#valley-form {
+    display: relative;
+    padding-top: 650px;
+}
+
+#contact-form input[type="text"], 
+#contact-form input[type="email"], 
+#contact-form input[type="tel"], 
+#contact-form input[type="url"], 
+#contact-form textarea, 
+#contact-form button[type="submit"], 
+label { 
+    font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; 
+}
+
+label {
+    display: block;
+    margin: 20px 0 10px;
+    font-size: 16px;
+}
+
+#contact-form {
+    background: transparent;
+    position: relative;
+    z-index: 3;
+    max-width: 350px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#contact-form h3 {
+    color: #414141;
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.form-text {
+    margin: 0 0 30px 0;
+    display:block;
+    color: #414141;
+    line-height: 1.6em;
+}
+
+.restrictions {
+    font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; 
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form p{
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact-form input[type="text"], 
+#contact-form input[type="email"], 
+#contact-form input[type="tel"], 
+#contact-form input[type="url"], 
+#contact-form textarea, 
+#job {
+    width:100%;
+    height: 50px;
+    border:1px solid #CCC;
+    background:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+#contact-form input[type="text"]:hover, #contact-form input[type="email"]:hover, #contact-form input[type="tel"]:hover, #contact-form input[type="url"]:hover, #contact-form textarea:hover {
+    -webkit-transition:border-color 0.3s ease-in-out;
+    -o-transition:border-color 0.3s ease-in-out;
+    transition:border-color 0.3s ease-in-out;
+    border:1px solid #AAA;
+}
+
+#contact-form textarea {
+    height:200px;
+    max-width:100%;
+    resize:none;
+    margin-bottom: 30px;
+}
+
+#contact-form button[type="submit"] {
+    cursor:pointer;
+    width: 100%;
+    font-weight: 900;
+    font-size: 16px;
+    margin: 0;
+    background: var(--primary);
+    color: #000;
+    margin-top: 50px;
+    line-height: 40px;
+    padding: 0;
+}
+
+#contact-form button::before {
+    border-color: var(--primary);
+}
+
+#contact-form button::after {
+    border-color: var(--primary);
+}
+
+#contact-form button[type="submit"]:hover {
+    opacity: .6;
+    -webkit-transition:background 0.3s ease-in-out;
+    -webkit-transition:background-color 0.3s ease-in-out;
+    -o-transition:background-color 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+}
+
+#contact-form button[type="submit"]:active { -webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact-form input:focus, #contact-form textarea:focus {
+    outline:0;
+    border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+.form-h4 {
+    font-size: 25px;
+}
+
+.form-p {
+    margin-bottom: 100px;
+}
+}
+
+@media only screen and (min-width: 48em) {
+    #valley-form {
+        padding-top: 450px;
+        padding-bottom: 150px;
+        margin: auto;
+    }
+    #contact-form {
+        width: 534px;
+        padding-bottom: 0;
+        padding-top: 100px;
+        height: auto;
+        margin: auto;
+        max-width: 534px;
+        min-width: 534px;
+    }
+
+    #contact-form input[type="email"], 
+    #contact-form input[type="tel"], 
+    #contact-form input[type="text"], 
+    .half, #job {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        height: 50px;
+        background: #fff;
+        border: none;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    #contact-form textarea {
+        width: 98%;
+        margin-bottom: 30px;
+        height: 200px;
+        background: #f6f7f9;
+        border: none;
+    }
+
+    #contact-form-submit {
+        height: 40px;
+        width: auto !important;
+    }
+
+    .form-submit {
+        text-align: right;
+        margin-bottom: 0;
+        margin: auto;
+        min-width: 200px;
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+
+    #valley-form {
+        padding-top: 300px;
+    }
+
+    label {
+        font-size: 13px;
     }
 }
