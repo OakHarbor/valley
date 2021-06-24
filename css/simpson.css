@@ -1,11 +1,12 @@
 
+
 /*-- -------------------------- -->
 <---           LANDING          -->
 <--- -------------------------- -*/
 
 #landing-page {
     min-height: 300px;
-    background:url("../images/maps-bg.jpg");
+    background:url("../images/nds-banner.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,9 +58,23 @@
 <---            REBAR           -->
 <--- -------------------------- -*/
 
+.image-square {
+    width: 90vw;
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+}
+
+.image-square .image {
+    height: 46%;
+    width: 46%;
+    display: inline-block;
+    margin: 5px;
+}
+
 #about-rebar {
     padding-top: 50px;
-    padding-bottom: 00px;
+    padding-bottom: 50px;
 }
 
 .pipe {
@@ -97,7 +112,7 @@
     background: var(--primary);
     width: 50px;
     height: 2px;
-    left: 150px;
+    left: 170px;
     top: 60px;
 }
 
@@ -107,7 +122,7 @@
     background: var(--primary);
     width: 30px;
     height: 2px;
-    left: 150px;
+    left: 170px;
     top: 69px;
 }
 
@@ -117,7 +132,7 @@
     background: var(--primary);
     width: 50px;
     height: 2px;
-    left: 217px;
+    left: 180px;
     top: 60px;
 }
 
@@ -127,7 +142,7 @@
     background: var(--primary);
     width: 30px;
     height: 2px;
-    left: 217px;
+    left: 180px;
     top: 69px;
 }
 
@@ -189,13 +204,46 @@
     font-size: 20px;
 }
 
-#benefits h2 {
-    text-align: center;
-    font-size: 1.5em;
+#list {
+    padding: 0px 0 50px;
 }
 
-#benefits h2 span {
+#list ul {
+    margin-bottom: 50px;
+}
+
+#list h2 {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    margin-top: 0;
+    position: relative;
+    padding-top: 50px;
+    line-height: 1em;
+}
+
+#list h2 span {
     color: var(--primary);
+}
+
+#list h2:before {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 50px;
+    height: 2px;
+    left: 296px;
+    top: 60px;
+}
+
+#list h2:after {
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    width: 30px;
+    height: 2px;
+    left: 296px;
+    top: 69px;
 }
 
 /*-- -------------------------- -->
@@ -203,7 +251,7 @@
 <--- -------------------------- -*/
 
 #rebar-stats {
-    background:url("../images/map-image.jpg");
+    background:url("../images/parking-lot.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -299,10 +347,6 @@
     padding-bottom: 250px;
 }
 
-.pipe {
-    padding-bottom: 50px !important;
-}
-
 /*-- -------------------------- -->
 <---          PROMOTIONS        -->
 <--- -------------------------- -*/
@@ -310,10 +354,6 @@
 #promotions {
     background: #f5f3f3;
     position: relative;
-}
-
-.container2 {
-    padding: 0 20px;
 }
 
 .card {
@@ -597,19 +637,8 @@
         color: #fff;
     }
 
-    #benefits {
-        padding: 100px 0;
-    }
-    #benefits h2 {
-        font-size: 2.5em;
-        width: 500px;
-        margin: auto;
-        margin-bottom: 50px;
-    }
-
-    #benefits ul {
-        margin: auto;
-        width: 400px;
+    #list h2 span {
+        display: block;
     }
 
     /*-- -------------------------- -->
@@ -617,7 +646,17 @@
     <--- -------------------------- -*/
 
     .card {
-        width: 650px;
+        width: 700px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding: 0;
         top: -190px;
         margin: auto;
@@ -630,8 +669,8 @@
         background-size: cover;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-        width: 100%;
-        height: 250px;
+        width: 50%;
+        height: auto;
         padding-top: 20px;
         border: 2px solid var(--primary);
         display: -webkit-box;
@@ -649,10 +688,6 @@
                 justify-content: center;
         position: relative;
         padding: 0;
-    }
-
-    .container2 {
-        padding: 0 30px;
     }
     
     .promotion-image:before {
@@ -678,8 +713,8 @@
     }
 
     .card-info {
-        width: 90%;
-        padding: 20px 30px;
+        width: 50%;
+        padding: 0 1em;
     }
 
     .card-info h3 {
@@ -689,14 +724,9 @@
         padding: 0 20px;
     }
 
-    .card-info h4 {
-        padding-left: 20px;
-    }
-
     .card-info p {
         padding: 0 20px;
         margin-bottom: 20px;
-        color: #000;
     }
 
     .card-info button {
@@ -765,12 +795,19 @@
         width: 550px;
         padding: 0 20px;
         text-align: left;
-        margin-left: 10%;
     }
 
     /*-- -------------------------- -->
     <---            REBAR           -->
     <--- -------------------------- -*/
+
+    .image-square {
+        max-width: 400px;
+        max-height: 400px;
+        margin-top: 50px;
+        margin-right: 50px;
+        display: block;
+    }
 
     #about-rebar {
         display: -webkit-box;
@@ -786,38 +823,44 @@
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-around;
-        padding: 120px 15px 0;
+        padding: 120px 15px 0px;
     }
 
     #about-rebar img {
-        width: 450px;
+        width: 400px;
         height: auto;
         -ms-flex-item-align: start;
             align-self: flex-start;
         margin-top: 70px;
-        margin-right: 50px;
+        margin: auto;
     }
 
     #about-rebar #group2 {
-        width: auto;
+        width: 470px;
         margin-top: 100px;
+        margin-left: 100px;
     }
 
     .rebar-group {
-        width: 520px;
+        width: 620px;
+    }
+
+    .pipe {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .rebar-group h2:before,
     .rebar-group h2:after {
-        left: 150px;
+        left: 100px;
     }
 
     .group2 h2:before {
-        left: 217px;
+        left: 180px;
     }
 
     .group2 h2:after {
-        left: 217px;
+        left: 180px;
     }
 
     .examples h2 {
@@ -885,31 +928,31 @@
         -o-transition: .2s ease;
         transition: .2s ease;
     }
-
-    #benefits {
-        padding: 100px 0 0;
-    }
-    #benefits h2 {
-        font-size: 2.5em;
-        width: 500px;
-        margin: auto;
-        margin-bottom: 50px;
+    #list {
+        padding-bottom: 100px;
     }
 
-    #benefits ul {
-        margin: auto;
-        width: 400px;
+    #list h2 {
+        text-align: left;
+        margin-top: -50px;
     }
 
-    .examples {
-        position: relative;
-        z-index: 10;
+    #list h2 span {
+        display: block;
     }
 
-    .seal {
-        position: relative;
-        z-index: 10;
-        background: #fff;
+    #list .container {
+        text-align: left;
+    }
+
+    #list ul {
+        display: inline-block;
+        width: 40%;
+        text-align: left;
+    }
+
+    .container3 {
+        padding-bottom: 100px !important;
     }
 
     /*-- -------------------------- -->
@@ -954,26 +997,6 @@
             flex-wrap: wrap;
         padding-bottom: 250px;
         width: 600px;
-    }
-    
-    #rebar-stats h2 span {
-        color: var(--primary);
-    }
-
-    .stat-group {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        padding-bottom: 250px;
     }
 
     .stat-group span {
@@ -1031,20 +1054,12 @@
         text-transform: uppercase;
     }
 
-    .card-info p {
-        color: #000;
-    }
-
     .card-info button {
         margin-bottom: 0;
     }
 
     .contact-info {
         padding: 0;
-    }
-
-    .card-info ol {
-        margin-bottom: 30px;
     }
 
     .contact-info h2 {
@@ -1084,10 +1099,11 @@
 
 }
 
+/*-- -------------------------- -->
+<---          Phrases           -->
+<--- -------------------------- -*/
+
 @media screen and (min-width: 1425px) {
-    #about-rebar img {
-        width: 600px;
-    }
 
     .container2 {
         max-width: 1300px !important;
@@ -1095,6 +1111,11 @@
 
     .pipe {
         max-width: 1100px !important;
+    }
+
+    .image-square {
+        max-width: 550px;
+        max-height: 550px;
     }
 
     .stat-group {
@@ -1106,225 +1127,54 @@
     #rebar-stats {
         padding-bottom: 0px;
     }
-
-    .landing-text h1 {
-        margin-left: 0;
-    }
+    
 }
 
 @media only screen and (min-width: 0em) {
-    /*-- -------------------------- -->
-<---            FORM            -->
+
+    #phrases h2 {
+        font-size: 22px;
+        border-left: 4px solid var(--primary);
+        padding-left: 14px;
+    }
+
+    #phrases p {
+        padding-left: 18px;
+    }
+
+    #phrases .item {
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+
+    #phrases .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #phrases .item {
+        width: 45%;
+    }
+}
+
+/*-- -------------------------- -->
+<---          Anshoring         -->
 <--- -------------------------- -*/
 
-/* Form */
-#valley-form {
-    display: block;
-    padding-top: 750px;
-}
+@media only screen and (min-width: 64em) {
 
-#contact-form input[type="text"], 
-#contact-form input[type="email"], 
-#contact-form input[type="tel"], 
-#contact-form input[type="url"], 
-#contact-form textarea, 
-#contact-form button[type="submit"], 
-label { 
-    font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; 
-}
-
-label {
-    display: block;
-    margin: 20px 0 10px;
-    font-size: 16px;
-}
-
-#contact-form {
-    background: transparent;
-    position: relative;
-    z-index: 3;
-    max-width: 350px;
-    margin: auto;
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
-
-#contact-form h3 {
-    color: #414141;
-    display: block;
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.form-text {
-    margin: 0 0 30px 0;
-    display:block;
-    color: #414141;
-    line-height: 1.6em;
-}
-
-.restrictions {
-    font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; 
-    font-size: 30px;
-    font-weight: bold;
-    display: block;
-    margin-top: 50px;
-}
-
-form p{
-    border: medium none !important;
-    margin: 0 0 10px;
-    min-width: 100%;
-    padding: 0;
-    width: 100%;
-}
-
-#contact-form input[type="text"], 
-#contact-form input[type="email"], 
-#contact-form input[type="tel"], 
-#contact-form input[type="url"], 
-#contact-form textarea, 
-#job {
-    width:100%;
-    height: 50px;
-    border:1px solid #CCC;
-    background:#FFF;
-    margin:0 0 5px;
-    padding:10px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-}
-
-#contact-form input[type="text"]:hover, #contact-form input[type="email"]:hover, #contact-form input[type="tel"]:hover, #contact-form input[type="url"]:hover, #contact-form textarea:hover {
-    -webkit-transition:border-color 0.3s ease-in-out;
-    -o-transition:border-color 0.3s ease-in-out;
-    transition:border-color 0.3s ease-in-out;
-    border:1px solid #AAA;
-}
-
-#contact-form textarea {
-    height:200px;
-    max-width:100%;
-    resize:none;
-    margin-bottom: 30px;
-}
-
-#contact-form button[type="submit"] {
-    cursor:pointer;
-    width: 100%;
-    font-weight: 900;
-    font-size: 16px;
-    margin: 0;
-    background: var(--primary);
-    color: #000;
-    margin-top: 50px;
-    line-height: 40px;
-    padding: 0;
-}
-
-#contact-form button::before {
-    border-color: var(--primary);
-}
-
-#contact-form button::after {
-    border-color: var(--primary);
-}
-
-#contact-form button[type="submit"]:hover {
-    opacity: .6;
-    -webkit-transition:background 0.3s ease-in-out;
-    -webkit-transition:background-color 0.3s ease-in-out;
-    -o-transition:background-color 0.3s ease-in-out;
-    transition:background-color 0.3s ease-in-out;
-}
-
-#contact-form button[type="submit"]:active { -webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
-
-#contact-form input:focus, #contact-form textarea:focus {
-    outline:0;
-    border:1px solid #999;
-}
-::-webkit-input-placeholder {
- color:#888;
-}
-:-moz-placeholder {
- color:#888;
-}
-::-moz-placeholder {
- color:#888;
-}
-:-ms-input-placeholder {
- color:#888;
-}
-
-.form-h4 {
-    font-size: 25px;
-}
-
-.form-p {
-    margin-bottom: 100px;
-}
-}
-
-@media only screen and (min-width: 48em) {
-    #valley-form {
-        padding-top: 450px;
-        padding-bottom: 150px;
-        margin: auto;
-    }
-    #contact-form {
-        width: 534px;
-        padding-bottom: 0;
-        padding-top: 100px;
-        height: auto;
-        margin: auto;
-        max-width: 534px;
-        min-width: 534px;
-    }
-
-    #contact-form input[type="email"], 
-    #contact-form input[type="tel"], 
-    #contact-form input[type="text"], 
-    .half, #job {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        height: 50px;
-        background: #fff;
-        border: none;
-        margin: auto;
-        margin-bottom: 15px;
-    }
-
-    #contact-form textarea {
-        width: 98%;
-        margin-bottom: 30px;
-        height: 200px;
-        background: #f6f7f9;
-        border: none;
-    }
-
-    #contact-form-submit {
-        height: 40px;
-        width: auto !important;
-    }
-
-    .form-submit {
-        text-align: right;
-        margin-bottom: 0;
-        margin: auto;
-        min-width: 200px;
-        width: 200px;
+    .anchoring img {
+        width: 400px !important;
     }
 }
 
 @media only screen and (min-width: 1300px) {
 
-    #valley-form {
-        padding-top: 300px;
-    }
-
-    label {
-        font-size: 13px;
+    .anchoring img {
+        margin-left: auto !important;
+        margin-top: 40px !important;
     }
 }
