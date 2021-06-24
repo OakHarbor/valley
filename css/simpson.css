@@ -256,6 +256,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding-bottom: 160px;
 }
 
 #rebar-stats:before {
@@ -292,7 +293,7 @@
     margin: auto;
     position: relative;
     z-index: 5;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -524,7 +525,8 @@
     <--- -------------------------- -*/
 
     #rebar-stats {
-        height: 1250px;
+        height: auto;
+        padding-bottom: 250px;
     }
 
     #rebar-stats h2 {
@@ -549,29 +551,12 @@
         text-align: left;
     }
 
-    .stat-group {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    }
-
     #rebar-stats h2 {
         display: block;
     }
 
     .stat-item {
-        width: 260px;
+        width: 90%;
         padding: 15px;
     }
 
@@ -820,14 +805,14 @@
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-around;
+       -webkit-box-pack: center;
+           -ms-flex-pack: center;
+               justify-content: center;
         padding: 120px 15px 0px;
     }
 
     #about-rebar img {
-        width: 400px;
+        width: 100%;
         height: auto;
         -ms-flex-item-align: start;
             align-self: flex-start;
@@ -852,7 +837,7 @@
 
     .rebar-group h2:before,
     .rebar-group h2:after {
-        left: 100px;
+        left: 170px;
     }
 
     .group2 h2:before {
@@ -888,6 +873,24 @@
 
     .pipe {
         max-width: 1100px !important;
+        position: relative;
+    }
+
+    .pipe2 {
+        position: relative;
+    }
+
+    .pipe2:before {
+        content: '';
+      position: absolute;
+      display: block;
+      height: 60%;
+      width: 2000px;
+      background: var(--primary);
+      opacity: 1;
+      top: 30px;
+      left: 50%;
+      margin-left: 300px;
     }
 
     .seal {
@@ -960,15 +963,15 @@
     <--- -------------------------- -*/
 
     #rebar-stats {
-        height: 1000px;
+        height: auto;
         background-attachment: fixed;
-        padding-bottom: 200px;
+        padding-bottom: 300px;
     }
 
     #rebar-stats h2 {
         font-weight: 700;
         font-size: 2.5em;
-        margin-bottom: 120px;
+        margin-bottom: 50px;
         margin-top: 0;
         position: relative;
         padding-top: 180px;
@@ -982,35 +985,35 @@
         color: var(--primary);
     }
 
-    .stat-group {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        padding-bottom: 250px;
-        width: 600px;
-    }
 
     .stat-group span {
         display: block;
     }
 
     .stat-item {
-        width: 250px;
-        margin: 0;
-        padding: 0;
+        width: 60%;
+        padding: 15px;
     }
 
     .stat-item h3 {
         margin-top: 50px;
+    }
+
+    .anchoring {
+        padding-top: 100px !important;
+    }
+
+    .anchoring #group2 {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+    }
+
+    .anchoring .group2 {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        margin-right: 70px;
     }
 
     /*-- -------------------------- -->
@@ -1099,10 +1102,6 @@
 
 }
 
-/*-- -------------------------- -->
-<---          Phrases           -->
-<--- -------------------------- -*/
-
 @media screen and (min-width: 1425px) {
 
     .container2 {
@@ -1117,18 +1116,12 @@
         max-width: 550px;
         max-height: 550px;
     }
-
-    .stat-group {
-        width: 1200px;
-        max-width: 1200px !important;
-        padding-bottom: 0;
-    }
-
-    #rebar-stats {
-        padding-bottom: 0px;
-    }
     
 }
+
+/*-- -------------------------- -->
+<---          Phrases           -->
+<--- -------------------------- -*/
 
 @media only screen and (min-width: 0em) {
 
@@ -1150,9 +1143,14 @@
 @media only screen and (min-width: 64em) {
 
     #phrases .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     #phrases .item {
