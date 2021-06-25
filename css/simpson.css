@@ -112,7 +112,7 @@
     background: var(--primary);
     width: 50px;
     height: 2px;
-    left: 170px;
+    left: 270px;
     top: 60px;
 }
 
@@ -122,7 +122,7 @@
     background: var(--primary);
     width: 30px;
     height: 2px;
-    left: 170px;
+    left: 270px;
     top: 69px;
 }
 
@@ -837,7 +837,7 @@
 
     .rebar-group h2:before,
     .rebar-group h2:after {
-        left: 170px;
+        left: 270px;
     }
 
     .group2 h2:before {
