@@ -1,0 +1,23 @@
+
+#tagline h2 {
+    max-width: 550px;
+}
+
+.rebar-group h2:before, .rebar-group h2:after {
+    display: none;
+}
+
+@media only screen and (min-width: 48em) {
+
+}
+
+@media only screen and (min-width: 64em) {
+
+    #top-square:before {
+        height: 146%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+
+}
