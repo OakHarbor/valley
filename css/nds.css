@@ -75,9 +75,9 @@
 }
 
 .image-square .i1:nth-of-type(1) {
-    background: url("../images/i1.jpg");
+    background: url("../images/flo-well.png");
 	background-size: cover;
-    background-position: center;
+    background-position: 0% center;
     background-repeat: no-repeat;
 }
 
@@ -96,9 +96,9 @@
 }
 
 .image-square .i4 {
-    background: url("../images/i4.jpg");
+    background: url("../images/ezflow.png");
 	background-size: cover;
-    background-position: center;
+    background-position: 0% center;
     background-repeat: no-repeat;
 }
 
